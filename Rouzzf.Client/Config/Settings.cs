@@ -1,4 +1,4 @@
-﻿using Quasar.Common.Cryptography;
+﻿using Rouzzf.Common.Cryptography;
 using System;
 using System.IO;
 using System.Security.Cryptography;
@@ -6,7 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Quasar.Client.Config
+namespace Rouzzf.Client.Config
 {
     /// <summary>
     /// Stores the configuration of the client.

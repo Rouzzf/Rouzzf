@@ -1,9 +1,9 @@
 ﻿using Microsoft.Win32;
-using Quasar.Client.Helper;
-using Quasar.Common.Enums;
+using Rouzzf.Client.Helper;
+using Rouzzf.Common.Enums;
 using System.Diagnostics;
 
-namespace Quasar.Client.Setup
+namespace Rouzzf.Client.Setup
 {
     public class ClientStartup : ClientSetupBase
     {

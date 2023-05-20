@@ -4,14 +4,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Quasar.Common.Messages;
-using Quasar.Common.Models;
-using Quasar.Server.Helper;
-using Quasar.Server.Messages;
-using Quasar.Server.Models;
-using Quasar.Server.Networking;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Models;
+using Rouzzf.Server.Helper;
+using Rouzzf.Server.Messages;
+using Rouzzf.Server.Models;
+using Rouzzf.Server.Networking;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmPasswordRecovery : Form
     {

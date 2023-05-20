@@ -1,9 +1,9 @@
-using Quasar.Client.Helper;
+using Rouzzf.Client.Helper;
 using System.Globalization;
 using System.IO;
 using System.Net;
 
-namespace Quasar.Client.IpGeoLocation
+namespace Rouzzf.Client.IpGeoLocation
 {
     /// <summary>
     /// Class to retrieve the IP geolocation information.

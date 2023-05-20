@@ -1,18 +1,18 @@
-﻿using Quasar.Server.Networking;
-using Quasar.Server.Utilities;
+﻿using Rouzzf.Server.Networking;
+using Rouzzf.Server.Utilities;
 using System;
 using System.Globalization;
 using System.Net.Sockets;
 using System.Windows.Forms;
-using Quasar.Server.Models;
+using Rouzzf.Server.Models;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmSettings : Form
     {
-        private readonly QuasarServer _listenServer;
+        private readonly RouzzfServer _listenServer;
 
-        public FrmSettings(QuasarServer listenServer)
+        public FrmSettings(RouzzfServer listenServer)
         {
             this._listenServer = listenServer;
 

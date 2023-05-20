@@ -4,17 +4,17 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Microsoft.Win32;
-using Quasar.Common.Messages;
-using Quasar.Common.Models;
-using Quasar.Common.Utilities;
-using Quasar.Server.Controls;
-using Quasar.Server.Extensions;
-using Quasar.Server.Helper;
-using Quasar.Server.Messages;
-using Quasar.Server.Networking;
-using Quasar.Server.Registry;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Utilities;
+using Rouzzf.Server.Controls;
+using Rouzzf.Server.Extensions;
+using Rouzzf.Server.Helper;
+using Rouzzf.Server.Messages;
+using Rouzzf.Server.Networking;
+using Rouzzf.Server.Registry;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmRegistryEditor : Form
     {

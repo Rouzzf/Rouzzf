@@ -1,6 +1,6 @@
-﻿using Quasar.Server.Controls;
+﻿using Rouzzf.Server.Controls;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     partial class FrmConnections
     {
@@ -55,7 +55,7 @@ namespace Quasar.Server.Forms
             // 
             // refreshToolStripMenuItem
             // 
-            this.refreshToolStripMenuItem.Image = global::Quasar.Server.Properties.Resources.refresh;
+            this.refreshToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.refresh;
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
             this.refreshToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.refreshToolStripMenuItem.Text = "Refresh";
@@ -63,7 +63,7 @@ namespace Quasar.Server.Forms
             // 
             // closeConnectionToolStripMenuItem
             // 
-            this.closeConnectionToolStripMenuItem.Image = global::Quasar.Server.Properties.Resources.uac_shield;
+            this.closeConnectionToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.uac_shield;
             this.closeConnectionToolStripMenuItem.Name = "closeConnectionToolStripMenuItem";
             this.closeConnectionToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.closeConnectionToolStripMenuItem.Text = "Close Connection";

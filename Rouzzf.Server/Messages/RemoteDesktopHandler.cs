@@ -1,13 +1,13 @@
-﻿using Quasar.Common.Enums;
-using Quasar.Common.Messages;
-using Quasar.Common.Networking;
-using Quasar.Common.Video.Codecs;
-using Quasar.Server.Networking;
+﻿using Rouzzf.Common.Enums;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
+using Rouzzf.Common.Video.Codecs;
+using Rouzzf.Server.Networking;
 using System;
 using System.Drawing;
 using System.IO;
 
-namespace Quasar.Server.Messages
+namespace Rouzzf.Server.Messages
 {
     /// <summary>
     /// Handles messages for the interaction with the remote desktop.

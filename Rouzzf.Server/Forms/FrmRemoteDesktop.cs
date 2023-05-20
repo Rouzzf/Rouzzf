@@ -1,17 +1,17 @@
 ﻿using Gma.System.MouseKeyHook;
-using Quasar.Common.Enums;
-using Quasar.Common.Helpers;
-using Quasar.Common.Messages;
-using Quasar.Server.Helper;
-using Quasar.Server.Messages;
-using Quasar.Server.Networking;
-using Quasar.Server.Utilities;
+using Rouzzf.Common.Enums;
+using Rouzzf.Common.Helpers;
+using Rouzzf.Common.Messages;
+using Rouzzf.Server.Helper;
+using Rouzzf.Server.Messages;
+using Rouzzf.Server.Networking;
+using Rouzzf.Server.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmRemoteDesktop : Form
     {

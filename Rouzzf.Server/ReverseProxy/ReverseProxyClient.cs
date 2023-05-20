@@ -1,12 +1,12 @@
-﻿using Quasar.Common.Messages.ReverseProxy;
-using Quasar.Server.Networking;
+﻿using Rouzzf.Common.Messages.ReverseProxy;
+using Rouzzf.Server.Networking;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Sockets;
 using System.Text;
 
-namespace Quasar.Server.ReverseProxy
+namespace Rouzzf.Server.ReverseProxy
 {
     public class ReverseProxyClient
     {

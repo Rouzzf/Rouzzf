@@ -54,7 +54,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Quasar.Common\Quasar.Common.csproj" />
+    <ProjectReference Include="..\Rouzzf.Common\Rouzzf.Common.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ILRepack.Lib.MSBuild.Task">

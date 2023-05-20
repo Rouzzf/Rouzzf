@@ -1,11 +1,11 @@
 ﻿using Mono.Cecil;
-using Quasar.Common.Utilities;
+using Rouzzf.Common.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Quasar.Server.Build
+namespace Rouzzf.Server.Build
 {
     public class Renamer
     {
@@ -57,7 +57,7 @@ namespace Quasar.Server.Build
 
         private void RenameInType(TypeDefinition typeDef)
         {
-            if (!typeDef.Namespace.StartsWith("Quasar") || typeDef.Namespace.StartsWith("Quasar.Common.Messages") || typeDef.IsEnum /* || typeDef.HasInterfaces */)
+            if (!typeDef.Namespace.StartsWith("Rouzzf") || typeDef.Namespace.StartsWith("Rouzzf.Common.Messages") || typeDef.IsEnum /* || typeDef.HasInterfaces */)
                 return;
 
             _typeOverloader.GiveName(typeDef);

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
-using Quasar.Common.Models;
-using Quasar.Common.Utilities;
-using Quasar.Server.Registry;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Utilities;
+using Rouzzf.Server.Registry;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmRegValueEditString : Form
     {

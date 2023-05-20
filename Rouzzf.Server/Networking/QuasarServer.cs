@@ -1,14 +1,14 @@
-﻿using Quasar.Common.Cryptography;
-using Quasar.Common.Messages;
+﻿using Rouzzf.Common.Cryptography;
+using Rouzzf.Common.Messages;
 using System;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace Quasar.Server.Networking
+namespace Rouzzf.Server.Networking
 {
-    public class QuasarServer : Server
+    public class RouzzfServer : Server
     {
         /// <summary>
         /// Gets the clients currently connected and identified to the server.
@@ -66,7 +66,7 @@ namespace Quasar.Server.Networking
         /// Constructor, initializes required objects and subscribes to events of the server.
         /// </summary>
         /// <param name="serverCertificate">The server certificate.</param>
-        public QuasarServer(X509Certificate2 serverCertificate) : base(serverCertificate)
+        public RouzzfServer(X509Certificate2 serverCertificate) : base(serverCertificate)
         {
             base.ClientState += OnClientState;
             base.ClientRead += OnClientRead;

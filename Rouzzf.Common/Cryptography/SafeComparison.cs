@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace Quasar.Common.Cryptography
+namespace Rouzzf.Common.Cryptography
 {
     public class SafeComparison
     {

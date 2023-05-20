@@ -1,9 +1,9 @@
 ﻿using Microsoft.Win32;
-using Quasar.Common.Models;
-using Quasar.Common.Utilities;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Utilities;
 using System;
 
-namespace Quasar.Server.Registry
+namespace Rouzzf.Server.Registry
 {
     public class RegValueHelper
     {

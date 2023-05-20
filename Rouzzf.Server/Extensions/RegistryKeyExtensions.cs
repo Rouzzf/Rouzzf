@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Win32;
 
-namespace Quasar.Server.Extensions
+namespace Rouzzf.Server.Extensions
 {
     public static class RegistryKeyExtensions
     {

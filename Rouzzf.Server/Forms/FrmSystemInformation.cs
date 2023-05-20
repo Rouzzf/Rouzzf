@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using Quasar.Common.Messages;
-using Quasar.Server.Extensions;
-using Quasar.Server.Helper;
-using Quasar.Server.Messages;
-using Quasar.Server.Networking;
+using Rouzzf.Common.Messages;
+using Rouzzf.Server.Extensions;
+using Rouzzf.Server.Helper;
+using Rouzzf.Server.Messages;
+using Rouzzf.Server.Networking;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmSystemInformation : Form
     {

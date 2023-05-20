@@ -1,5 +1,5 @@
-﻿using Quasar.Client.Config;
-using Quasar.Client.IO;
+﻿using Rouzzf.Client.Config;
+using Rouzzf.Client.IO;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-namespace Quasar.Client.Setup
+namespace Rouzzf.Client.Setup
 {
     public class ClientUninstaller : ClientSetupBase
     {

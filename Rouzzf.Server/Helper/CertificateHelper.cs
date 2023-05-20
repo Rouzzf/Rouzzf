@@ -11,7 +11,7 @@ using Org.BouncyCastle.X509.Extension;
 using System;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Quasar.Server.Helper
+namespace Rouzzf.Server.Helper
 {
     public static class CertificateHelper
     {

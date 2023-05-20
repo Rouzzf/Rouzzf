@@ -3,13 +3,13 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.XPath;
 
-namespace Quasar.Server.Models
+namespace Rouzzf.Server.Models
 {
     public static class Settings
     {
         private static readonly string SettingsPath = Path.Combine(Application.StartupPath, "settings.xml");
 
-        public static readonly string CertificatePath = Path.Combine(Application.StartupPath, "quasar.p12");
+        public static readonly string CertificatePath = Path.Combine(Application.StartupPath, "Rouzzf.p12");
 
         public static ushort ListenPort
         {

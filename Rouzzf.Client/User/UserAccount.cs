@@ -1,8 +1,8 @@
-﻿using Quasar.Common.Enums;
+﻿using Rouzzf.Common.Enums;
 using System;
 using System.Security.Principal;
 
-namespace Quasar.Client.User
+namespace Rouzzf.Client.User
 {
     public class UserAccount
     {

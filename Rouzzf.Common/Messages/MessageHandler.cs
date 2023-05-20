@@ -1,8 +1,8 @@
-﻿using Quasar.Common.Networking;
+﻿using Rouzzf.Common.Networking;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Quasar.Common.Messages
+namespace Rouzzf.Common.Messages
 {
     /// <summary>
     /// Handles registrations of <see cref="IMessageProcessor"/>s and processing of <see cref="IMessage"/>s.

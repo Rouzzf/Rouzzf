@@ -1,10 +1,10 @@
 ﻿using Microsoft.Win32;
-using Quasar.Common.Utilities;
+using Rouzzf.Common.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Quasar.Client.Extensions
+namespace Rouzzf.Client.Extensions
 {
     /// <summary>
     /// Provides extensions for registry key and value operations.

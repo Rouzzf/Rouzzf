@@ -1,7 +1,7 @@
 ﻿using ProtoBuf;
-using Quasar.Common.Models;
+using Rouzzf.Common.Models;
 
-namespace Quasar.Common.Messages
+namespace Rouzzf.Common.Messages
 {
     [ProtoContract]
     public class GetRegistryKeysResponse : IMessage

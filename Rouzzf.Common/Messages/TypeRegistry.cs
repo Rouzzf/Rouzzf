@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Quasar.Common.Messages
+namespace Rouzzf.Common.Messages
 {
     public static class TypeRegistry
     {

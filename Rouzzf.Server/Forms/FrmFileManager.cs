@@ -1,19 +1,19 @@
-﻿using Quasar.Common.Enums;
-using Quasar.Common.Helpers;
-using Quasar.Common.Messages;
-using Quasar.Common.Models;
-using Quasar.Server.Controls;
-using Quasar.Server.Helper;
-using Quasar.Server.Messages;
-using Quasar.Server.Models;
-using Quasar.Server.Networking;
+﻿using Rouzzf.Common.Enums;
+using Rouzzf.Common.Helpers;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Models;
+using Rouzzf.Server.Controls;
+using Rouzzf.Server.Helper;
+using Rouzzf.Server.Messages;
+using Rouzzf.Server.Models;
+using Rouzzf.Server.Networking;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 using Process = System.Diagnostics.Process;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmFileManager : Form
     {

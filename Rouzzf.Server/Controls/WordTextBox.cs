@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Globalization;
 using System.Windows.Forms;
-using Quasar.Server.Enums;
+using Rouzzf.Server.Enums;
 
-namespace Quasar.Server.Controls
+namespace Rouzzf.Server.Controls
 {
     public partial class WordTextBox : TextBox
     {

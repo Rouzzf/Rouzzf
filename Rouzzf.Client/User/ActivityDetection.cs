@@ -1,11 +1,11 @@
-﻿using Quasar.Client.Helper;
-using Quasar.Client.Networking;
-using Quasar.Common.Enums;
-using Quasar.Common.Messages;
+﻿using Rouzzf.Client.Helper;
+using Rouzzf.Client.Networking;
+using Rouzzf.Common.Enums;
+using Rouzzf.Common.Messages;
 using System;
 using System.Threading;
 
-namespace Quasar.Client.User
+namespace Rouzzf.Client.User
 {
     /// <summary>
     /// Provides user activity detection and sends <see cref="SetUserStatus"/> messages on change.
@@ -20,7 +20,7 @@ namespace Quasar.Client.User
         /// <summary>
         /// The client to use for communication with the server.
         /// </summary>
-        private readonly QuasarClient _client;
+        private readonly RouzzfClient _client;
 
         /// <summary>
         /// Create a <see cref="_token"/> and signals cancellation.
@@ -36,7 +36,7 @@ namespace Quasar.Client.User
         /// Initializes a new instance of <see cref="ActivityDetection"/> using the given client.
         /// </summary>
         /// <param name="client">The name of the mutex.</param>
-        public ActivityDetection(QuasarClient client)
+        public ActivityDetection(RouzzfClient client)
         {
             _client = client;
             _tokenSource = new CancellationTokenSource();

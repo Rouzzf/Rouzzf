@@ -1,6 +1,6 @@
-﻿using Quasar.Common.Enums;
+﻿using Rouzzf.Common.Enums;
 
-namespace Quasar.Common.Extensions
+namespace Rouzzf.Common.Extensions
 {
     public static class StringExtensions
     {

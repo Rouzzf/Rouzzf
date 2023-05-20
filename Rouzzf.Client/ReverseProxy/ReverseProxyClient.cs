@@ -1,9 +1,9 @@
-﻿using Quasar.Common.Messages.ReverseProxy;
+﻿using Rouzzf.Common.Messages.ReverseProxy;
 using System;
 using System.Net;
 using System.Net.Sockets;
 
-namespace Quasar.Client.ReverseProxy
+namespace Rouzzf.Client.ReverseProxy
 {
     public class ReverseProxyClient
     {

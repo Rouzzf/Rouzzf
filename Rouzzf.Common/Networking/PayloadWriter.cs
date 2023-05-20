@@ -1,9 +1,9 @@
 ﻿using ProtoBuf;
-using Quasar.Common.Messages;
+using Rouzzf.Common.Messages;
 using System;
 using System.IO;
 
-namespace Quasar.Common.Networking
+namespace Rouzzf.Common.Networking
 {
     public class PayloadWriter : MemoryStream
     {

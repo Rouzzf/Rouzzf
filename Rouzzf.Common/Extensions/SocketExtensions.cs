@@ -2,7 +2,7 @@
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
 
-namespace Quasar.Common.Extensions
+namespace Rouzzf.Common.Extensions
 {
     /// <summary>
     /// Socket Extension for KeepAlive

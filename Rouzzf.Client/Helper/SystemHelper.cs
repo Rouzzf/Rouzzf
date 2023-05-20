@@ -1,8 +1,8 @@
-﻿using Quasar.Common.Helpers;
+﻿using Rouzzf.Common.Helpers;
 using System;
 using System.Management;
 
-namespace Quasar.Client.Helper
+namespace Rouzzf.Client.Helper
 {
     public static class SystemHelper
     {

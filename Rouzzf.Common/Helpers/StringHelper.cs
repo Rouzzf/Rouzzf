@@ -1,8 +1,8 @@
-﻿using Quasar.Common.Utilities;
+﻿using Rouzzf.Common.Utilities;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Quasar.Common.Helpers
+namespace Rouzzf.Common.Helpers
 {
     public static class StringHelper
     {

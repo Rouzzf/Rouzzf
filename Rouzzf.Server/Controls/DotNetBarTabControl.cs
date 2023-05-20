@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 // thanks to Mavamaarten~ for coding this
 
-namespace Quasar.Server.Controls
+namespace Rouzzf.Server.Controls
 {
     internal class DotNetBarTabControl : TabControl
     {

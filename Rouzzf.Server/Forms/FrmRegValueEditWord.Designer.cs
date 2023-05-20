@@ -1,7 +1,7 @@
-﻿using Quasar.Server.Controls;
-using Quasar.Server.Enums;
+﻿using Rouzzf.Server.Controls;
+using Rouzzf.Server.Enums;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     partial class FrmRegValueEditWord
     {

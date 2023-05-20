@@ -1,8 +1,8 @@
-﻿using Quasar.Common.Networking;
+﻿using Rouzzf.Common.Networking;
 using System;
 using System.Threading;
 
-namespace Quasar.Common.Messages
+namespace Rouzzf.Common.Messages
 {
     /// <summary>
     /// Provides a MessageProcessor implementation that provides progress report callbacks.

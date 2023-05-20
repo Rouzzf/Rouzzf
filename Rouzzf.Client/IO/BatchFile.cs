@@ -1,8 +1,8 @@
-﻿using Quasar.Common.Helpers;
+﻿using Rouzzf.Common.Helpers;
 using System.IO;
 using System.Text;
 
-namespace Quasar.Client.IO
+namespace Rouzzf.Client.IO
 {
     /// <summary>
     /// Provides methods to create batch files for application update, uninstall and restart operations.

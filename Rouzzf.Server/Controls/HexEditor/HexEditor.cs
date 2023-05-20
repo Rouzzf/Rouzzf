@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Quasar.Server.Controls.HexEditor
+namespace Rouzzf.Server.Controls.HexEditor
 {
     /*
     * Derived and Adapted from Bernhard Elbl 

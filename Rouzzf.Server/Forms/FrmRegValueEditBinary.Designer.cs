@@ -1,6 +1,6 @@
-﻿using Quasar.Server.Controls.HexEditor;
+﻿using Rouzzf.Server.Controls.HexEditor;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     partial class FrmRegValueEditBinary
     {

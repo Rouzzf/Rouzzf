@@ -1,4 +1,4 @@
-﻿namespace Quasar.Server.Forms
+﻿namespace Rouzzf.Server.Forms
 {
     partial class FrmRegValueEditString
     {

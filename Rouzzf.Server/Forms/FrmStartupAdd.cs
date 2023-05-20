@@ -1,11 +1,11 @@
-﻿using Quasar.Common.Enums;
-using Quasar.Common.Helpers;
-using Quasar.Common.Models;
+﻿using Rouzzf.Common.Enums;
+using Rouzzf.Common.Helpers;
+using Rouzzf.Common.Models;
 using System;
 using System.IO;
 using System.Windows.Forms;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmStartupAdd : Form
     {

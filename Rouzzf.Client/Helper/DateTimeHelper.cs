@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Quasar.Client.Helper
+namespace Rouzzf.Client.Helper
 {
     public static class DateTimeHelper
     {

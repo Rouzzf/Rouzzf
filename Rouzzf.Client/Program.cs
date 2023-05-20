@@ -1,11 +1,11 @@
-﻿using Quasar.Client.IO;
+﻿using Rouzzf.Client.IO;
 using System;
 using System.Diagnostics;
 using System.Net;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Quasar.Client
+namespace Rouzzf.Client
 {
     internal static class Program
     {
@@ -26,7 +26,7 @@ namespace Quasar.Client
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuasarApplication());
+            Application.Run(new RouzzfApplication());
         }
 
         private static void HandleThreadException(object sender, ThreadExceptionEventArgs e)

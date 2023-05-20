@@ -1,9 +1,9 @@
-﻿using Quasar.Common.Enums;
-using Quasar.Common.Messages;
-using Quasar.Common.Networking;
-using Quasar.Server.Networking;
+﻿using Rouzzf.Common.Enums;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
+using Rouzzf.Server.Networking;
 
-namespace Quasar.Server.Messages
+namespace Rouzzf.Server.Messages
 {
     /// <summary>
     /// Handles messages for the interaction with the remote client status.

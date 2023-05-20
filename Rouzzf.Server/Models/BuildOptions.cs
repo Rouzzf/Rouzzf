@@ -1,4 +1,4 @@
-﻿namespace Quasar.Server.Models
+﻿namespace Rouzzf.Server.Models
 {
     public class BuildOptions
     {

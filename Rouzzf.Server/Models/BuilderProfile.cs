@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.XPath;
 
-namespace Quasar.Server.Models
+namespace Rouzzf.Server.Models
 {
     public class BuilderProfile
     {
@@ -158,7 +158,7 @@ namespace Quasar.Server.Models
         {
             get
             {
-                return ReadValueSafe("RegistryName", "Quasar Client Startup");
+                return ReadValueSafe("RegistryName", "Rouzzf Client Startup");
             }
             set
             {

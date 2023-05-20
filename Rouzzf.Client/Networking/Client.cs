@@ -1,8 +1,8 @@
-﻿using Quasar.Client.ReverseProxy;
-using Quasar.Common.Extensions;
-using Quasar.Common.Messages;
-using Quasar.Common.Messages.ReverseProxy;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Client.ReverseProxy;
+using Rouzzf.Common.Extensions;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Messages.ReverseProxy;
+using Rouzzf.Common.Networking;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 
-namespace Quasar.Client.Networking
+namespace Rouzzf.Client.Networking
 {
     public class Client : ISender
     {

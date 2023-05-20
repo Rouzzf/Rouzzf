@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
-using Quasar.Server.Helper;
+using Rouzzf.Server.Helper;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmVisitWebsite : Form
     {

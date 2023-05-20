@@ -1,6 +1,6 @@
-﻿using Quasar.Server.Controls;
+﻿using Rouzzf.Server.Controls;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     partial class FrmRegistryEditor
     {

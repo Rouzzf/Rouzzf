@@ -1,12 +1,12 @@
-﻿using Quasar.Server.Helper;
+﻿using Rouzzf.Server.Helper;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
-using Quasar.Server.Models;
+using Rouzzf.Server.Models;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmCertificate : Form
     {
@@ -26,7 +26,7 @@ namespace Quasar.Server.Forms
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            SetCertificate(CertificateHelper.CreateCertificateAuthority("Quasar Server CA", 4096));
+            SetCertificate(CertificateHelper.CreateCertificateAuthority("Rouzzf Server CA", 4096));
         }
 
         private void btnImport_Click(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace Quasar.Server.Forms
             catch (Exception)
             {
                 MessageBox.Show(this,
-                    "There was an error saving the certificate, please make sure you have write access to the Quasar directory.",
+                    "There was an error saving the certificate, please make sure you have write access to the Rouzzf directory.",
                     "Save error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

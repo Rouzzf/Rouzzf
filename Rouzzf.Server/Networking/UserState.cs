@@ -1,9 +1,9 @@
-﻿using Quasar.Common.Cryptography;
-using Quasar.Common.Helpers;
+﻿using Rouzzf.Common.Cryptography;
+using Rouzzf.Common.Helpers;
 using System.IO;
 using System.Windows.Forms;
 
-namespace Quasar.Server.Networking
+namespace Rouzzf.Server.Networking
 {
     public class UserState
     {

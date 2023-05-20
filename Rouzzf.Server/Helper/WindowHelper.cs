@@ -1,6 +1,6 @@
-﻿using Quasar.Server.Networking;
+﻿using Rouzzf.Server.Networking;
 
-namespace Quasar.Server.Helper
+namespace Rouzzf.Server.Helper
 {
     public static class WindowHelper
     {

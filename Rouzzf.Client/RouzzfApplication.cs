@@ -1,13 +1,13 @@
-﻿using Quasar.Client.Config;
-using Quasar.Client.Logging;
-using Quasar.Client.Messages;
-using Quasar.Client.Networking;
-using Quasar.Client.Setup;
-using Quasar.Client.User;
-using Quasar.Client.Utilities;
-using Quasar.Common.DNS;
-using Quasar.Common.Helpers;
-using Quasar.Common.Messages;
+﻿using Rouzzf.Client.Config;
+using Rouzzf.Client.Logging;
+using Rouzzf.Client.Messages;
+using Rouzzf.Client.Networking;
+using Rouzzf.Client.Setup;
+using Rouzzf.Client.User;
+using Rouzzf.Client.Utilities;
+using Rouzzf.Common.DNS;
+using Rouzzf.Common.Helpers;
+using Rouzzf.Common.Messages;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -16,12 +16,12 @@ using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Quasar.Client
+namespace Rouzzf.Client
 {
     /// <summary>
     /// The client application which handles basic bootstrapping of the message processors and background tasks.
     /// </summary>
-    public class QuasarApplication : Form
+    public class RouzzfApplication : Form
     {
         /// <summary>
         /// A system-wide mutex that ensures that only one instance runs at a time.
@@ -31,7 +31,7 @@ namespace Quasar.Client
         /// <summary>
         /// The client used for the connection to the server.
         /// </summary>
-        private QuasarClient _connectClient;
+        private RouzzfClient _connectClient;
 
         /// <summary>
         /// List of <see cref="IMessageProcessor"/> to keep track of all used message processors.
@@ -59,9 +59,9 @@ namespace Quasar.Client
         private readonly NotifyIcon _notifyIcon;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="QuasarApplication"/> class.
+        /// Initializes a new instance of the <see cref="RouzzfApplication"/> class.
         /// </summary>
-        public QuasarApplication()
+        public RouzzfApplication()
         {
             _messageProcessors = new List<IMessageProcessor>();
             _notifyIcon = new NotifyIcon();
@@ -84,7 +84,7 @@ namespace Quasar.Client
         /// </summary>
         private void InitializeNotifyicon()
         {
-            _notifyIcon.Text = "Quasar Client\nNo connection";
+            _notifyIcon.Text = "Rouzzf Client\nNo connection";
             _notifyIcon.Visible = true;
             try
             {
@@ -153,7 +153,7 @@ namespace Quasar.Client
                 }
 
                 var hosts = new HostsManager(new HostsConverter().RawHostsToList(Settings.HOSTS));
-                _connectClient = new QuasarClient(hosts, Settings.SERVERCERTIFICATE);
+                _connectClient = new RouzzfClient(hosts, Settings.SERVERCERTIFICATE);
                 _connectClient.ClientState += ConnectClientOnClientState;
                 InitializeMessageProcessors(_connectClient);
 
@@ -173,9 +173,9 @@ namespace Quasar.Client
         private void ConnectClientOnClientState(Networking.Client s, bool connected)
         {
             if (connected)
-                _notifyIcon.Text = "Quasar Client\nConnection established";
+                _notifyIcon.Text = "Rouzzf Client\nConnection established";
             else
-                _notifyIcon.Text = "Quasar Client\nNo connection";
+                _notifyIcon.Text = "Rouzzf Client\nNo connection";
         }
 
         /// <summary>
@@ -183,7 +183,7 @@ namespace Quasar.Client
         /// </summary>
         /// <param name="client">The client which handles the connection.</param>
         /// <remarks>Always initialize from UI thread.</remarks>
-        private void InitializeMessageProcessors(QuasarClient client)
+        private void InitializeMessageProcessors(RouzzfClient client)
         {
             _messageProcessors.Add(new ClientServicesHandler(this, client));
             _messageProcessors.Add(new FileManagerHandler(client));
@@ -229,7 +229,7 @@ namespace Quasar.Client
             if (Settings.UNATTENDEDMODE)
                 return;
             
-            _notifyIcon.ShowBalloonTip(4000, "Quasar Client", value, ToolTipIcon.Info);
+            _notifyIcon.ShowBalloonTip(4000, "Rouzzf Client", value, ToolTipIcon.Info);
         }
 
         protected override void Dispose(bool disposing)

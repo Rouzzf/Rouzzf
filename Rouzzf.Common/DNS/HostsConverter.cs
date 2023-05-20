@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 
-namespace Quasar.Common.DNS
+namespace Rouzzf.Common.DNS
 {
     public class HostsConverter
     {

@@ -1,6 +1,6 @@
-﻿using Quasar.Client.User;
+﻿using Rouzzf.Client.User;
 
-namespace Quasar.Client.Setup
+namespace Rouzzf.Client.Setup
 {
     public abstract class ClientSetupBase
     {

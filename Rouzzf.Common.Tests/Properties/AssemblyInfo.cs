@@ -2,11 +2,11 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Quasar Common Tests")]
+[assembly: AssemblyTitle("Rouzzf Common Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Quasar")]
+[assembly: AssemblyProduct("Rouzzf")]
 [assembly: AssemblyCopyright("Copyright © MaxXor 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

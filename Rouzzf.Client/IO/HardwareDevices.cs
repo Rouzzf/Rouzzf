@@ -1,12 +1,12 @@
-﻿using Quasar.Common.Cryptography;
-using Quasar.Common.Helpers;
+﻿using Rouzzf.Common.Cryptography;
+using Rouzzf.Common.Helpers;
 using System;
 using System.Linq;
 using System.Management;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
 
-namespace Quasar.Client.IO
+namespace Rouzzf.Client.IO
 {
     /// <summary>
     /// Provides access to retrieve information about the used hardware devices.

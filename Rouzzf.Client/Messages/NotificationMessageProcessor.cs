@@ -1,6 +1,6 @@
-﻿using Quasar.Common.Messages;
+﻿using Rouzzf.Common.Messages;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public abstract class NotificationMessageProcessor : MessageProcessorBase<string>
     {

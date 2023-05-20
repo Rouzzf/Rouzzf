@@ -1,9 +1,9 @@
-﻿using Quasar.Common.Cryptography;
+﻿using Rouzzf.Common.Cryptography;
 using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Quasar.Common.Helpers
+namespace Rouzzf.Common.Helpers
 {
     public static class FileHelper
     {

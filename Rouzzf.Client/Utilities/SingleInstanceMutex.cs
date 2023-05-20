@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Quasar.Client.Utilities
+namespace Rouzzf.Client.Utilities
 {
     /// <summary>
     /// A user-wide mutex that ensures that only one instance runs at a time.

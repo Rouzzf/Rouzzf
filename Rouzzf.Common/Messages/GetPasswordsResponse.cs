@@ -1,8 +1,8 @@
 ﻿using ProtoBuf;
-using Quasar.Common.Models;
+using Rouzzf.Common.Models;
 using System.Collections.Generic;
 
-namespace Quasar.Common.Messages
+namespace Rouzzf.Common.Messages
 {
     [ProtoContract]
     public class GetPasswordsResponse : IMessage

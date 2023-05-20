@@ -1,6 +1,6 @@
 ﻿using ProtoBuf;
 
-namespace Quasar.Common.Messages
+namespace Rouzzf.Common.Messages
 {
     [ProtoContract]
     public class DoLoadRegistryKey : IMessage

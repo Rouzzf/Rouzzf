@@ -2,7 +2,7 @@
 using System.Runtime.Serialization.Json;
 using System.Text;
 
-namespace Quasar.Client.Helper
+namespace Rouzzf.Client.Helper
 {
     /// <summary>
     /// Provides methods to serialize and deserialize JSON.

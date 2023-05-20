@@ -1,9 +1,9 @@
-﻿using Quasar.Server.Forms;
+﻿using Rouzzf.Server.Forms;
 using System;
 using System.Net;
 using System.Windows.Forms;
 
-namespace Quasar.Server
+namespace Rouzzf.Server
 {
     internal static class Program
     {

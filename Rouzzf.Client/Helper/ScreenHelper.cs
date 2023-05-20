@@ -2,9 +2,9 @@
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
-using Quasar.Client.Utilities;
+using Rouzzf.Client.Utilities;
 
-namespace Quasar.Client.Helper
+namespace Rouzzf.Client.Helper
 {
     public static class ScreenHelper
     {

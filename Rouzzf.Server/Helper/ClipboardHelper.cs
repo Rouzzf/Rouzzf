@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Quasar.Server.Helper
+namespace Rouzzf.Server.Helper
 {
     public static class ClipboardHelper
     {

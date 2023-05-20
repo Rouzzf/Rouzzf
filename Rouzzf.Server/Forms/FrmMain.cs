@@ -1,10 +1,10 @@
-﻿using Quasar.Common.Enums;
-using Quasar.Common.Messages;
-using Quasar.Server.Extensions;
-using Quasar.Server.Messages;
-using Quasar.Server.Models;
-using Quasar.Server.Networking;
-using Quasar.Server.Utilities;
+﻿using Rouzzf.Common.Enums;
+using Rouzzf.Common.Messages;
+using Rouzzf.Server.Extensions;
+using Rouzzf.Server.Messages;
+using Rouzzf.Server.Models;
+using Rouzzf.Server.Networking;
+using Rouzzf.Server.Utilities;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,11 +14,11 @@ using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmMain : Form
     {
-        public QuasarServer ListenServer { get; set; }
+        public RouzzfServer ListenServer { get; set; }
 
         private const int STATUS_ID = 4;
         private const int USERSTATUS_ID = 5;
@@ -67,9 +67,9 @@ namespace Quasar.Server.Forms
                 {
                     int selected = lstClients.SelectedItems.Count;
                     this.Text = (selected > 0)
-                        ? string.Format("Quasar - Connected: {0} [Selected: {1}]", ListenServer.ConnectedClients.Length,
+                        ? string.Format("Rouzzf - Connected: {0} [Selected: {1}]", ListenServer.ConnectedClients.Length,
                             selected)
-                        : string.Format("Quasar - Connected: {0}", ListenServer.ConnectedClients.Length);
+                        : string.Format("Rouzzf - Connected: {0}", ListenServer.ConnectedClients.Length);
                 });
             }
             catch (Exception)
@@ -106,7 +106,7 @@ namespace Quasar.Server.Forms
             var b = SafeComparison.AreEqual(result.Exponent, result2.Exponent) &&
                     SafeComparison.AreEqual(result.Modulus, result2.Modulus);*/
 
-            ListenServer = new QuasarServer(serverCertificate);
+            ListenServer = new RouzzfServer(serverCertificate);
             ListenServer.ServerState += ServerState;
             ListenServer.ClientConnected += ClientConnected;
             ListenServer.ClientDisconnected += ClientDisconnected;

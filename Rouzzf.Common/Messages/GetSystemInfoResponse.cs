@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Quasar.Common.Messages
+namespace Rouzzf.Common.Messages
 {
     [ProtoContract]
     public class GetSystemInfoResponse : IMessage

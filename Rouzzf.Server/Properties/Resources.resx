@@ -249,8 +249,8 @@ SOFTWARE.</value>
   <data name="keyboard_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\keyboard_add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Quasar_Server" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Icons\Quasar_Server.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rouzzf_Server" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\Rouzzf_Server.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="keyboard_magnify" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\keyboard_magnify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

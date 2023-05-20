@@ -1,12 +1,12 @@
-﻿using Quasar.Common.Messages;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
 using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Security;
 using System.Threading;
 
-namespace Quasar.Server.Networking
+namespace Rouzzf.Server.Networking
 {
     public class Client : IEquatable<Client>, ISender
     {

@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace Quasar.Common.DNS
+namespace Rouzzf.Common.DNS
 {
     public class Host
     {

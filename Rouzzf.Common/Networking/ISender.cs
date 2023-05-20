@@ -1,6 +1,6 @@
-﻿using Quasar.Common.Messages;
+﻿using Rouzzf.Common.Messages;
 
-namespace Quasar.Common.Networking
+namespace Rouzzf.Common.Networking
 {
     public interface ISender
     {

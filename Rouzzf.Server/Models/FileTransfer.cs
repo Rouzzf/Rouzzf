@@ -1,9 +1,9 @@
-﻿using Quasar.Common.IO;
-using Quasar.Common.Utilities;
-using Quasar.Server.Enums;
+﻿using Rouzzf.Common.IO;
+using Rouzzf.Common.Utilities;
+using Rouzzf.Server.Enums;
 using System;
 
-namespace Quasar.Server.Models
+namespace Rouzzf.Server.Models
 {
     public class FileTransfer : IEquatable<FileTransfer>
     {

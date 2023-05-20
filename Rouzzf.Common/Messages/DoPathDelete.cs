@@ -1,7 +1,7 @@
 ﻿using ProtoBuf;
-using Quasar.Common.Enums;
+using Rouzzf.Common.Enums;
 
-namespace Quasar.Common.Messages
+namespace Rouzzf.Common.Messages
 {
     [ProtoContract]
     public class DoPathDelete : IMessage

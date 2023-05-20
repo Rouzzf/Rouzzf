@@ -1,20 +1,20 @@
-﻿using Quasar.Client.Config;
-using Quasar.Client.Helper;
-using Quasar.Client.IO;
-using Quasar.Client.IpGeoLocation;
-using Quasar.Client.User;
-using Quasar.Common.DNS;
-using Quasar.Common.Helpers;
-using Quasar.Common.Messages;
-using Quasar.Common.Utilities;
+﻿using Rouzzf.Client.Config;
+using Rouzzf.Client.Helper;
+using Rouzzf.Client.IO;
+using Rouzzf.Client.IpGeoLocation;
+using Rouzzf.Client.User;
+using Rouzzf.Common.DNS;
+using Rouzzf.Common.Helpers;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Utilities;
 using System;
 using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 
-namespace Quasar.Client.Networking
+namespace Rouzzf.Client.Networking
 {
-    public class QuasarClient : Client, IDisposable
+    public class RouzzfClient : Client, IDisposable
     {
         /// <summary>
         /// Used to keep track if the client has been identified by the server.
@@ -42,11 +42,11 @@ namespace Quasar.Client.Networking
         private readonly CancellationToken _token;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="QuasarClient"/> class.
+        /// Initializes a new instance of the <see cref="RouzzfClient"/> class.
         /// </summary>
         /// <param name="hostsManager">The hosts manager which contains the available hosts to connect to.</param>
         /// <param name="serverCertificate">The server certificate.</param>
-        public QuasarClient(HostsManager hostsManager, X509Certificate2 serverCertificate)
+        public RouzzfClient(HostsManager hostsManager, X509Certificate2 serverCertificate)
             : base(serverCertificate)
         {
             this._hosts = hostsManager;

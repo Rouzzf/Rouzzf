@@ -1,7 +1,7 @@
-﻿using Quasar.Common.DNS;
-using Quasar.Common.Helpers;
-using Quasar.Server.Build;
-using Quasar.Server.Models;
+﻿using Rouzzf.Common.DNS;
+using Rouzzf.Common.Helpers;
+using Rouzzf.Server.Build;
+using Rouzzf.Server.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmBuilder : Form
     {
@@ -276,7 +276,7 @@ namespace Quasar.Server.Forms
 
             if (!File.Exists("client.bin"))
             {
-                throw new Exception("Could not locate \"client.bin\" file. It should be in the same directory as Quasar.");
+                throw new Exception("Could not locate \"client.bin\" file. It should be in the same directory as Rouzzf.");
             }
 
             if (options.RawHosts.Length < 2)

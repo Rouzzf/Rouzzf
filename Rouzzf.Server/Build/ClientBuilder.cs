@@ -1,14 +1,14 @@
 ﻿using Mono.Cecil;
 using Mono.Cecil.Cil;
-using Quasar.Common.Cryptography;
-using Quasar.Server.Models;
+using Rouzzf.Common.Cryptography;
+using Rouzzf.Server.Models;
 using System;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using Vestris.ResourceLib;
 
-namespace Quasar.Server.Build
+namespace Rouzzf.Server.Build
 {
     /// <summary>
     /// Provides methods used to create a custom client executable.
@@ -96,7 +96,7 @@ namespace Quasar.Server.Build
 
             foreach (var typeDef in asmDef.Modules[0].Types)
             {
-                if (typeDef.FullName == "Quasar.Client.Config.Settings")
+                if (typeDef.FullName == "Rouzzf.Client.Config.Settings")
                 {
                     foreach (var methodDef in typeDef.Methods)
                     {

@@ -1,16 +1,16 @@
-﻿using Quasar.Common.Helpers;
-using Quasar.Common.Messages;
-using Quasar.Server.Helper;
-using Quasar.Server.Messages;
-using Quasar.Server.Models;
-using Quasar.Server.Networking;
-using Quasar.Server.ReverseProxy;
+﻿using Rouzzf.Common.Helpers;
+using Rouzzf.Common.Messages;
+using Rouzzf.Server.Helper;
+using Rouzzf.Server.Messages;
+using Rouzzf.Server.Models;
+using Rouzzf.Server.Networking;
+using Rouzzf.Server.ReverseProxy;
 using System;
 using System.Globalization;
 using System.Net.Sockets;
 using System.Windows.Forms;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmReverseProxy : Form
     {

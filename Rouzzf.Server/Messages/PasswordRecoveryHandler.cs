@@ -1,11 +1,11 @@
-﻿using Quasar.Common.Messages;
-using Quasar.Common.Models;
-using Quasar.Common.Networking;
-using Quasar.Server.Networking;
+﻿using Rouzzf.Common.Messages;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Networking;
+using Rouzzf.Server.Networking;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Quasar.Server.Messages
+namespace Rouzzf.Server.Messages
 {
     /// <summary>
     /// Handles messages for the interaction with the remote password recovery.

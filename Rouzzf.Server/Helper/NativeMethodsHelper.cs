@@ -1,7 +1,7 @@
 ﻿using System;
-using Quasar.Server.Utilities;
+using Rouzzf.Server.Utilities;
 
-namespace Quasar.Server.Helper
+namespace Rouzzf.Server.Helper
 {
     public static class NativeMethodsHelper
     {

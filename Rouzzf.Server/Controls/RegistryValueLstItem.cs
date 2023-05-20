@@ -1,9 +1,9 @@
 ﻿using System.Windows.Forms;
-using Quasar.Common.Models;
-using Quasar.Server.Extensions;
-using Quasar.Server.Registry;
+using Rouzzf.Common.Models;
+using Rouzzf.Server.Extensions;
+using Rouzzf.Server.Registry;
 
-namespace Quasar.Server.Controls
+namespace Rouzzf.Server.Controls
 {
     public class RegistryValueLstItem : ListViewItem
     {

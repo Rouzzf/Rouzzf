@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Quasar.Server.Utilities
+namespace Rouzzf.Server.Utilities
 {
     public class FrameUpdatedEventArgs : EventArgs
     {

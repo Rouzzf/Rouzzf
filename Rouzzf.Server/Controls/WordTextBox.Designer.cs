@@ -1,4 +1,4 @@
-﻿namespace Quasar.Server.Controls
+﻿namespace Rouzzf.Server.Controls
 {
     partial class WordTextBox
     {

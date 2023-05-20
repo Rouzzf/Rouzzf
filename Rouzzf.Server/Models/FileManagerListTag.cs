@@ -1,6 +1,6 @@
-﻿using Quasar.Common.Enums;
+﻿using Rouzzf.Common.Enums;
 
-namespace Quasar.Server.Models
+namespace Rouzzf.Server.Models
 {
     public class FileManagerListTag
     {

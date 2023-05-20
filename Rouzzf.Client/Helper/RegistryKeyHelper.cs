@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Win32;
-using Quasar.Client.Extensions;
-using Quasar.Common.Models;
-using Quasar.Common.Utilities;
+using Rouzzf.Client.Extensions;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Utilities;
 
-namespace Quasar.Client.Helper
+namespace Rouzzf.Client.Helper
 {
     public static class RegistryKeyHelper
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using ProtoBuf;
-using Quasar.Common.Enums;
+using Rouzzf.Common.Enums;
 
-namespace Quasar.Common.Models
+namespace Rouzzf.Common.Models
 {
     [ProtoContract]
     public class FileSystemEntry

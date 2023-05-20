@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-using Quasar.Common.Models;
-using Quasar.Common.Utilities;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Utilities;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmRegValueEditMultiString : Form
     {

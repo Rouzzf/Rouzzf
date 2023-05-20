@@ -4,7 +4,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Quasar.Client.Recovery.Utilities
+namespace Rouzzf.Client.Recovery.Utilities
 {
     public class SQLiteHandler
     {

@@ -1,10 +1,10 @@
-﻿using Quasar.Common.Models;
+﻿using Rouzzf.Common.Models;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Quasar.Common.IO
+namespace Rouzzf.Common.IO
 {
     public class FileSplit : IEnumerable<FileChunk>, IDisposable
     {

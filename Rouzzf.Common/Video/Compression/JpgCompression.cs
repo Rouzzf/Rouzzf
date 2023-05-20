@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 
-namespace Quasar.Common.Video.Compression
+namespace Rouzzf.Common.Video.Compression
 {
     public class JpgCompression : IDisposable
     {

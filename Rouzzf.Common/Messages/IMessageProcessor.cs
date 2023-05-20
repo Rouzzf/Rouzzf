@@ -1,6 +1,6 @@
-﻿using Quasar.Common.Networking;
+﻿using Rouzzf.Common.Networking;
 
-namespace Quasar.Common.Messages
+namespace Rouzzf.Common.Messages
 {
     /// <summary>
     /// Provides basic functionality to process messages.

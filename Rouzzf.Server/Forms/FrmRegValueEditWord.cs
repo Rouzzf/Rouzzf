@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
 using Microsoft.Win32;
-using Quasar.Common.Models;
-using Quasar.Common.Utilities;
-using Quasar.Server.Enums;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Utilities;
+using Rouzzf.Server.Enums;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     public partial class FrmRegValueEditWord : Form
     {

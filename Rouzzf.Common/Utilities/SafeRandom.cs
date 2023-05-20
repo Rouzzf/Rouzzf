@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 
-namespace Quasar.Common.Utilities
+namespace Rouzzf.Common.Utilities
 {
     /// <summary>
     /// Thread-safe random number generator.

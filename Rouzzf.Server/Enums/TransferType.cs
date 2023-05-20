@@ -1,4 +1,4 @@
-﻿namespace Quasar.Server.Enums
+﻿namespace Rouzzf.Server.Enums
 {
     public enum TransferType
     {

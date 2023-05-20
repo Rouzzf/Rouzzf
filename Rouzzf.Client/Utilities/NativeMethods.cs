@@ -3,7 +3,7 @@ using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace Quasar.Client.Utilities
+namespace Rouzzf.Client.Utilities
 {
     /// <summary>
     /// Provides access to the Win32 API.

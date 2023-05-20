@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Quasar.Common.Cryptography;
-using Quasar.Common.Helpers;
+using Rouzzf.Common.Cryptography;
+using Rouzzf.Common.Helpers;
 
-namespace Quasar.Common.Tests.Cryptography
+namespace Rouzzf.Common.Tests.Cryptography
 {
     [TestClass]
     public class Sha256Tests

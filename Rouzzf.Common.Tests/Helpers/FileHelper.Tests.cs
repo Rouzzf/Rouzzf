@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Quasar.Common.Helpers;
+using Rouzzf.Common.Helpers;
 
-namespace Quasar.Common.Tests.Helpers
+namespace Rouzzf.Common.Tests.Helpers
 {
     [TestClass]
     public class FileHelperTests

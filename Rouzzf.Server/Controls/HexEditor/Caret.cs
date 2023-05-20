@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace Quasar.Server.Controls.HexEditor
+namespace Rouzzf.Server.Controls.HexEditor
 {
     public class Caret
     {

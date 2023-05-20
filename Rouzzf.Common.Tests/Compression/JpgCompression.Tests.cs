@@ -1,9 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Quasar.Common.Video.Compression;
+using Rouzzf.Common.Video.Compression;
 using System;
 using System.Drawing;
 
-namespace Quasar.Common.Tests.Compression
+namespace Rouzzf.Common.Tests.Compression
 {
     [TestClass]
     public class JpgCompressionTests

@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Quasar.Common.Cryptography
+namespace Rouzzf.Common.Cryptography
 {
     public class Aes256
     {

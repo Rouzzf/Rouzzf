@@ -1,5 +1,5 @@
-﻿using Quasar.Common.Extensions;
-using Quasar.Common.Messages;
+﻿using Rouzzf.Common.Extensions;
+using Rouzzf.Common.Messages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Net.Sockets;
 using System.Security.Authentication;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Quasar.Server.Networking
+namespace Rouzzf.Server.Networking
 {
     public class Server
     {

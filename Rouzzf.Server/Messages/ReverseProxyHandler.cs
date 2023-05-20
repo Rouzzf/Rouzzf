@@ -1,12 +1,12 @@
-﻿using Quasar.Common.Messages;
-using Quasar.Common.Messages.ReverseProxy;
-using Quasar.Common.Networking;
-using Quasar.Server.Networking;
-using Quasar.Server.ReverseProxy;
+﻿using Rouzzf.Common.Messages;
+using Rouzzf.Common.Messages.ReverseProxy;
+using Rouzzf.Common.Networking;
+using Rouzzf.Server.Networking;
+using Rouzzf.Server.ReverseProxy;
 using System;
 using System.Linq;
 
-namespace Quasar.Server.Messages
+namespace Rouzzf.Server.Messages
 {
     /// <summary>
     /// Handles messages for the interaction with the remote reverse proxy.

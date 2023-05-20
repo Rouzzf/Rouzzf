@@ -1,4 +1,4 @@
-﻿namespace Quasar.Client.IpGeoLocation
+﻿namespace Rouzzf.Client.IpGeoLocation
 {
     /// <summary>
     /// Stores the IP geolocation information.

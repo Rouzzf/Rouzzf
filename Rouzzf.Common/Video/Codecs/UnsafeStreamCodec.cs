@@ -1,11 +1,11 @@
-﻿using Quasar.Common.Video.Compression;
+﻿using Rouzzf.Common.Video.Compression;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 
-namespace Quasar.Common.Video.Codecs
+namespace Rouzzf.Common.Video.Codecs
 {
     public class UnsafeStreamCodec : IDisposable
     {

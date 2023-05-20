@@ -1,13 +1,13 @@
-﻿using Quasar.Client.Config;
-using Quasar.Client.Extensions;
-using Quasar.Common.Helpers;
+﻿using Rouzzf.Client.Config;
+using Rouzzf.Client.Extensions;
+using Rouzzf.Common.Helpers;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace Quasar.Client.Setup
+namespace Rouzzf.Client.Setup
 {
     public class ClientInstaller : ClientSetupBase
     {

@@ -2,7 +2,7 @@
 using System.Management;
 using System.Text.RegularExpressions;
 
-namespace Quasar.Common.Helpers
+namespace Rouzzf.Common.Helpers
 {
     public static class PlatformHelper
     {

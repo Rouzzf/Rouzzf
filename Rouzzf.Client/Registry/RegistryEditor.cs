@@ -1,10 +1,10 @@
 ﻿using Microsoft.Win32;
-using Quasar.Client.Extensions;
-using Quasar.Client.Helper;
-using Quasar.Common.Models;
+using Rouzzf.Client.Extensions;
+using Rouzzf.Client.Helper;
+using Rouzzf.Common.Models;
 using System;
 
-namespace Quasar.Client.Registry
+namespace Rouzzf.Client.Registry
 {
     public class RegistryEditor
     {

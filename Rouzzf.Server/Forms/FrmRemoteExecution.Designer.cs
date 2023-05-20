@@ -1,4 +1,4 @@
-﻿namespace Quasar.Server.Forms
+﻿namespace Rouzzf.Server.Forms
 {
     partial class FrmRemoteExecution
     {
@@ -39,7 +39,7 @@
             this.groupURL = new System.Windows.Forms.GroupBox();
             this.radioLocalFile = new System.Windows.Forms.RadioButton();
             this.radioURL = new System.Windows.Forms.RadioButton();
-            this.lstTransfers = new Quasar.Server.Controls.AeroListView();
+            this.lstTransfers = new Rouzzf.Server.Controls.AeroListView();
             this.hClient = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chkUpdate = new System.Windows.Forms.CheckBox();

@@ -1,4 +1,4 @@
-﻿namespace Quasar.Common.Messages
+﻿namespace Rouzzf.Common.Messages
 {
     public interface IMessage
     {

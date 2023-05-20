@@ -1,8 +1,8 @@
-﻿using Quasar.Server.Models;
+﻿using Rouzzf.Server.Models;
 using System.Collections;
 using System.Windows.Forms;
 
-namespace Quasar.Server.Utilities
+namespace Rouzzf.Server.Utilities
 {
     public class ListViewColumnSorter : IComparer
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Quasar.Server.Properties {
+namespace Rouzzf.Server.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Quasar.Server.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Quasar.Server.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Rouzzf.Server.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -353,9 +353,9 @@ namespace Quasar.Server.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Quasar_Server {
+        internal static System.Drawing.Bitmap Rouzzf_Server {
             get {
-                object obj = ResourceManager.GetObject("Quasar_Server", resourceCulture);
+                object obj = ResourceManager.GetObject("Rouzzf_Server", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

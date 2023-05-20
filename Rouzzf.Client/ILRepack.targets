@@ -6,7 +6,7 @@
     <InputAssemblies Include="$(TargetPath)"/>
     <InputAssemblies Include="$(TargetDir)protobuf-net.dll"/>
     <InputAssemblies Include="$(TargetDir)Gma.System.MouseKeyHook.dll"/>
-    <InputAssemblies Include="$(TargetDir)Quasar.Common.dll"/>
+    <InputAssemblies Include="$(TargetDir)Rouzzf.Common.dll"/>
     <InputAssemblies Include="$(TargetDir)BouncyCastle.Crypto.dll"/>
   </ItemGroup>
 

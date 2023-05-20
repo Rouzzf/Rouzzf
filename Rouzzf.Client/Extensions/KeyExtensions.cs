@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Quasar.Client.Extensions
+namespace Rouzzf.Client.Extensions
 {
     public static class KeyExtensions
     {

@@ -1,4 +1,4 @@
-﻿namespace Quasar.Server.Forms
+﻿namespace Rouzzf.Server.Forms
 {
     partial class FrmCertificate
     {
@@ -66,7 +66,7 @@
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(493, 15);
             this.lblDescription.TabIndex = 0;
-            this.lblDescription.Text = "To use Quasar create a new certificate or import an existing one from a previous" +
+            this.lblDescription.Text = "To use Rouzzf create a new certificate or import an existing one from a previous" +
     " installation.";
             // 
             // txtDetails
@@ -140,7 +140,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmCertificate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quasar - Certificate Wizard";
+            this.Text = "Rouzzf - Certificate Wizard";
             this.ResumeLayout(false);
             this.PerformLayout();
 

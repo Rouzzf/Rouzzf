@@ -1,6 +1,6 @@
-﻿using Quasar.Server.Controls;
+﻿using Rouzzf.Server.Controls;
 
-namespace Quasar.Server.Forms
+namespace Rouzzf.Server.Forms
 {
     partial class FrmRemoteDesktop
     {
@@ -105,7 +105,7 @@ namespace Quasar.Server.Forms
             // 
             // btnMouse
             // 
-            this.btnMouse.Image = global::Quasar.Server.Properties.Resources.mouse_delete;
+            this.btnMouse.Image = global::Rouzzf.Server.Properties.Resources.mouse_delete;
             this.btnMouse.Location = new System.Drawing.Point(302, 5);
             this.btnMouse.Name = "btnMouse";
             this.btnMouse.Size = new System.Drawing.Size(28, 28);
@@ -134,7 +134,7 @@ namespace Quasar.Server.Forms
             // 
             // btnKeyboard
             // 
-            this.btnKeyboard.Image = global::Quasar.Server.Properties.Resources.keyboard_delete;
+            this.btnKeyboard.Image = global::Rouzzf.Server.Properties.Resources.keyboard_delete;
             this.btnKeyboard.Location = new System.Drawing.Point(336, 5);
             this.btnKeyboard.Name = "btnKeyboard";
             this.btnKeyboard.Size = new System.Drawing.Size(28, 28);

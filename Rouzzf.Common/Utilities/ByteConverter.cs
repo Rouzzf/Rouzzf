@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Quasar.Common.Utilities
+namespace Rouzzf.Common.Utilities
 {
     public class ByteConverter
     {

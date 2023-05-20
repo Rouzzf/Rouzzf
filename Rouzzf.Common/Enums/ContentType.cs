@@ -1,4 +1,4 @@
-﻿namespace Quasar.Common.Enums
+﻿namespace Rouzzf.Common.Enums
 {
     public enum ContentType
     {

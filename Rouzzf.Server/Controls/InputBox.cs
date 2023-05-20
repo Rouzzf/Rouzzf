@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Quasar.Server.Controls
+namespace Rouzzf.Server.Controls
 {
     public static class InputBox
     {

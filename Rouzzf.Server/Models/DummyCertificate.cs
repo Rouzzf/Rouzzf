@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 
-namespace Quasar.Server.Models
+namespace Rouzzf.Server.Models
 {
     /// <summary>
     /// Provides a dummy certificate for debugging. Do not use in production.

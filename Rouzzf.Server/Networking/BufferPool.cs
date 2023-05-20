@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Quasar.Server.Networking
+namespace Rouzzf.Server.Networking
 {
     /// <summary>
     /// Implements a pool of byte arrays to improve allocation performance when parsing data.

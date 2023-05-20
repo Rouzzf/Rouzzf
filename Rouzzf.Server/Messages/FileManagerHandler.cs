@@ -1,18 +1,18 @@
-﻿using Quasar.Common.Enums;
-using Quasar.Common.IO;
-using Quasar.Common.Messages;
-using Quasar.Common.Models;
-using Quasar.Common.Networking;
-using Quasar.Server.Enums;
-using Quasar.Server.Models;
-using Quasar.Server.Networking;
+﻿using Rouzzf.Common.Enums;
+using Rouzzf.Common.IO;
+using Rouzzf.Common.Messages;
+using Rouzzf.Common.Models;
+using Rouzzf.Common.Networking;
+using Rouzzf.Server.Enums;
+using Rouzzf.Server.Models;
+using Rouzzf.Server.Networking;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading;
 
-namespace Quasar.Server.Messages
+namespace Rouzzf.Server.Messages
 {
     /// <summary>
     /// Handles messages for the interaction with remote files and directories.
