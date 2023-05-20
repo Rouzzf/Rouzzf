@@ -205,7 +205,7 @@ namespace Rouzzf.Client
             {
                 MessageHandler.Register(msgProc);
                 if (msgProc is NotificationMessageProcessor notifyMsgProc)
-                    notifyMsgProc.ProgressChanged += ShowNotification;
+                    notifyMsgProc.report += ShowNotification;
             }
         }
 
@@ -218,7 +218,7 @@ namespace Rouzzf.Client
             {
                 MessageHandler.Unregister(msgProc);
                 if (msgProc is NotificationMessageProcessor notifyMsgProc)
-                    notifyMsgProc.ProgressChanged -= ShowNotification;
+                    notifyMsgProc.report -= ShowNotification;
                 if (msgProc is IDisposable disposableMsgProc)
                     disposableMsgProc.Dispose();
             }
