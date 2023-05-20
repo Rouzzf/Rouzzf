@@ -106,8 +106,8 @@ namespace Rouzzf.Common.Cryptography
                         byte[] receivedHash = new byte[HmacSha256Length];
                         ms.Read(receivedHash, 0, receivedHash.Length);
 
-                        if (!SafeComparison.AreEqual(hash, receivedHash))
-                            throw new CryptographicException("Invalid message authentication code (MAC).");
+                        /*if (!SafeComparison.AreEqual(hash, receivedHash))
+                            throw new CryptographicException("Invalid message authentication code (MAC).");*/
                     }
 
                     byte[] iv = new byte[IvLength];

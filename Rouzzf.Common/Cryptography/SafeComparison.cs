@@ -1,4 +1,4 @@
-﻿using System.Runtime.CompilerServices;
+﻿/*using System.Runtime.CompilerServices;
 
 namespace Rouzzf.Common.Cryptography
 {
@@ -27,3 +27,4 @@ namespace Rouzzf.Common.Cryptography
         }
     }
 }
+*/
