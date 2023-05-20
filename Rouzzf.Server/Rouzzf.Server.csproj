@@ -2,15 +2,15 @@
   <PropertyGroup>
     <TargetFramework>net452</TargetFramework>
     <OutputType>WinExe</OutputType>
-    <AssemblyName>Quasar</AssemblyName>
+    <AssemblyName>Rouzzf</AssemblyName>
     <UseWindowsForms>true</UseWindowsForms>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Quasar.Server.Program</StartupObject>
+    <StartupObject>Rouzzf.Server.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Images\Icons\Quasar_Server.ico</ApplicationIcon>
+    <ApplicationIcon>Images\Icons\Rouzzf_Server.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
