@@ -183,11 +183,6 @@ namespace Rouzzf.Client.Networking
         private List<ReverseProxyClient> _proxyClients = new List<ReverseProxyClient>();
 
         /// <summary>
-        /// The internal index of the message type.
-        /// </summary>
-        private int _typeIndex;
-
-        /// <summary>
         /// Lock object for the list of proxy clients.
         /// </summary>
         private readonly object _proxyClientsLock = new object();
