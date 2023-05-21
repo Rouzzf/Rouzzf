@@ -83,7 +83,7 @@ namespace Rouzzf.Server.Forms
         private void RegisterMessageHandler()
         {
             _connectClient.ClientState += ClientDisconnected;
-            _fileManagerHandler.ProgressChanged += SetStatusMessage;
+            _fileManagerHandler.report += SetStatusMessage;
             _fileManagerHandler.DrivesChanged += DrivesChanged;
             _fileManagerHandler.DirectoryChanged += DirectoryChanged;
             _fileManagerHandler.FileTransferUpdated += FileTransferUpdated;
@@ -96,7 +96,7 @@ namespace Rouzzf.Server.Forms
         private void UnregisterMessageHandler()
         {
             MessageHandler.Unregister(_fileManagerHandler);
-            _fileManagerHandler.ProgressChanged -= SetStatusMessage;
+            _fileManagerHandler.report -= SetStatusMessage;
             _fileManagerHandler.DrivesChanged -= DrivesChanged;
             _fileManagerHandler.DirectoryChanged -= DirectoryChanged;
             _fileManagerHandler.FileTransferUpdated -= FileTransferUpdated;

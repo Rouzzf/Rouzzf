@@ -108,7 +108,7 @@ namespace Rouzzf.Server.Forms
         {
             _connectClient.ClientState += ClientDisconnected;
             _remoteDesktopHandler.DisplaysChanged += DisplaysChanged;
-            _remoteDesktopHandler.ProgressChanged += UpdateImage;
+            _remoteDesktopHandler.report += UpdateImage;
             MessageHandler.Register(_remoteDesktopHandler);
         }
 
@@ -119,7 +119,7 @@ namespace Rouzzf.Server.Forms
         {
             MessageHandler.Unregister(_remoteDesktopHandler);
             _remoteDesktopHandler.DisplaysChanged -= DisplaysChanged;
-            _remoteDesktopHandler.ProgressChanged -= UpdateImage;
+            _remoteDesktopHandler.report -= UpdateImage;
             _connectClient.ClientState -= ClientDisconnected;
         }
 

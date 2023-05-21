@@ -69,7 +69,7 @@ namespace Rouzzf.Server.Forms
         private void RegisterMessageHandler()
         {
             _connectClient.ClientState += ClientDisconnected;
-            _connectionsHandler.ProgressChanged += TcpConnectionsChanged;
+            _connectionsHandler.report += TcpConnectionsChanged;
             MessageHandler.Register(_connectionsHandler);
         }
 
@@ -79,7 +79,7 @@ namespace Rouzzf.Server.Forms
         private void UnregisterMessageHandler()
         {
             MessageHandler.Unregister(_connectionsHandler);
-            _connectionsHandler.ProgressChanged -= TcpConnectionsChanged;
+            _connectionsHandler.report -= TcpConnectionsChanged;
             _connectClient.ClientState -= ClientDisconnected;
         }
 

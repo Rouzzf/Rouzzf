@@ -66,7 +66,7 @@ namespace Rouzzf.Server.Forms
         private void RegisterMessageHandler()
         {
             _connectClient.ClientState += ClientDisconnected;
-            RemoteShellHandler.ProgressChanged += CommandOutput;
+            RemoteShellHandler.report += CommandOutput;
             RemoteShellHandler.CommandError += CommandError;
             MessageHandler.Register(RemoteShellHandler);
         }
@@ -77,7 +77,7 @@ namespace Rouzzf.Server.Forms
         private void UnregisterMessageHandler()
         {
             MessageHandler.Unregister(RemoteShellHandler);
-            RemoteShellHandler.ProgressChanged -= CommandOutput;
+            RemoteShellHandler.report -= CommandOutput;
             RemoteShellHandler.CommandError -= CommandError;
             _connectClient.ClientState -= ClientDisconnected;
         }

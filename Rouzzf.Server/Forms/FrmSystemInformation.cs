@@ -65,7 +65,7 @@ namespace Rouzzf.Server.Forms
         private void RegisterMessageHandler()
         {
             _connectClient.ClientState += ClientDisconnected;
-            _sysInfoHandler.ProgressChanged += SystemInformationChanged;
+            _sysInfoHandler.report += SystemInformationChanged;
             MessageHandler.Register(_sysInfoHandler);
         }
 
@@ -75,7 +75,7 @@ namespace Rouzzf.Server.Forms
         private void UnregisterMessageHandler()
         {
             MessageHandler.Unregister(_sysInfoHandler);
-            _sysInfoHandler.ProgressChanged -= SystemInformationChanged;
+            _sysInfoHandler.report -= SystemInformationChanged;
             _connectClient.ClientState -= ClientDisconnected;
         }
 

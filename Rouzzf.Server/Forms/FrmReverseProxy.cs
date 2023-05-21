@@ -48,7 +48,7 @@ namespace Rouzzf.Server.Forms
         private void RegisterMessageHandler()
         {
             //_connectClient.ClientState += ClientDisconnected;
-            _reverseProxyHandler.ProgressChanged += ConnectionChanged;
+            _reverseProxyHandler.report += ConnectionChanged;
             MessageHandler.Register(_reverseProxyHandler);
         }
 
@@ -58,7 +58,7 @@ namespace Rouzzf.Server.Forms
         private void UnregisterMessageHandler()
         {
             MessageHandler.Unregister(_reverseProxyHandler);
-            _reverseProxyHandler.ProgressChanged -= ConnectionChanged;
+            _reverseProxyHandler.report -= ConnectionChanged;
             //_connectClient.ClientState -= ClientDisconnected;
         }
 

@@ -66,7 +66,7 @@ namespace Rouzzf.Server.Forms
         private void RegisterMessageHandler()
         {
             _connectClient.ClientState += ClientDisconnected;
-            _startupManagerHandler.ProgressChanged += StartupItemsChanged;
+            _startupManagerHandler.report += StartupItemsChanged;
             MessageHandler.Register(_startupManagerHandler);
         }
 
@@ -76,7 +76,7 @@ namespace Rouzzf.Server.Forms
         private void UnregisterMessageHandler()
         {
             MessageHandler.Unregister(_startupManagerHandler);
-            _startupManagerHandler.ProgressChanged -= StartupItemsChanged;
+            _startupManagerHandler.report -= StartupItemsChanged;
             _connectClient.ClientState -= ClientDisconnected;
         }
 

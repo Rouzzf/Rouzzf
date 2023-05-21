@@ -49,7 +49,7 @@ namespace Rouzzf.Server.Messages
             _fileManagerHandler = new FileManagerHandler(client, "Logs\\");
             _fileManagerHandler.DirectoryChanged += DirectoryChanged;
             _fileManagerHandler.FileTransferUpdated += FileTransferUpdated;
-            _fileManagerHandler.ProgressChanged += StatusUpdated;
+            _fileManagerHandler.report += StatusUpdated;
             MessageHandler.Register(_fileManagerHandler);
         }
 
@@ -155,7 +155,7 @@ namespace Rouzzf.Server.Messages
             if (disposing)
             {
                 MessageHandler.Unregister(_fileManagerHandler);
-                _fileManagerHandler.ProgressChanged -= StatusUpdated;
+                _fileManagerHandler.report -= StatusUpdated;
                 _fileManagerHandler.FileTransferUpdated -= FileTransferUpdated;
                 _fileManagerHandler.DirectoryChanged -= DirectoryChanged;
                 _fileManagerHandler.Dispose();

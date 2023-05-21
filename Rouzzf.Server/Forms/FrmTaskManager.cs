@@ -66,7 +66,7 @@ namespace Rouzzf.Server.Forms
         private void RegisterMessageHandler()
         {
             _connectClient.ClientState += ClientDisconnected;
-            _taskManagerHandler.ProgressChanged += TasksChanged;
+            _taskManagerHandler.report += TasksChanged;
             _taskManagerHandler.ProcessActionPerformed += ProcessActionPerformed;
             MessageHandler.Register(_taskManagerHandler);
         }
@@ -78,7 +78,7 @@ namespace Rouzzf.Server.Forms
         {
             MessageHandler.Unregister(_taskManagerHandler);
             _taskManagerHandler.ProcessActionPerformed -= ProcessActionPerformed;
-            _taskManagerHandler.ProgressChanged -= TasksChanged;
+            _taskManagerHandler.report -= TasksChanged;
             _connectClient.ClientState -= ClientDisconnected;
         }
 

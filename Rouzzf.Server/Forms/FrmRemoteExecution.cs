@@ -67,7 +67,7 @@ namespace Rouzzf.Server.Forms
         {
             // TODO handle disconnects
             remoteExecutionMessageHandler.TaskHandler.ProcessActionPerformed += ProcessActionPerformed;
-            remoteExecutionMessageHandler.FileHandler.ProgressChanged += SetStatusMessage;
+            remoteExecutionMessageHandler.FileHandler.report += SetStatusMessage;
             remoteExecutionMessageHandler.FileHandler.FileTransferUpdated += FileTransferUpdated;
             MessageHandler.Register(remoteExecutionMessageHandler.FileHandler);
             MessageHandler.Register(remoteExecutionMessageHandler.TaskHandler);
@@ -80,7 +80,7 @@ namespace Rouzzf.Server.Forms
         {
             MessageHandler.Unregister(remoteExecutionMessageHandler.TaskHandler);
             MessageHandler.Unregister(remoteExecutionMessageHandler.FileHandler);
-            remoteExecutionMessageHandler.FileHandler.ProgressChanged -= SetStatusMessage;
+            remoteExecutionMessageHandler.FileHandler.report -= SetStatusMessage;
             remoteExecutionMessageHandler.FileHandler.FileTransferUpdated -= FileTransferUpdated;
             remoteExecutionMessageHandler.TaskHandler.ProcessActionPerformed -= ProcessActionPerformed;
         }

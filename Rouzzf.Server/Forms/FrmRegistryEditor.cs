@@ -71,7 +71,7 @@ namespace Rouzzf.Server.Forms
         private void RegisterMessageHandler()
         {
             _connectClient.ClientState += ClientDisconnected;
-            _registryHandler.ProgressChanged += ShowErrorMessage;
+            _registryHandler.report += ShowErrorMessage;
             _registryHandler.KeysReceived += AddKeys;
             _registryHandler.KeyCreated += CreateNewKey;
             _registryHandler.KeyDeleted += DeleteKey;
@@ -89,7 +89,7 @@ namespace Rouzzf.Server.Forms
         private void UnregisterMessageHandler()
         {
             MessageHandler.Unregister(_registryHandler);
-            _registryHandler.ProgressChanged -= ShowErrorMessage;
+            _registryHandler.report -= ShowErrorMessage;
             _registryHandler.KeysReceived -= AddKeys;
             _registryHandler.KeyCreated -= CreateNewKey;
             _registryHandler.KeyDeleted -= DeleteKey;
