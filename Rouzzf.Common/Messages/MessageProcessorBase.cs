@@ -8,7 +8,7 @@ namespace Rouzzf.Common.Messages
     {
         protected readonly SynchronizationContext SynchronizationContext;
 
-        private readonly SendOrPostCallback callBack;
+        private readonly SendOrPostCallback var1;
 
         public delegate void ReportProgressEventHandler(object sender, T value);
 
@@ -16,21 +16,13 @@ namespace Rouzzf.Common.Messages
 
         protected MessageProcessorBase(bool flag)
         {
-            callBack = CallBack;
-            if (flag)
-            {
-                SynchronizationContext = SynchronizationContext.Current;
-            }
-            else
-            {
-                SynchronizationContext = ProgressStatics.DefaultContext;
-            }
+            var1 = CallBack;
+            SynchronizationContext = flag ? SynchronizationContext.Current : ProgressStatics.DefaultContext;
         }
 
         private void CallBack(object state)
         {
-            var handler = report;
-            handler?.Invoke(this, (T)state);
+            report?.Invoke(this, (T)state);
         }
 
         public abstract bool CanExecute(IMessage message);
@@ -39,12 +31,11 @@ namespace Rouzzf.Common.Messages
 
         public abstract void Execute(ISender sender, IMessage message);
 
-        protected virtual void OnReport(T value)
+        protected void OnReport(T value)
         {
-            var handler = report;
-            if (handler != null)
+            if (report != null)
             {
-                SynchronizationContext.Post(callBack, value);
+                SynchronizationContext.Post(var1, value);
             }
         }
 
