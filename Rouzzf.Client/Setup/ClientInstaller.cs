@@ -62,7 +62,7 @@ namespace Rouzzf.Client.Setup
                 }
                 catch (Exception ex)
                 {
-                    if (ex is IOException || ex is UnauthorizedAccessException)
+                    /*if (ex is IOException || ex is UnauthorizedAccessException)
                     {
                         // kill old process running at destination path
                         Process[] foundProcesses =
@@ -78,7 +78,7 @@ namespace Rouzzf.Client.Setup
                             Thread.Sleep(2000);
                             break;
                         }
-                    }
+                    }*/
                 }
             }
 
