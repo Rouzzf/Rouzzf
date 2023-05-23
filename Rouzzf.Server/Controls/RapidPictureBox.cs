@@ -1,8 +1,8 @@
-﻿using Rouzzf.Server.Utilities;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
+using Rouzzf.Server.Utilities;
 
 namespace Rouzzf.Server.Controls
 {
@@ -127,7 +127,7 @@ namespace Rouzzf.Server.Controls
                 {
                     // get old image to dispose it correctly
                     var oldImage = GetImageSafe;
-
+                    
                     SuspendLayout();
                     GetImageSafe = cloneBitmap ? new Bitmap(bmp, Width, Height) /*resize bitmap*/ : bmp;
                     ResumeLayout();

@@ -1,4 +1,5 @@
 ﻿using ProtoBuf;
+using Rouzzf.Common.Enums;
 
 namespace Rouzzf.Common.Messages
 {
@@ -10,5 +11,8 @@ namespace Rouzzf.Common.Messages
 
         [ProtoMember(2)]
         public string RemotePath { get; set; }
+
+        [ProtoMember(3)]
+        public FileType FileType { get; set; }
     }
 }

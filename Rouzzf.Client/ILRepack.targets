@@ -8,6 +8,7 @@
     <InputAssemblies Include="$(TargetDir)Gma.System.MouseKeyHook.dll"/>
     <InputAssemblies Include="$(TargetDir)Rouzzf.Common.dll"/>
     <InputAssemblies Include="$(TargetDir)BouncyCastle.Crypto.dll"/>
+    <InputAssemblies Include="$(TargetDir)ICSharpCode.SharpZipLib.dll"/>
   </ItemGroup>
 
   <ILRepack

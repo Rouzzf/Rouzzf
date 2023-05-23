@@ -293,12 +293,10 @@ namespace Rouzzf.Server.Forms
             {
                 FileManagerListTag tag = (FileManagerListTag)files.Tag;
 
-                if (tag.Type == FileType.File)
-                {
-                    string remotePath = GetAbsolutePath(files.SubItems[0].Text);
+                string remotePath = GetAbsolutePath(files.SubItems[0].Text);
 
-                    _fileManagerHandler.BeginDownloadFile(remotePath);
-                }
+                _fileManagerHandler.BeginDownloadFile(remotePath, tag.Type);
+
             }
         }
 

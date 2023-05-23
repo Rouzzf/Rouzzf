@@ -192,7 +192,7 @@ namespace Rouzzf.Server.Messages
         /// <param name="keyDown">Indicates whether it's a keydown or keyup event.</param>
         public void SendKeyboardEvent(byte keyCode, bool keyDown)
         {
-            _client.Send(new DoKeyboardEvent { Key = keyCode, KeyDown = keyDown });
+            _client.Send(new DoKeyboardEvent {Key = keyCode, KeyDown = keyDown});
         }
 
         private void Execute(ISender client, GetDesktopResponse message)
@@ -213,10 +213,10 @@ namespace Rouzzf.Server.Messages
                     // create deep copy & resize bitmap to local resolution
                     OnReport(new Bitmap(_codec.DecodeData(ms), LocalResolution));
                 }
-
+                
                 message.Image = null;
 
-                client.Send(new GetDesktop { Quality = message.Quality, DisplayIndex = message.Monitor });
+                client.Send(new GetDesktop {Quality = message.Quality, DisplayIndex = message.Monitor});
             }
         }
 
