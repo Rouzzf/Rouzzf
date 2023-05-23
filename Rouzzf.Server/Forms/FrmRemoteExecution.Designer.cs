@@ -53,7 +53,7 @@
             this.btnExecute.Name = "btnExecute";
             this.btnExecute.Size = new System.Drawing.Size(138, 23);
             this.btnExecute.TabIndex = 6;
-            this.btnExecute.Text = "Execute remotely";
+            this.btnExecute.Text = "远程执行";
             this.btnExecute.UseVisualStyleBackColor = true;
             this.btnExecute.Click += new System.EventHandler(this.btnExecute_Click);
             // 
@@ -90,7 +90,7 @@
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse.TabIndex = 2;
-            this.btnBrowse.Text = "Browse...";
+            this.btnBrowse.Text = "浏览...";
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
@@ -109,7 +109,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Path:";
+            this.label1.Text = "路径:";
             // 
             // groupURL
             // 
@@ -131,7 +131,7 @@
             this.radioLocalFile.Size = new System.Drawing.Size(110, 17);
             this.radioLocalFile.TabIndex = 0;
             this.radioLocalFile.TabStop = true;
-            this.radioLocalFile.Text = "Execute local file";
+            this.radioLocalFile.Text = "执行本地文件";
             this.radioLocalFile.UseVisualStyleBackColor = true;
             this.radioLocalFile.CheckedChanged += new System.EventHandler(this.radioLocalFile_CheckedChanged);
             // 
@@ -142,7 +142,7 @@
             this.radioURL.Name = "radioURL";
             this.radioURL.Size = new System.Drawing.Size(114, 17);
             this.radioURL.TabIndex = 2;
-            this.radioURL.Text = "Execute from URL";
+            this.radioURL.Text = "从URL执行";
             this.radioURL.UseVisualStyleBackColor = true;
             this.radioURL.CheckedChanged += new System.EventHandler(this.radioURL_CheckedChanged);
             // 
@@ -166,12 +166,12 @@
             // 
             // hClient
             // 
-            this.hClient.Text = "Client";
+            this.hClient.Text = "客户端";
             this.hClient.Width = 302;
             // 
             // hStatus
             // 
-            this.hStatus.Text = "Status";
+            this.hStatus.Text = "状态";
             this.hStatus.Width = 173;
             // 
             // chkUpdate
@@ -181,7 +181,7 @@
             this.chkUpdate.Name = "chkUpdate";
             this.chkUpdate.Size = new System.Drawing.Size(167, 17);
             this.chkUpdate.TabIndex = 5;
-            this.chkUpdate.Text = "Update clients with this file";
+            this.chkUpdate.Text = "使用此文件更新客户端";
             this.chkUpdate.UseVisualStyleBackColor = true;
             // 
             // FrmRemoteExecution
@@ -201,7 +201,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmRemoteExecution";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Update []";
+            this.Text = "Rouzzf - 更新 []";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmRemoteExecution_FormClosing);
             this.Load += new System.EventHandler(this.FrmRemoteExecution_Load);
             this.groupLocalFile.ResumeLayout(false);

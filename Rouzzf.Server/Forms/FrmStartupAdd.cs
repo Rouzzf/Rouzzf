@@ -46,7 +46,7 @@ namespace Rouzzf.Server.Forms
         private void btnAdd_Click(object sender, EventArgs e)
         {
             StartupItem = new StartupItem
-                {Name = txtName.Text, Path = txtPath.Text, Type = (StartupType) cmbType.SelectedIndex};
+            { Name = txtName.Text, Path = txtPath.Text, Type = (StartupType)cmbType.SelectedIndex };
 
             this.DialogResult = DialogResult.OK;
             this.Close();

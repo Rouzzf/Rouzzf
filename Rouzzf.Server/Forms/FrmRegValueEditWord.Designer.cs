@@ -65,7 +65,7 @@ namespace Rouzzf.Server.Forms
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Value name:";
+            this.label1.Text = "值名称:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
@@ -78,7 +78,7 @@ namespace Rouzzf.Server.Forms
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Value data:";
+            this.label2.Text = "值数据:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cancelButton
@@ -89,7 +89,7 @@ namespace Rouzzf.Server.Forms
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 2;
-            this.cancelButton.Text = "Cancel";
+            this.cancelButton.Text = "取消";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // okButton
@@ -121,7 +121,7 @@ namespace Rouzzf.Server.Forms
             this.radioDecimal.Name = "radioDecimal";
             this.radioDecimal.Size = new System.Drawing.Size(63, 17);
             this.radioDecimal.TabIndex = 4;
-            this.radioDecimal.Text = "Decimal";
+            this.radioDecimal.Text = "十进制";
             this.radioDecimal.UseVisualStyleBackColor = true;
             // 
             // radioHexa
@@ -133,7 +133,7 @@ namespace Rouzzf.Server.Forms
             this.radioHexa.Size = new System.Drawing.Size(86, 17);
             this.radioHexa.TabIndex = 3;
             this.radioHexa.TabStop = true;
-            this.radioHexa.Text = "Hexadecimal";
+            this.radioHexa.Text = "十六进制";
             this.radioHexa.UseVisualStyleBackColor = true;
             this.radioHexa.CheckedChanged += new System.EventHandler(this.radioHex_CheckboxChanged);
             // 
@@ -169,7 +169,7 @@ namespace Rouzzf.Server.Forms
             this.MinimizeBox = false;
             this.Name = "FrmRegValueEditWord";
             this.ShowIcon = false;
-            this.Text = "Edit";
+            this.Text = "编辑";
             this.baseBox.ResumeLayout(false);
             this.baseBox.PerformLayout();
             this.ResumeLayout(false);

@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Windows.Forms;
-using Rouzzf.Common.Messages;
+﻿using Rouzzf.Common.Messages;
 using Rouzzf.Server.Helper;
 using Rouzzf.Server.Messages;
 using Rouzzf.Server.Networking;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Rouzzf.Server.Forms
 {
@@ -120,7 +120,7 @@ namespace Rouzzf.Server.Forms
         private void FrmRemoteShell_Load(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
-            this.Text = WindowHelper.GetWindowTitle("Remote Shell", _connectClient);
+            this.Text = WindowHelper.GetWindowTitle("远程Shell", _connectClient);
         }
 
         private void FrmRemoteShell_FormClosing(object sender, FormClosingEventArgs e)
@@ -174,7 +174,7 @@ namespace Rouzzf.Server.Forms
 
         private void txtConsoleOutput_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar != (char) 2)
+            if (e.KeyChar != (char)2)
             {
                 txtConsoleInput.Text += e.KeyChar.ToString();
                 txtConsoleInput.Focus();

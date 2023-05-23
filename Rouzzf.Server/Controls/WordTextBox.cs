@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Rouzzf.Server.Enums;
+using System;
 using System.Globalization;
 using System.Windows.Forms;
-using Rouzzf.Server.Enums;
 
 namespace Rouzzf.Server.Controls
 {
@@ -27,7 +27,7 @@ namespace Rouzzf.Server.Controls
                 if (isHexNumber == value)
                     return;
 
-                if(value)
+                if (value)
                 {
                     if (Type == WordType.DWORD)
                         Text = UIntValue.ToString("x");
@@ -135,7 +135,7 @@ namespace Rouzzf.Server.Controls
 
         private void UpdateMaxLength()
         {
-            if(Type == WordType.DWORD)
+            if (Type == WordType.DWORD)
             {
                 if (IsHexNumber)
                     base.MaxLength = 8;

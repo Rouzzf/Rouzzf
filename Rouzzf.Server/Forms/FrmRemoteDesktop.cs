@@ -252,7 +252,7 @@ namespace Rouzzf.Server.Forms
 
         private void FrmRemoteDesktop_Load(object sender, EventArgs e)
         {
-            this.Text = WindowHelper.GetWindowTitle("Remote Desktop", _connectClient);
+            this.Text = WindowHelper.GetWindowTitle("远程桌面", _connectClient);
 
             OnResize(EventArgs.Empty); // trigger resize event to align controls 
 
@@ -265,7 +265,7 @@ namespace Rouzzf.Server.Forms
         /// <param name="e">The new frames per second.</param>
         private void frameCounter_FrameUpdated(FrameUpdatedEventArgs e)
         {
-            this.Text = string.Format("{0} - FPS: {1}", WindowHelper.GetWindowTitle("Remote Desktop", _connectClient), e.CurrentFramesPerSecond.ToString("0.00"));
+            this.Text = string.Format("{0} - FPS: {1}", WindowHelper.GetWindowTitle("远程桌面", _connectClient), e.CurrentFramesPerSecond.ToString("0.00"));
         }
 
         private void FrmRemoteDesktop_FormClosing(object sender, FormClosingEventArgs e)
@@ -293,8 +293,8 @@ namespace Rouzzf.Server.Forms
         {
             if (cbMonitors.Items.Count == 0)
             {
-                MessageBox.Show("No remote display detected.\nPlease wait till the client sends a list with available displays.",
-                    "Starting failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("未检测到远程显示\n请等待，直到客户端发送一个具有可用显示的列表.",
+                    "远程错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

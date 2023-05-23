@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Forms;
-using Rouzzf.Common.Messages;
+﻿using Rouzzf.Common.Messages;
 using Rouzzf.Server.Extensions;
 using Rouzzf.Server.Helper;
 using Rouzzf.Server.Messages;
 using Rouzzf.Server.Networking;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Rouzzf.Server.Forms
 {
@@ -94,7 +94,7 @@ namespace Rouzzf.Server.Forms
 
         private void FrmSystemInformation_Load(object sender, EventArgs e)
         {
-            this.Text = WindowHelper.GetWindowTitle("System Information", _connectClient);
+            this.Text = WindowHelper.GetWindowTitle("系统信息", _connectClient);
             _sysInfoHandler.RefreshSystemInformation();
             AddBasicSystemInformation();
         }
@@ -111,7 +111,7 @@ namespace Rouzzf.Server.Forms
 
             foreach (var info in infos)
             {
-                var lvi = new ListViewItem(new[] {info.Item1, info.Item2});
+                var lvi = new ListViewItem(new[] { info.Item1, info.Item2 });
                 lstSystem.Items.Add(lvi);
             }
 
@@ -163,7 +163,7 @@ namespace Rouzzf.Server.Forms
         private void AddBasicSystemInformation()
         {
             ListViewItem lvi =
-                new ListViewItem(new[] {"Operating System", _connectClient.Value.OperatingSystem});
+                new ListViewItem(new[] { "Operating System", _connectClient.Value.OperatingSystem });
             lstSystem.Items.Add(lvi);
             lvi =
                 new ListViewItem(new[]
@@ -172,7 +172,7 @@ namespace Rouzzf.Server.Forms
                     (_connectClient.Value.OperatingSystem.Contains("32 Bit")) ? "x86 (32 Bit)" : "x64 (64 Bit)"
                 });
             lstSystem.Items.Add(lvi);
-            lvi = new ListViewItem(new[] {"", "Getting more information..."});
+            lvi = new ListViewItem(new[] { "", "Getting more information..." });
             lstSystem.Items.Add(lvi);
         }
     }

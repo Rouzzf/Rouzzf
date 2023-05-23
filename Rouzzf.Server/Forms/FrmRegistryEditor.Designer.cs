@@ -160,7 +160,7 @@ namespace Rouzzf.Server.Forms
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(784, 22);
             this.statusStrip.TabIndex = 1;
-            this.statusStrip.Text = "statusStrip";
+            this.statusStrip.Text = "状态条";
             // 
             // selectedStripStatusLabel
             // 
@@ -184,13 +184,13 @@ namespace Rouzzf.Server.Forms
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Text = "文件";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Text = "编辑";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.menuStripExit_Click);
             // 
             // editToolStripMenuItem
@@ -205,7 +205,7 @@ namespace Rouzzf.Server.Forms
             this.renameToolStripMenuItem2});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Text = "编辑";
             this.editToolStripMenuItem.DropDownOpening += new System.EventHandler(this.editToolStripMenuItem_DropDownOpening);
             // 
             // modifyToolStripMenuItem1
@@ -214,7 +214,7 @@ namespace Rouzzf.Server.Forms
             this.modifyToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modifyToolStripMenuItem1.Name = "modifyToolStripMenuItem1";
             this.modifyToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
-            this.modifyToolStripMenuItem1.Text = "Modify...";
+            this.modifyToolStripMenuItem1.Text = "修改...";
             this.modifyToolStripMenuItem1.Visible = false;
             this.modifyToolStripMenuItem1.Click += new System.EventHandler(this.modifyRegistryValue_Click);
             // 
@@ -223,7 +223,7 @@ namespace Rouzzf.Server.Forms
             this.modifyBinaryDataToolStripMenuItem1.Enabled = false;
             this.modifyBinaryDataToolStripMenuItem1.Name = "modifyBinaryDataToolStripMenuItem1";
             this.modifyBinaryDataToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
-            this.modifyBinaryDataToolStripMenuItem1.Text = "Modify Binary Data...";
+            this.modifyBinaryDataToolStripMenuItem1.Text = "修改二进制数据...";
             this.modifyBinaryDataToolStripMenuItem1.Visible = false;
             this.modifyBinaryDataToolStripMenuItem1.Click += new System.EventHandler(this.modifyBinaryDataRegistryValue_Click);
             // 
@@ -246,13 +246,13 @@ namespace Rouzzf.Server.Forms
             this.expandableStringValueToolStripMenuItem2});
             this.newToolStripMenuItem2.Name = "newToolStripMenuItem2";
             this.newToolStripMenuItem2.Size = new System.Drawing.Size(184, 22);
-            this.newToolStripMenuItem2.Text = "New";
+            this.newToolStripMenuItem2.Text = "新建";
             // 
             // keyToolStripMenuItem2
             // 
             this.keyToolStripMenuItem2.Name = "keyToolStripMenuItem2";
             this.keyToolStripMenuItem2.Size = new System.Drawing.Size(199, 22);
-            this.keyToolStripMenuItem2.Text = "Key";
+            this.keyToolStripMenuItem2.Text = "键";
             this.keyToolStripMenuItem2.Click += new System.EventHandler(this.createNewRegistryKey_Click);
             // 
             // toolStripSeparator7
@@ -264,42 +264,42 @@ namespace Rouzzf.Server.Forms
             // 
             this.stringValueToolStripMenuItem2.Name = "stringValueToolStripMenuItem2";
             this.stringValueToolStripMenuItem2.Size = new System.Drawing.Size(199, 22);
-            this.stringValueToolStripMenuItem2.Text = "String Value";
+            this.stringValueToolStripMenuItem2.Text = "字符串值";
             this.stringValueToolStripMenuItem2.Click += new System.EventHandler(this.createStringRegistryValue_Click);
             // 
             // binaryValueToolStripMenuItem2
             // 
             this.binaryValueToolStripMenuItem2.Name = "binaryValueToolStripMenuItem2";
             this.binaryValueToolStripMenuItem2.Size = new System.Drawing.Size(199, 22);
-            this.binaryValueToolStripMenuItem2.Text = "Binary Value";
+            this.binaryValueToolStripMenuItem2.Text = "二进制值";
             this.binaryValueToolStripMenuItem2.Click += new System.EventHandler(this.createBinaryRegistryValue_Click);
             // 
             // dWORD32bitValueToolStripMenuItem2
             // 
             this.dWORD32bitValueToolStripMenuItem2.Name = "dWORD32bitValueToolStripMenuItem2";
             this.dWORD32bitValueToolStripMenuItem2.Size = new System.Drawing.Size(199, 22);
-            this.dWORD32bitValueToolStripMenuItem2.Text = "DWORD (32-bit) Value";
+            this.dWORD32bitValueToolStripMenuItem2.Text = "双字节 (32-bit) 值";
             this.dWORD32bitValueToolStripMenuItem2.Click += new System.EventHandler(this.createDwordRegistryValue_Click);
             // 
             // qWORD64bitValueToolStripMenuItem2
             // 
             this.qWORD64bitValueToolStripMenuItem2.Name = "qWORD64bitValueToolStripMenuItem2";
             this.qWORD64bitValueToolStripMenuItem2.Size = new System.Drawing.Size(199, 22);
-            this.qWORD64bitValueToolStripMenuItem2.Text = "QWORD (64-bit) Value";
+            this.qWORD64bitValueToolStripMenuItem2.Text = "四字节 (64-bit) 值";
             this.qWORD64bitValueToolStripMenuItem2.Click += new System.EventHandler(this.createQwordRegistryValue_Click);
             // 
             // multiStringValueToolStripMenuItem2
             // 
             this.multiStringValueToolStripMenuItem2.Name = "multiStringValueToolStripMenuItem2";
             this.multiStringValueToolStripMenuItem2.Size = new System.Drawing.Size(199, 22);
-            this.multiStringValueToolStripMenuItem2.Text = "Multi-String Value";
+            this.multiStringValueToolStripMenuItem2.Text = "多字符串值";
             this.multiStringValueToolStripMenuItem2.Click += new System.EventHandler(this.createMultiStringRegistryValue_Click);
             // 
             // expandableStringValueToolStripMenuItem2
             // 
             this.expandableStringValueToolStripMenuItem2.Name = "expandableStringValueToolStripMenuItem2";
             this.expandableStringValueToolStripMenuItem2.Size = new System.Drawing.Size(199, 22);
-            this.expandableStringValueToolStripMenuItem2.Text = "Expandable String Value";
+            this.expandableStringValueToolStripMenuItem2.Text = "可扩展字符串值";
             this.expandableStringValueToolStripMenuItem2.Click += new System.EventHandler(this.createExpandStringRegistryValue_Click);
             // 
             // toolStripSeparator6
@@ -313,7 +313,7 @@ namespace Rouzzf.Server.Forms
             this.deleteToolStripMenuItem2.Name = "deleteToolStripMenuItem2";
             this.deleteToolStripMenuItem2.ShortcutKeyDisplayString = "Del";
             this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(184, 22);
-            this.deleteToolStripMenuItem2.Text = "Delete";
+            this.deleteToolStripMenuItem2.Text = "删除";
             this.deleteToolStripMenuItem2.Click += new System.EventHandler(this.menuStripDelete_Click);
             // 
             // renameToolStripMenuItem2
@@ -321,7 +321,7 @@ namespace Rouzzf.Server.Forms
             this.renameToolStripMenuItem2.Enabled = false;
             this.renameToolStripMenuItem2.Name = "renameToolStripMenuItem2";
             this.renameToolStripMenuItem2.Size = new System.Drawing.Size(184, 22);
-            this.renameToolStripMenuItem2.Text = "Rename";
+            this.renameToolStripMenuItem2.Text = "重命名";
             this.renameToolStripMenuItem2.Click += new System.EventHandler(this.menuStripRename_Click);
             // 
             // tv_ContextMenuStrip
@@ -347,13 +347,13 @@ namespace Rouzzf.Server.Forms
             this.expandableStringValueToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Text = "新建";
             // 
             // keyToolStripMenuItem
             // 
             this.keyToolStripMenuItem.Name = "keyToolStripMenuItem";
             this.keyToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.keyToolStripMenuItem.Text = "Key";
+            this.keyToolStripMenuItem.Text = "键";
             this.keyToolStripMenuItem.Click += new System.EventHandler(this.createNewRegistryKey_Click);
             // 
             // toolStripSeparator2
@@ -365,42 +365,42 @@ namespace Rouzzf.Server.Forms
             // 
             this.stringValueToolStripMenuItem.Name = "stringValueToolStripMenuItem";
             this.stringValueToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.stringValueToolStripMenuItem.Text = "String Value";
+            this.stringValueToolStripMenuItem.Text = "字符串值";
             this.stringValueToolStripMenuItem.Click += new System.EventHandler(this.createStringRegistryValue_Click);
             // 
             // binaryValueToolStripMenuItem
             // 
             this.binaryValueToolStripMenuItem.Name = "binaryValueToolStripMenuItem";
             this.binaryValueToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.binaryValueToolStripMenuItem.Text = "Binary Value";
+            this.binaryValueToolStripMenuItem.Text = "二进制值";
             this.binaryValueToolStripMenuItem.Click += new System.EventHandler(this.createBinaryRegistryValue_Click);
             // 
             // dWORD32bitValueToolStripMenuItem
             // 
             this.dWORD32bitValueToolStripMenuItem.Name = "dWORD32bitValueToolStripMenuItem";
             this.dWORD32bitValueToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.dWORD32bitValueToolStripMenuItem.Text = "DWORD (32-bit) Value";
+            this.dWORD32bitValueToolStripMenuItem.Text = "双字节 (32-bit) 值";
             this.dWORD32bitValueToolStripMenuItem.Click += new System.EventHandler(this.createDwordRegistryValue_Click);
             // 
             // qWORD64bitValueToolStripMenuItem
             // 
             this.qWORD64bitValueToolStripMenuItem.Name = "qWORD64bitValueToolStripMenuItem";
             this.qWORD64bitValueToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.qWORD64bitValueToolStripMenuItem.Text = "QWORD (64-bit) Value";
+            this.qWORD64bitValueToolStripMenuItem.Text = "四字节 (64-bit) 值";
             this.qWORD64bitValueToolStripMenuItem.Click += new System.EventHandler(this.createQwordRegistryValue_Click);
             // 
             // multiStringValueToolStripMenuItem
             // 
             this.multiStringValueToolStripMenuItem.Name = "multiStringValueToolStripMenuItem";
             this.multiStringValueToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.multiStringValueToolStripMenuItem.Text = "Multi-String Value";
+            this.multiStringValueToolStripMenuItem.Text = "多字符串值";
             this.multiStringValueToolStripMenuItem.Click += new System.EventHandler(this.createMultiStringRegistryValue_Click);
             // 
             // expandableStringValueToolStripMenuItem
             // 
             this.expandableStringValueToolStripMenuItem.Name = "expandableStringValueToolStripMenuItem";
             this.expandableStringValueToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.expandableStringValueToolStripMenuItem.Text = "Expandable String Value";
+            this.expandableStringValueToolStripMenuItem.Text = "可扩展字符串值";
             this.expandableStringValueToolStripMenuItem.Click += new System.EventHandler(this.createExpandStringRegistryValue_Click);
             // 
             // toolStripSeparator1
@@ -413,7 +413,7 @@ namespace Rouzzf.Server.Forms
             this.deleteToolStripMenuItem.Enabled = false;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Text = "删除";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteRegistryKey_Click);
             // 
             // renameToolStripMenuItem
@@ -421,7 +421,7 @@ namespace Rouzzf.Server.Forms
             this.renameToolStripMenuItem.Enabled = false;
             this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
             this.renameToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.renameToolStripMenuItem.Text = "Rename";
+            this.renameToolStripMenuItem.Text = "重命名";
             this.renameToolStripMenuItem.Click += new System.EventHandler(this.renameRegistryKey_Click);
             // 
             // selectedItem_ContextMenuStrip
@@ -441,7 +441,7 @@ namespace Rouzzf.Server.Forms
             this.modifyToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modifyToolStripMenuItem.Name = "modifyToolStripMenuItem";
             this.modifyToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.modifyToolStripMenuItem.Text = "Modify...";
+            this.modifyToolStripMenuItem.Text = "修改...";
             this.modifyToolStripMenuItem.Click += new System.EventHandler(this.modifyRegistryValue_Click);
             // 
             // modifyBinaryDataToolStripMenuItem
@@ -449,7 +449,7 @@ namespace Rouzzf.Server.Forms
             this.modifyBinaryDataToolStripMenuItem.Enabled = false;
             this.modifyBinaryDataToolStripMenuItem.Name = "modifyBinaryDataToolStripMenuItem";
             this.modifyBinaryDataToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.modifyBinaryDataToolStripMenuItem.Text = "Modify Binary Data...";
+            this.modifyBinaryDataToolStripMenuItem.Text = "修改二进制数据...";
             this.modifyBinaryDataToolStripMenuItem.Click += new System.EventHandler(this.modifyBinaryDataRegistryValue_Click);
             // 
             // modifyToolStripSeparator1
@@ -461,14 +461,14 @@ namespace Rouzzf.Server.Forms
             // 
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
             this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
-            this.deleteToolStripMenuItem1.Text = "Delete";
+            this.deleteToolStripMenuItem1.Text = "删除";
             this.deleteToolStripMenuItem1.Click += new System.EventHandler(this.deleteRegistryValue_Click);
             // 
             // renameToolStripMenuItem1
             // 
             this.renameToolStripMenuItem1.Name = "renameToolStripMenuItem1";
             this.renameToolStripMenuItem1.Size = new System.Drawing.Size(184, 22);
-            this.renameToolStripMenuItem1.Text = "Rename";
+            this.renameToolStripMenuItem1.Text = "重命名";
             this.renameToolStripMenuItem1.Click += new System.EventHandler(this.renameRegistryValue_Click);
             // 
             // lst_ContextMenuStrip
@@ -491,13 +491,13 @@ namespace Rouzzf.Server.Forms
             this.expandableStringValueToolStripMenuItem1});
             this.newToolStripMenuItem1.Name = "newToolStripMenuItem1";
             this.newToolStripMenuItem1.Size = new System.Drawing.Size(98, 22);
-            this.newToolStripMenuItem1.Text = "New";
+            this.newToolStripMenuItem1.Text = "新建";
             // 
             // keyToolStripMenuItem1
             // 
             this.keyToolStripMenuItem1.Name = "keyToolStripMenuItem1";
             this.keyToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
-            this.keyToolStripMenuItem1.Text = "Key";
+            this.keyToolStripMenuItem1.Text = "键";
             this.keyToolStripMenuItem1.Click += new System.EventHandler(this.createNewRegistryKey_Click);
             // 
             // toolStripSeparator4
@@ -509,42 +509,42 @@ namespace Rouzzf.Server.Forms
             // 
             this.stringValueToolStripMenuItem1.Name = "stringValueToolStripMenuItem1";
             this.stringValueToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
-            this.stringValueToolStripMenuItem1.Text = "String Value";
+            this.stringValueToolStripMenuItem1.Text = "字符串值";
             this.stringValueToolStripMenuItem1.Click += new System.EventHandler(this.createStringRegistryValue_Click);
             // 
             // binaryValueToolStripMenuItem1
             // 
             this.binaryValueToolStripMenuItem1.Name = "binaryValueToolStripMenuItem1";
             this.binaryValueToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
-            this.binaryValueToolStripMenuItem1.Text = "Binary Value";
+            this.binaryValueToolStripMenuItem1.Text = "二进制值";
             this.binaryValueToolStripMenuItem1.Click += new System.EventHandler(this.createBinaryRegistryValue_Click);
             // 
             // dWORD32bitValueToolStripMenuItem1
             // 
             this.dWORD32bitValueToolStripMenuItem1.Name = "dWORD32bitValueToolStripMenuItem1";
             this.dWORD32bitValueToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
-            this.dWORD32bitValueToolStripMenuItem1.Text = "DWORD (32-bit) Value";
+            this.dWORD32bitValueToolStripMenuItem1.Text = "双字节 (32-bit) 值";
             this.dWORD32bitValueToolStripMenuItem1.Click += new System.EventHandler(this.createDwordRegistryValue_Click);
             // 
             // qWORD64bitValueToolStripMenuItem1
             // 
             this.qWORD64bitValueToolStripMenuItem1.Name = "qWORD64bitValueToolStripMenuItem1";
             this.qWORD64bitValueToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
-            this.qWORD64bitValueToolStripMenuItem1.Text = "QWORD (64-bit) Value";
+            this.qWORD64bitValueToolStripMenuItem1.Text = "四字节 (64-bit) 值";
             this.qWORD64bitValueToolStripMenuItem1.Click += new System.EventHandler(this.createQwordRegistryValue_Click);
             // 
             // multiStringValueToolStripMenuItem1
             // 
             this.multiStringValueToolStripMenuItem1.Name = "multiStringValueToolStripMenuItem1";
             this.multiStringValueToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
-            this.multiStringValueToolStripMenuItem1.Text = "Multi-String Value";
+            this.multiStringValueToolStripMenuItem1.Text = "多字符串值";
             this.multiStringValueToolStripMenuItem1.Click += new System.EventHandler(this.createMultiStringRegistryValue_Click);
             // 
             // expandableStringValueToolStripMenuItem1
             // 
             this.expandableStringValueToolStripMenuItem1.Name = "expandableStringValueToolStripMenuItem1";
             this.expandableStringValueToolStripMenuItem1.Size = new System.Drawing.Size(199, 22);
-            this.expandableStringValueToolStripMenuItem1.Text = "Expandable String Value";
+            this.expandableStringValueToolStripMenuItem1.Text = "可扩展字符串值";
             this.expandableStringValueToolStripMenuItem1.Click += new System.EventHandler(this.createExpandStringRegistryValue_Click);
             // 
             // tvRegistryDirectory
@@ -587,17 +587,17 @@ namespace Rouzzf.Server.Forms
             // 
             // hName
             // 
-            this.hName.Text = "Name";
+            this.hName.Text = "名称";
             this.hName.Width = 173;
             // 
             // hType
             // 
-            this.hType.Text = "Type";
+            this.hType.Text = "类型";
             this.hType.Width = 104;
             // 
             // hValue
             // 
-            this.hValue.Text = "Value";
+            this.hValue.Text = "值";
             this.hValue.Width = 214;
             // 
             // FrmRegistryEditor
@@ -612,7 +612,7 @@ namespace Rouzzf.Server.Forms
             this.MainMenuStrip = this.menuStrip;
             this.Name = "FrmRegistryEditor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registry Editor []";
+            this.Text = "Rouzzf - 注册表编辑器 []";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmRegistryEditor_FormClosing);
             this.Load += new System.EventHandler(this.FrmRegistryEditor_Load);
             this.tableLayoutPanel.ResumeLayout(false);

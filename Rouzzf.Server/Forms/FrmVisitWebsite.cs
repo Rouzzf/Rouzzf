@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Rouzzf.Server.Helper;
+using System;
 using System.Windows.Forms;
-using Rouzzf.Server.Helper;
 
 namespace Rouzzf.Server.Forms
 {
@@ -19,7 +19,7 @@ namespace Rouzzf.Server.Forms
 
         private void FrmVisitWebsite_Load(object sender, EventArgs e)
         {
-            this.Text = WindowHelper.GetWindowTitle("Visit Website", _selectedClients);
+            this.Text = WindowHelper.GetWindowTitle("访问网站", _selectedClients);
         }
 
         private void btnVisitWebsite_Click(object sender, EventArgs e)

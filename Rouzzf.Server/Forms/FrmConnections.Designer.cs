@@ -58,7 +58,7 @@ namespace Rouzzf.Server.Forms
             this.refreshToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.refresh;
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
             this.refreshToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.refreshToolStripMenuItem.Text = "Refresh";
+            this.refreshToolStripMenuItem.Text = "刷新";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // closeConnectionToolStripMenuItem
@@ -66,7 +66,7 @@ namespace Rouzzf.Server.Forms
             this.closeConnectionToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.uac_shield;
             this.closeConnectionToolStripMenuItem.Name = "closeConnectionToolStripMenuItem";
             this.closeConnectionToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.closeConnectionToolStripMenuItem.Text = "Close Connection";
+            this.closeConnectionToolStripMenuItem.Text = "关闭连接";
             this.closeConnectionToolStripMenuItem.Click += new System.EventHandler(this.closeConnectionToolStripMenuItem_Click);
             // 
             // lstConnections
@@ -91,27 +91,27 @@ namespace Rouzzf.Server.Forms
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Process";
+            this.columnHeader1.Text = "程序";
             this.columnHeader1.Width = 179;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Local Address";
+            this.columnHeader2.Text = "本地地址";
             this.columnHeader2.Width = 95;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Local Port";
+            this.columnHeader3.Text = "本地端口";
             this.columnHeader3.Width = 75;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Remote Address";
+            this.columnHeader4.Text = "远程地址";
             this.columnHeader4.Width = 95;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Remote Port";
+            this.columnHeader5.Text = "远程端口";
             this.columnHeader5.Width = 75;
             // 
             // columnHeader6
@@ -129,7 +129,7 @@ namespace Rouzzf.Server.Forms
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmConnections";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Connections []";
+            this.Text = "Rouzzf - 连接 []";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmConnections_FormClosing);
             this.Load += new System.EventHandler(this.FrmConnections_Load);
             this.contextMenuStrip.ResumeLayout(false);

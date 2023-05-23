@@ -1,7 +1,7 @@
-﻿using System;
-using System.Windows.Forms;
-using Rouzzf.Common.Models;
+﻿using Rouzzf.Common.Models;
 using Rouzzf.Common.Utilities;
+using System;
+using System.Windows.Forms;
 
 namespace Rouzzf.Server.Forms
 {
@@ -21,7 +21,7 @@ namespace Rouzzf.Server.Forms
 
         private void okButton_Click(object sender, EventArgs e)
         {
-            _value.Data = ByteConverter.GetBytes(valueDataTxtBox.Text.Split(new[] {"\r\n"}, StringSplitOptions.RemoveEmptyEntries));
+            _value.Data = ByteConverter.GetBytes(valueDataTxtBox.Text.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries));
             this.Tag = _value;
             this.DialogResult = DialogResult.OK;
             this.Close();

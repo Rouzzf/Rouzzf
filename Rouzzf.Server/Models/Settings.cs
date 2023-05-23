@@ -179,7 +179,7 @@ namespace Rouzzf.Server.Models
         private static string ReadValueSafe(string pstrValueToRead, string defaultValue = "")
         {
             string value = ReadValue(pstrValueToRead);
-            return (!string.IsNullOrEmpty(value)) ? value: defaultValue;
+            return (!string.IsNullOrEmpty(value)) ? value : defaultValue;
         }
 
         private static void WriteValue(string pstrValueToRead, string pstrValueToWrite)

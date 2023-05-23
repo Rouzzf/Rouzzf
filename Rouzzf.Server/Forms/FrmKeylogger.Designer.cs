@@ -32,9 +32,9 @@
             this.lstLogs = new System.Windows.Forms.ListView();
             this.hLogs = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.stripLblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnGetLogs = new System.Windows.Forms.Button();
             this.wLogViewer = new System.Windows.Forms.WebBrowser();
-            this.stripLblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +47,7 @@
             this.lstLogs.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.lstLogs.FullRowSelect = true;
             this.lstLogs.GridLines = true;
+            this.lstLogs.HideSelection = false;
             this.lstLogs.Location = new System.Drawing.Point(0, 31);
             this.lstLogs.Name = "lstLogs";
             this.lstLogs.Size = new System.Drawing.Size(153, 431);
@@ -57,7 +58,7 @@
             // 
             // hLogs
             // 
-            this.hLogs.Text = "Logs";
+            this.hLogs.Text = "日志";
             this.hLogs.Width = 149;
             // 
             // statusStrip
@@ -68,7 +69,13 @@
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(862, 22);
             this.statusStrip.TabIndex = 6;
-            this.statusStrip.Text = "statusStrip1";
+            this.statusStrip.Text = "状态条";
+            // 
+            // stripLblStatus
+            // 
+            this.stripLblStatus.Name = "stripLblStatus";
+            this.stripLblStatus.Size = new System.Drawing.Size(53, 17);
+            this.stripLblStatus.Text = "状态:OK";
             // 
             // btnGetLogs
             // 
@@ -76,7 +83,7 @@
             this.btnGetLogs.Name = "btnGetLogs";
             this.btnGetLogs.Size = new System.Drawing.Size(149, 23);
             this.btnGetLogs.TabIndex = 7;
-            this.btnGetLogs.Text = "Get Logs";
+            this.btnGetLogs.Text = "获取日志";
             this.btnGetLogs.UseVisualStyleBackColor = true;
             this.btnGetLogs.Click += new System.EventHandler(this.btnGetLogs_Click);
             // 
@@ -92,12 +99,6 @@
             this.wLogViewer.Size = new System.Drawing.Size(708, 409);
             this.wLogViewer.TabIndex = 8;
             // 
-            // stripLblStatus
-            // 
-            this.stripLblStatus.Name = "stripLblStatus";
-            this.stripLblStatus.Size = new System.Drawing.Size(77, 17);
-            this.stripLblStatus.Text = "Status: Ready";
-            // 
             // FrmKeylogger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -112,7 +113,7 @@
             this.MinimumSize = new System.Drawing.Size(630, 465);
             this.Name = "FrmKeylogger";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Keylogger []";
+            this.Text = "Rouzzf - 键盘记录器 []";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmKeylogger_FormClosing);
             this.Load += new System.EventHandler(this.FrmKeylogger_Load);
             this.statusStrip.ResumeLayout(false);

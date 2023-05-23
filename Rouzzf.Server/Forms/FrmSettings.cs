@@ -1,10 +1,10 @@
-﻿using Rouzzf.Server.Networking;
+﻿using Rouzzf.Server.Models;
+using Rouzzf.Server.Networking;
 using Rouzzf.Server.Utilities;
 using System;
 using System.Globalization;
 using System.Net.Sockets;
 using System.Windows.Forms;
-using Rouzzf.Server.Models;
 
 namespace Rouzzf.Server.Forms
 {
@@ -50,16 +50,16 @@ namespace Rouzzf.Server.Forms
 
             if (port == 0)
             {
-                MessageBox.Show("Please enter a valid port > 0.", "Please enter a valid port", MessageBoxButtons.OK,
+                MessageBox.Show("请输入有效的端口 > 0.", "请输入有效端口", MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 return;
             }
 
-            if (btnListen.Text == "Start listening" && !_listenServer.Listening)
+            if (btnListen.Text == "启动监听" && !_listenServer.Listening)
             {
                 try
                 {
-                    if(chkNoIPIntegration.Checked)
+                    if (chkNoIPIntegration.Checked)
                         NoIpUpdater.Start();
                     _listenServer.Listen(port, chkIPv6Support.Checked, chkUseUpnp.Checked);
                     ToggleListenerSettings(false);
@@ -68,11 +68,11 @@ namespace Rouzzf.Server.Forms
                 {
                     if (ex.ErrorCode == 10048)
                     {
-                        MessageBox.Show(this, "The port is already in use.", "Socket Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(this, "端口被占用.", "套接字错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     else
                     {
-                        MessageBox.Show(this, $"An unexpected socket error occurred: {ex.Message}\n\nError Code: {ex.ErrorCode}\n\n", "Unexpected Socket Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(this, $"发生意外的套接字错误: {ex.Message}\n\n错误码: {ex.ErrorCode}\n\n", "套接字错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     _listenServer.Disconnect();
                 }
@@ -81,7 +81,7 @@ namespace Rouzzf.Server.Forms
                     _listenServer.Disconnect();
                 }
             }
-            else if (btnListen.Text == "Stop listening" && _listenServer.Listening)
+            else if (btnListen.Text == "停止监听" && _listenServer.Listening)
             {
                 _listenServer.Disconnect();
                 ToggleListenerSettings(true);
@@ -94,7 +94,7 @@ namespace Rouzzf.Server.Forms
 
             if (port == 0)
             {
-                MessageBox.Show("Please enter a valid port > 0.", "Please enter a valid port", MessageBoxButtons.OK,
+                MessageBox.Show("请输入有效端口 > 0.", "请输入有效端口", MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 return;
             }
@@ -114,7 +114,7 @@ namespace Rouzzf.Server.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Discard your changes?", "Cancel", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
+            if (MessageBox.Show("是否保存当前配置", "关闭", MessageBoxButtons.YesNo, MessageBoxIcon.Question) ==
                 DialogResult.Yes)
                 this.Close();
         }
@@ -126,7 +126,7 @@ namespace Rouzzf.Server.Forms
 
         private void ToggleListenerSettings(bool enabled)
         {
-            btnListen.Text = enabled ? "Start listening" : "Stop listening";
+            btnListen.Text = enabled ? "启动监听" : "停止监听";
             ncPort.Enabled = enabled;
             chkIPv6Support.Enabled = enabled;
             chkUseUpnp.Enabled = enabled;

@@ -80,13 +80,13 @@ namespace Rouzzf.Server.Forms
         {
             if (_clients.Length > 1)
             {
-                this.Text = "Reverse Proxy [Load-Balancer is active]";
-                lblLoadBalance.Text = "The Load Balancer is active, " + _clients.Length + " clients will be used as proxy\r\nKeep refreshing at www.ipchicken.com to see if your ip address will keep changing, if so, it works";
+                this.Text = "反向代理[负载平衡器已激活]";
+                lblLoadBalance.Text = "负载均衡器处于活动状态, " + _clients.Length + " 客户端将被用作代理\r\n保持在www.ipchicken.com上刷新，看看你的ip地址是否会不断变化";
             }
             else if (_clients.Length == 1)
             {
-                this.Text = WindowHelper.GetWindowTitle("Reverse Proxy", _clients[0]);
-                lblLoadBalance.Text = "The Load Balancer is not active, only 1 client is used, select multiple clients to activate the load balancer";
+                this.Text = WindowHelper.GetWindowTitle("反向代理", _clients[0]);
+                lblLoadBalance.Text = "负载均衡器未激活，只有一个客户端被使用，请选择多个客户端来激活负载均衡器";
             }
             nudServerPort.Value = Settings.ReverseProxyPort;
         }
@@ -117,7 +117,7 @@ namespace Rouzzf.Server.Forms
 
                 if (port == 0)
                 {
-                    MessageBox.Show("Please enter a valid port > 0.", "Please enter a valid port", MessageBoxButtons.OK,
+                    MessageBox.Show("请输入正确的端口 > 0.", "请输入正确的端口", MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
                     return;
                 }
@@ -129,17 +129,17 @@ namespace Rouzzf.Server.Forms
             {
                 if (ex.ErrorCode == 10048)
                 {
-                    MessageBox.Show("The port is already in use.", "Listen Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("端口被占用.", "监听错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    MessageBox.Show($"An unexpected socket error occurred: {ex.Message}\n\nError Code: {ex.ErrorCode}",
-                        "Unexpected Listen Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"发生意外的套接字错误: {ex.Message}\n\n错误码: {ex.ErrorCode}",
+                        "监听错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"An unexpected error occurred: {ex.Message}", "Unexpected Listen Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"发生意外的套接字错误: {ex.Message}", "监听错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -192,7 +192,8 @@ namespace Rouzzf.Server.Forms
                         StringHelper.GetHumanReadableFileSize(connection.LengthReceived),
                         StringHelper.GetHumanReadableFileSize(connection.LengthSent),
                         connection.Type.ToString()
-                    }) { Tag = connection };
+                    })
+                    { Tag = connection };
                 }
             }
         }

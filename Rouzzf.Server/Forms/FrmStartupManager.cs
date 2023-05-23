@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Forms;
-using Rouzzf.Common.Enums;
+﻿using Rouzzf.Common.Enums;
 using Rouzzf.Common.Messages;
 using Rouzzf.Common.Models;
 using Rouzzf.Server.Helper;
 using Rouzzf.Server.Messages;
 using Rouzzf.Server.Networking;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Rouzzf.Server.Forms
 {
@@ -95,7 +95,7 @@ namespace Rouzzf.Server.Forms
 
         private void FrmStartupManager_Load(object sender, EventArgs e)
         {
-            this.Text = WindowHelper.GetWindowTitle("Startup Manager", _connectClient);
+            this.Text = WindowHelper.GetWindowTitle("启动管理器", _connectClient);
 
             AddGroups();
             _startupManagerHandler.RefreshStartupItems();
@@ -113,16 +113,16 @@ namespace Rouzzf.Server.Forms
         {
             lstStartupItems.Groups.Add(
                 new ListViewGroup("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run")
-                    {Tag = StartupType.LocalMachineRun});
+                { Tag = StartupType.LocalMachineRun });
             lstStartupItems.Groups.Add(
                 new ListViewGroup("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce")
-                    {Tag = StartupType.LocalMachineRunOnce});
+                { Tag = StartupType.LocalMachineRunOnce });
             lstStartupItems.Groups.Add(
                 new ListViewGroup("HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run")
-                    {Tag = StartupType.CurrentUserRun});
+                { Tag = StartupType.CurrentUserRun });
             lstStartupItems.Groups.Add(
                 new ListViewGroup("HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce")
-                    {Tag = StartupType.CurrentUserRunOnce});
+                { Tag = StartupType.CurrentUserRunOnce });
             lstStartupItems.Groups.Add(
                 new ListViewGroup("HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Run")
                 { Tag = StartupType.LocalMachineRunX86 });
@@ -130,7 +130,7 @@ namespace Rouzzf.Server.Forms
                 new ListViewGroup("HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce")
                 { Tag = StartupType.LocalMachineRunOnceX86 });
             lstStartupItems.Groups.Add(new ListViewGroup("%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup")
-                {Tag = StartupType.StartMenu});
+            { Tag = StartupType.StartMenu });
         }
 
         /// <summary>
@@ -145,7 +145,7 @@ namespace Rouzzf.Server.Forms
             foreach (var item in startupItems)
             {
                 var i = lstStartupItems.Groups.Cast<ListViewGroup>().First(x => (StartupType)x.Tag == item.Type);
-                ListViewItem lvi = new ListViewItem(new[] {item.Name, item.Path}) {Group = i, Tag = item};
+                ListViewItem lvi = new ListViewItem(new[] { item.Name, item.Path }) { Group = i, Tag = item };
                 lstStartupItems.Items.Add(lvi);
             }
         }

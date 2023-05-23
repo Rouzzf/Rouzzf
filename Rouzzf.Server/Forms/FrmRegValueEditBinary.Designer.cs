@@ -56,7 +56,7 @@ namespace Rouzzf.Server.Forms
             this.label1.Location = new System.Drawing.Point(9, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
-            this.label1.Text = "Value name:";
+            this.label1.Text = "值名称:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
@@ -68,7 +68,7 @@ namespace Rouzzf.Server.Forms
             this.label2.Location = new System.Drawing.Point(9, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
-            this.label2.Text = "Value data:";
+            this.label2.Text = "值数据:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cancelButton
@@ -79,7 +79,7 @@ namespace Rouzzf.Server.Forms
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 2;
-            this.cancelButton.Text = "Cancel";
+            this.cancelButton.Text = "取消";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // okButton
@@ -125,7 +125,7 @@ namespace Rouzzf.Server.Forms
             this.MinimizeBox = false;
             this.Name = "FrmRegValueEditBinary";
             this.ShowIcon = false;
-            this.Text = "Edit Binary";
+            this.Text = "编辑二进制";
             this.ResumeLayout(false);
             this.PerformLayout();
 

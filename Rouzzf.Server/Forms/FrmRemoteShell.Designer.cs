@@ -92,7 +92,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmRemoteShell";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Remote Shell []";
+            this.Text = "Rouzzf - 远程Shell []";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmRemoteShell_FormClosing);
             this.Load += new System.EventHandler(this.FrmRemoteShell_Load);
             this.tableLayoutPanel.ResumeLayout(false);

@@ -56,7 +56,7 @@
             this.groupAutostartItem.Size = new System.Drawing.Size(653, 105);
             this.groupAutostartItem.TabIndex = 0;
             this.groupAutostartItem.TabStop = false;
-            this.groupAutostartItem.Text = "Autostart Item";
+            this.groupAutostartItem.Text = "自启动项";
             // 
             // lblType
             // 
@@ -65,7 +65,7 @@
             this.lblType.Name = "lblType";
             this.lblType.Size = new System.Drawing.Size(33, 13);
             this.lblType.TabIndex = 4;
-            this.lblType.Text = "Type:";
+            this.lblType.Text = "类型:";
             // 
             // cmbType
             // 
@@ -102,7 +102,7 @@
             this.lblPath.Name = "lblPath";
             this.lblPath.Size = new System.Drawing.Size(33, 13);
             this.lblPath.TabIndex = 2;
-            this.lblPath.Text = "Path:";
+            this.lblPath.Text = "路径:";
             // 
             // lblName
             // 
@@ -111,7 +111,7 @@
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(39, 13);
             this.lblName.TabIndex = 0;
-            this.lblName.Text = "Name:";
+            this.lblName.Text = "名称:";
             // 
             // btnAdd
             // 
@@ -120,7 +120,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(89, 23);
             this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "&Add";
+            this.btnAdd.Text = "新增";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -131,7 +131,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(89, 23);
             this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "&Cancel";
+            this.btnCancel.Text = "关闭";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -152,7 +152,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmAddToAutostart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add to Autostart";
+            this.Text = "添加到自启动";
             this.groupAutostartItem.ResumeLayout(false);
             this.groupAutostartItem.PerformLayout();
             this.ResumeLayout(false);

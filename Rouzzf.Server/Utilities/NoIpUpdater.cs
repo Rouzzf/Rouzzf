@@ -13,7 +13,7 @@ namespace Rouzzf.Server.Utilities
         public static void Start()
         {
             if (_running) return;
-            Thread updateThread = new Thread(BackgroundUpdater) {IsBackground = true};
+            Thread updateThread = new Thread(BackgroundUpdater) { IsBackground = true };
             updateThread.Start();
         }
 

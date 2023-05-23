@@ -58,7 +58,7 @@
             this.groupMsgSettings.Size = new System.Drawing.Size(325, 146);
             this.groupMsgSettings.TabIndex = 0;
             this.groupMsgSettings.TabStop = false;
-            this.groupMsgSettings.Text = "Messagebox Settings";
+            this.groupMsgSettings.Text = "对话框设置";
             // 
             // cmbMsgIcon
             // 
@@ -76,7 +76,7 @@
             this.lblMsgIcon.Name = "lblMsgIcon";
             this.lblMsgIcon.Size = new System.Drawing.Size(99, 13);
             this.lblMsgIcon.TabIndex = 7;
-            this.lblMsgIcon.Text = "Messagebox Icon:";
+            this.lblMsgIcon.Text = "对话框的图标:";
             // 
             // cmbMsgButtons
             // 
@@ -94,7 +94,7 @@
             this.lblMsgButtons.Name = "lblMsgButtons";
             this.lblMsgButtons.Size = new System.Drawing.Size(118, 13);
             this.lblMsgButtons.TabIndex = 5;
-            this.lblMsgButtons.Text = "Messagebox Buttons:";
+            this.lblMsgButtons.Text = "对话框按钮:";
             // 
             // txtText
             // 
@@ -103,7 +103,7 @@
             this.txtText.Name = "txtText";
             this.txtText.Size = new System.Drawing.Size(249, 22);
             this.txtText.TabIndex = 4;
-            this.txtText.Text = "You are running Rouzzf.";
+            this.txtText.Text = "你正在运行Rouzzf.";
             // 
             // txtCaption
             // 
@@ -112,7 +112,7 @@
             this.txtCaption.Name = "txtCaption";
             this.txtCaption.Size = new System.Drawing.Size(249, 22);
             this.txtCaption.TabIndex = 2;
-            this.txtCaption.Text = "Information";
+            this.txtCaption.Text = "信息";
             // 
             // lblText
             // 
@@ -121,7 +121,7 @@
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(30, 13);
             this.lblText.TabIndex = 3;
-            this.lblText.Text = "Text:";
+            this.lblText.Text = "内容:";
             // 
             // lblCaption
             // 
@@ -130,7 +130,7 @@
             this.lblCaption.Name = "lblCaption";
             this.lblCaption.Size = new System.Drawing.Size(51, 13);
             this.lblCaption.TabIndex = 1;
-            this.lblCaption.Text = "Caption:";
+            this.lblCaption.Text = "字幕:";
             // 
             // btnPreview
             // 
@@ -138,7 +138,7 @@
             this.btnPreview.Name = "btnPreview";
             this.btnPreview.Size = new System.Drawing.Size(75, 23);
             this.btnPreview.TabIndex = 1;
-            this.btnPreview.Text = "Preview";
+            this.btnPreview.Text = "预览";
             this.btnPreview.UseVisualStyleBackColor = true;
             this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
             // 
@@ -148,7 +148,7 @@
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(75, 23);
             this.btnSend.TabIndex = 2;
-            this.btnSend.Text = "Send";
+            this.btnSend.Text = "发送";
             this.btnSend.UseVisualStyleBackColor = true;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
@@ -167,7 +167,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmShowMessagebox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Show Messagebox []";
+            this.Text = "显示对话框 []";
             this.Load += new System.EventHandler(this.FrmShowMessagebox_Load);
             this.groupMsgSettings.ResumeLayout(false);
             this.groupMsgSettings.PerformLayout();

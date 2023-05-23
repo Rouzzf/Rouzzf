@@ -26,7 +26,7 @@ namespace Rouzzf.Server.Models
         {
             get
             {
-                return ReadValueSafe("Tag", "Office04");
+                return ReadValueSafe("Tag", "Rouzzf");
             }
             set
             {
@@ -110,7 +110,7 @@ namespace Rouzzf.Server.Models
         {
             get
             {
-                return ReadValueSafe("InstallSub", "SubDir");
+                return ReadValueSafe("InstallSub", "Rouzzf");
             }
             set
             {
@@ -389,7 +389,7 @@ namespace Rouzzf.Server.Models
                     }
                     doc.AppendChild(doc.CreateElement("settings"));
                 }
-                
+
                 XmlElement root = doc.DocumentElement;
                 XmlNode oldNode = root.SelectSingleNode(@"/settings/" + pstrValueToRead);
                 if (oldNode == null) // create if not exist

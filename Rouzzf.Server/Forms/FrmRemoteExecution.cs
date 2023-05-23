@@ -45,14 +45,16 @@ namespace Rouzzf.Server.Forms
             {
                 var remoteExecutionMessageHandler = new RemoteExecutionMessageHandler
                 {
-                    FileHandler = new FileManagerHandler(client), TaskHandler = new TaskManagerHandler(client)
+                    FileHandler = new FileManagerHandler(client),
+                    TaskHandler = new TaskManagerHandler(client)
                 };
 
                 var lvi = new ListViewItem(new[]
                 {
                     $"{client.Value.Username}@{client.Value.PcName} [{client.EndPoint.Address}:{client.EndPoint.Port}]",
                     "Waiting..."
-                }) {Tag = remoteExecutionMessageHandler};
+                })
+                { Tag = remoteExecutionMessageHandler };
 
                 lstTransfers.Items.Add(lvi);
                 _remoteExecutionMessageHandlers.Add(remoteExecutionMessageHandler);
@@ -87,7 +89,7 @@ namespace Rouzzf.Server.Forms
 
         private void FrmRemoteExecution_Load(object sender, EventArgs e)
         {
-            this.Text = WindowHelper.GetWindowTitle("Remote Execution", _clients.Length);
+            this.Text = WindowHelper.GetWindowTitle("远程执行", _clients.Length);
         }
 
         private void FrmRemoteExecution_FormClosing(object sender, FormClosingEventArgs e)
@@ -159,13 +161,13 @@ namespace Rouzzf.Server.Forms
         {
             for (var i = 0; i < lstTransfers.Items.Count; i++)
             {
-                var handler = (RemoteExecutionMessageHandler) lstTransfers.Items[i].Tag;
+                var handler = (RemoteExecutionMessageHandler)lstTransfers.Items[i].Tag;
 
                 if (handler.FileHandler.Equals(sender as FileManagerHandler) || handler.TaskHandler.Equals(sender as TaskManagerHandler))
                 {
-                    lstTransfers.Items[i].SubItems[(int) TransferColumn.Status].Text = transfer.Status;
+                    lstTransfers.Items[i].SubItems[(int)TransferColumn.Status].Text = transfer.Status;
 
-                    if (transfer.Status == "Completed")
+                    if (transfer.Status == "完成")
                     {
                         handler.TaskHandler.StartProcess(transfer.RemotePath, _isUpdate);
                     }
@@ -188,7 +190,7 @@ namespace Rouzzf.Server.Forms
 
                 if (handler.FileHandler.Equals(sender as FileManagerHandler) || handler.TaskHandler.Equals(sender as TaskManagerHandler))
                 {
-                    lstTransfers.Items[i].SubItems[(int) TransferColumn.Status].Text = message;
+                    lstTransfers.Items[i].SubItems[(int)TransferColumn.Status].Text = message;
                     return;
                 }
             }

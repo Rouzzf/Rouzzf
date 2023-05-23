@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Windows.Forms;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using Rouzzf.Common.Messages;
 using Rouzzf.Common.Models;
-using Rouzzf.Common.Utilities;
 using Rouzzf.Server.Controls;
 using Rouzzf.Server.Extensions;
 using Rouzzf.Server.Helper;
 using Rouzzf.Server.Messages;
 using Rouzzf.Server.Networking;
 using Rouzzf.Server.Registry;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Rouzzf.Server.Forms
 {
@@ -129,11 +128,11 @@ namespace Rouzzf.Server.Forms
             if (_connectClient.Value.AccountType != "Admin")
             {
                 MessageBox.Show(
-                    "The client software is not running as administrator and therefore some functionality like Update, Create, Open and Delete may not work properly!",
-                    "Alert!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    "客户端软件没有以管理员身份运行，因此一些功能，如更新、创建、打开和删除可能无法正常工作!",
+                    "警报!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            this.Text = WindowHelper.GetWindowTitle("Registry Editor", _connectClient);
+            this.Text = WindowHelper.GetWindowTitle("注册表编辑器", _connectClient);
 
             // signal client to retrive the root nodes (indicated by null)
             _registryHandler.LoadRegistryKey(null);
@@ -143,7 +142,7 @@ namespace Rouzzf.Server.Forms
         {
             UnregisterMessageHandler();
         }
-        
+
         private void ShowErrorMessage(object sender, string errorMsg)
         {
             MessageBox.Show(errorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -225,7 +224,8 @@ namespace Rouzzf.Server.Forms
         {
             TreeNode parent = GetTreeNode(rootKey);
 
-            if (parent.Nodes.ContainsKey(subKey)) {
+            if (parent.Nodes.ContainsKey(subKey))
+            {
                 parent.Nodes.RemoveByKey(subKey);
             }
         }
@@ -273,7 +273,7 @@ namespace Rouzzf.Server.Forms
         {
             TreeNode key = GetTreeNode(keyPath);
 
-            if (key != null )
+            if (key != null)
             {
                 List<RegValueData> valuesFromNode = ((RegValueData[])key.Tag).ToList();
                 valuesFromNode.Add(value);
@@ -312,7 +312,7 @@ namespace Rouzzf.Server.Forms
                 {
                     var regValue = ((RegValueData[])key.Tag).First(item => item.Name == valueName);
 
-                    if(tvRegistryDirectory.SelectedNode == key)
+                    if (tvRegistryDirectory.SelectedNode == key)
                     {
                         var valueItem = lstRegistryValues.Items.Cast<RegistryValueLstItem>()
                                                      .SingleOrDefault(item => item.Name == valueName);
@@ -337,7 +337,7 @@ namespace Rouzzf.Server.Forms
                 if (tvRegistryDirectory.SelectedNode == key)
                 {
                     var valueItem = lstRegistryValues.Items.Cast<RegistryValueLstItem>()
-                                                     .SingleOrDefault(item => item.Name == oldName);              
+                                                     .SingleOrDefault(item => item.Name == oldName);
                     if (valueItem != null)
                         valueItem.RegName = newName;
                 }
@@ -417,7 +417,7 @@ namespace Rouzzf.Server.Forms
                 {
                     if (e.Node.Parent.Nodes.ContainsKey(e.Label))
                     {
-                        MessageBox.Show("Invalid label. \nA node with that label already exists.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("无效的标签\n带有该标签的节点已经存在.", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         e.Node.BeginEdit();
                     }
                     else
@@ -428,7 +428,7 @@ namespace Rouzzf.Server.Forms
                 }
                 else
                 {
-                    MessageBox.Show("Invalid label. \nThe label cannot be blank.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("无效的标签\n标签不能为空", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     e.Node.BeginEdit();
                 }
             }
@@ -499,7 +499,7 @@ namespace Rouzzf.Server.Forms
             this.deleteToolStripMenuItem2.Enabled = GetDeleteState();
         }
 
-        private void  CreateTreeViewMenuStrip()
+        private void CreateTreeViewMenuStrip()
         {
             this.renameToolStripMenuItem.Enabled = tvRegistryDirectory.SelectedNode.Parent != null;
 
@@ -530,12 +530,13 @@ namespace Rouzzf.Server.Forms
             this.Close();
         }
 
-        private void menuStripDelete_Click(object sender, EventArgs e) {
-            if(tvRegistryDirectory.Focused)
+        private void menuStripDelete_Click(object sender, EventArgs e)
+        {
+            if (tvRegistryDirectory.Focused)
             {
                 deleteRegistryKey_Click(this, e);
             }
-            else if (lstRegistryValues.Focused) 
+            else if (lstRegistryValues.Focused)
             {
                 deleteRegistryValue_Click(this, e);
             }
@@ -589,7 +590,7 @@ namespace Rouzzf.Server.Forms
                 {
                     if (lstRegistryValues.Items.ContainsKey(e.Label))
                     {
-                        MessageBox.Show("Invalid label. \nA node with that label already exists.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("无效的标签\n带有该标签的节点已经存在.", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         lstRegistryValues.Items[index].BeginEdit();
                         return;
                     }
@@ -600,7 +601,7 @@ namespace Rouzzf.Server.Forms
                 }
                 else
                 {
-                    MessageBox.Show("Invalid label. \nThe label cannot be blank.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("无效的标签\n标签不能为空", "警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     lstRegistryValues.Items[index].BeginEdit();
 
                 }
@@ -638,8 +639,8 @@ namespace Rouzzf.Server.Forms
         private void deleteRegistryKey_Click(object sender, EventArgs e)
         {
             // prompt user to confirm delete
-            string msg = "Are you sure you want to permanently delete this key and all of its subkeys?";
-            string caption = "Confirm Key Delete";
+            string msg = "您确定要永久删除此键及其所有子键吗?";
+            string caption = "注册表删除";
             var answer = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (answer == DialogResult.Yes)
@@ -725,8 +726,8 @@ namespace Rouzzf.Server.Forms
         private void deleteRegistryValue_Click(object sender, EventArgs e)
         {
             //Prompt user to confirm delete
-            string msg = "Deleting certain registry values could cause system instability. Are you sure you want to permanently delete " + (lstRegistryValues.SelectedItems.Count == 1 ? "this value?": "these values?");
-            string caption = "Confirm Value Delete";
+            string msg = "删除某些注册表值可能会导致系统不稳定.您确定要永久删除吗?" + (lstRegistryValues.SelectedItems.Count == 1 ? "这个值?" : "这些值?");
+            string caption = "注册表删除";
             var answer = MessageBox.Show(msg, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (answer == DialogResult.Yes)
@@ -735,7 +736,7 @@ namespace Rouzzf.Server.Forms
                 {
                     if (item.GetType() == typeof(RegistryValueLstItem))
                     {
-                        RegistryValueLstItem registryValue = (RegistryValueLstItem) item;
+                        RegistryValueLstItem registryValue = (RegistryValueLstItem)item;
                         _registryHandler.DeleteRegistryValue(tvRegistryDirectory.SelectedNode.FullPath, registryValue.RegName);
                     }
                 }
@@ -744,8 +745,8 @@ namespace Rouzzf.Server.Forms
 
         private void renameRegistryValue_Click(object sender, EventArgs e)
         {
-		    lstRegistryValues.LabelEdit = true;
-		    lstRegistryValues.SelectedItems[0].BeginEdit();
+            lstRegistryValues.LabelEdit = true;
+            lstRegistryValues.SelectedItems[0].BeginEdit();
         }
 
         private void modifyRegistryValue_Click(object sender, EventArgs e)
@@ -824,7 +825,7 @@ namespace Rouzzf.Server.Forms
             {
                 if (frm.ShowDialog() == DialogResult.OK)
                 {
-                    _registryHandler.ChangeRegistryValue(keyPath, (RegValueData) frm.Tag);
+                    _registryHandler.ChangeRegistryValue(keyPath, (RegValueData)frm.Tag);
                 }
             }
         }

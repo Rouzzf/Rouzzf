@@ -56,7 +56,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 19;
-            this.btnSave.Text = "&Save";
+            this.btnSave.Text = "保存";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -67,7 +67,7 @@
             this.lblPort.Name = "lblPort";
             this.lblPort.Size = new System.Drawing.Size(93, 13);
             this.lblPort.TabIndex = 0;
-            this.lblPort.Text = "Port to listen on:";
+            this.lblPort.Text = "端口监听:";
             // 
             // ncPort
             // 
@@ -98,7 +98,7 @@
             this.chkAutoListen.Name = "chkAutoListen";
             this.chkAutoListen.Size = new System.Drawing.Size(222, 17);
             this.chkAutoListen.TabIndex = 6;
-            this.chkAutoListen.Text = "Listen for new connections on startup";
+            this.chkAutoListen.Text = "启动时监听新连接";
             this.chkAutoListen.UseVisualStyleBackColor = true;
             // 
             // chkPopup
@@ -108,7 +108,7 @@
             this.chkPopup.Name = "chkPopup";
             this.chkPopup.Size = new System.Drawing.Size(259, 17);
             this.chkPopup.TabIndex = 7;
-            this.chkPopup.Text = "Show popup notification on new connection";
+            this.chkPopup.Text = "在新连接上显示弹出通知";
             this.chkPopup.UseVisualStyleBackColor = true;
             // 
             // btnListen
@@ -117,7 +117,7 @@
             this.btnListen.Name = "btnListen";
             this.btnListen.Size = new System.Drawing.Size(110, 23);
             this.btnListen.TabIndex = 2;
-            this.btnListen.Text = "Start listening";
+            this.btnListen.Text = "启动监听";
             this.btnListen.UseVisualStyleBackColor = true;
             this.btnListen.Click += new System.EventHandler(this.btnListen_Click);
             // 
@@ -127,7 +127,7 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 18;
-            this.btnCancel.Text = "&Cancel";
+            this.btnCancel.Text = "关闭";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -138,7 +138,7 @@
             this.chkUseUpnp.Name = "chkUseUpnp";
             this.chkUseUpnp.Size = new System.Drawing.Size(249, 17);
             this.chkUseUpnp.TabIndex = 8;
-            this.chkUseUpnp.Text = "Try to automatically forward the port (UPnP)";
+            this.chkUseUpnp.Text = "尝试自动转发端口(UPnP)";
             this.chkUseUpnp.UseVisualStyleBackColor = true;
             // 
             // chkShowTooltip
@@ -148,7 +148,7 @@
             this.chkShowTooltip.Name = "chkShowTooltip";
             this.chkShowTooltip.Size = new System.Drawing.Size(268, 17);
             this.chkShowTooltip.TabIndex = 9;
-            this.chkShowTooltip.Text = "Show tooltip on client with system information";
+            this.chkShowTooltip.Text = "在客户端显示带有系统信息的工具提示";
             this.chkShowTooltip.UseVisualStyleBackColor = true;
             // 
             // chkNoIPIntegration
@@ -158,7 +158,7 @@
             this.chkNoIPIntegration.Name = "chkNoIPIntegration";
             this.chkNoIPIntegration.Size = new System.Drawing.Size(187, 17);
             this.chkNoIPIntegration.TabIndex = 10;
-            this.chkNoIPIntegration.Text = "Enable No-Ip.com DNS Updater";
+            this.chkNoIPIntegration.Text = "启用 No-Ip.com DNS 更新";
             this.chkNoIPIntegration.UseVisualStyleBackColor = true;
             this.chkNoIPIntegration.CheckedChanged += new System.EventHandler(this.chkNoIPIntegration_CheckedChanged);
             // 
@@ -170,7 +170,7 @@
             this.lblHost.Name = "lblHost";
             this.lblHost.Size = new System.Drawing.Size(34, 13);
             this.lblHost.TabIndex = 11;
-            this.lblHost.Text = "Host:";
+            this.lblHost.Text = "主机:";
             // 
             // lblPass
             // 
@@ -180,7 +180,7 @@
             this.lblPass.Name = "lblPass";
             this.lblPass.Size = new System.Drawing.Size(32, 13);
             this.lblPass.TabIndex = 15;
-            this.lblPass.Text = "Pass:";
+            this.lblPass.Text = "密码:";
             // 
             // lblUser
             // 
@@ -190,7 +190,7 @@
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(32, 13);
             this.lblUser.TabIndex = 13;
-            this.lblUser.Text = "Mail:";
+            this.lblUser.Text = "账号:";
             // 
             // txtNoIPPass
             // 
@@ -224,7 +224,7 @@
             this.chkShowPassword.Name = "chkShowPassword";
             this.chkShowPassword.Size = new System.Drawing.Size(107, 17);
             this.chkShowPassword.TabIndex = 17;
-            this.chkShowPassword.Text = "Show Password";
+            this.chkShowPassword.Text = "显示密码";
             this.chkShowPassword.UseVisualStyleBackColor = true;
             this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
             // 
@@ -235,7 +235,7 @@
             this.chkIPv6Support.Name = "chkIPv6Support";
             this.chkIPv6Support.Size = new System.Drawing.Size(128, 17);
             this.chkIPv6Support.TabIndex = 5;
-            this.chkIPv6Support.Text = "Enable IPv6 support";
+            this.chkIPv6Support.Text = "启用IPv6";
             this.chkIPv6Support.UseVisualStyleBackColor = true;
             // 
             // FrmSettings
@@ -268,7 +268,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Settings";
+            this.Text = "设置";
             this.Load += new System.EventHandler(this.FrmSettings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ncPort)).EndInit();
             this.ResumeLayout(false);

@@ -122,14 +122,14 @@ namespace Rouzzf.Server.Forms
             this.systemToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.cog;
             this.systemToolStripMenuItem.Name = "systemToolStripMenuItem";
             this.systemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.systemToolStripMenuItem.Text = "Administration";
+            this.systemToolStripMenuItem.Text = "管理";
             // 
             // systemInformationToolStripMenuItem
             // 
             this.systemInformationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("systemInformationToolStripMenuItem.Image")));
             this.systemInformationToolStripMenuItem.Name = "systemInformationToolStripMenuItem";
             this.systemInformationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.systemInformationToolStripMenuItem.Text = "System Information";
+            this.systemInformationToolStripMenuItem.Text = "系统信息";
             this.systemInformationToolStripMenuItem.Click += new System.EventHandler(this.systemInformationToolStripMenuItem_Click);
             // 
             // fileManagerToolStripMenuItem
@@ -137,7 +137,7 @@ namespace Rouzzf.Server.Forms
             this.fileManagerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fileManagerToolStripMenuItem.Image")));
             this.fileManagerToolStripMenuItem.Name = "fileManagerToolStripMenuItem";
             this.fileManagerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fileManagerToolStripMenuItem.Text = "File Manager";
+            this.fileManagerToolStripMenuItem.Text = "文件管理器";
             this.fileManagerToolStripMenuItem.Click += new System.EventHandler(this.fileManagerToolStripMenuItem_Click);
             // 
             // startupManagerToolStripMenuItem
@@ -145,7 +145,7 @@ namespace Rouzzf.Server.Forms
             this.startupManagerToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.application_edit;
             this.startupManagerToolStripMenuItem.Name = "startupManagerToolStripMenuItem";
             this.startupManagerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.startupManagerToolStripMenuItem.Text = "Startup Manager";
+            this.startupManagerToolStripMenuItem.Text = "启动管理器";
             this.startupManagerToolStripMenuItem.Click += new System.EventHandler(this.startupManagerToolStripMenuItem_Click);
             // 
             // taskManagerToolStripMenuItem
@@ -153,7 +153,7 @@ namespace Rouzzf.Server.Forms
             this.taskManagerToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.application_cascade;
             this.taskManagerToolStripMenuItem.Name = "taskManagerToolStripMenuItem";
             this.taskManagerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.taskManagerToolStripMenuItem.Text = "Task Manager";
+            this.taskManagerToolStripMenuItem.Text = "任务管理器";
             this.taskManagerToolStripMenuItem.Click += new System.EventHandler(this.taskManagerToolStripMenuItem_Click);
             // 
             // remoteShellToolStripMenuItem
@@ -161,7 +161,7 @@ namespace Rouzzf.Server.Forms
             this.remoteShellToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("remoteShellToolStripMenuItem.Image")));
             this.remoteShellToolStripMenuItem.Name = "remoteShellToolStripMenuItem";
             this.remoteShellToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.remoteShellToolStripMenuItem.Text = "Remote Shell";
+            this.remoteShellToolStripMenuItem.Text = "远程Shell";
             this.remoteShellToolStripMenuItem.Click += new System.EventHandler(this.remoteShellToolStripMenuItem_Click);
             // 
             // connectionsToolStripMenuItem
@@ -169,7 +169,7 @@ namespace Rouzzf.Server.Forms
             this.connectionsToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.transmit_blue;
             this.connectionsToolStripMenuItem.Name = "connectionsToolStripMenuItem";
             this.connectionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.connectionsToolStripMenuItem.Text = "TCP Connections";
+            this.connectionsToolStripMenuItem.Text = "TCP 连接";
             this.connectionsToolStripMenuItem.Click += new System.EventHandler(this.connectionsToolStripMenuItem_Click);
             // 
             // reverseProxyToolStripMenuItem
@@ -177,7 +177,7 @@ namespace Rouzzf.Server.Forms
             this.reverseProxyToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.server_link;
             this.reverseProxyToolStripMenuItem.Name = "reverseProxyToolStripMenuItem";
             this.reverseProxyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.reverseProxyToolStripMenuItem.Text = "Reverse Proxy";
+            this.reverseProxyToolStripMenuItem.Text = "反向代理";
             this.reverseProxyToolStripMenuItem.Click += new System.EventHandler(this.reverseProxyToolStripMenuItem_Click);
             // 
             // registryEditorToolStripMenuItem
@@ -185,7 +185,7 @@ namespace Rouzzf.Server.Forms
             this.registryEditorToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.registry;
             this.registryEditorToolStripMenuItem.Name = "registryEditorToolStripMenuItem";
             this.registryEditorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.registryEditorToolStripMenuItem.Text = "Registry Editor";
+            this.registryEditorToolStripMenuItem.Text = "注册表编辑器";
             this.registryEditorToolStripMenuItem.Click += new System.EventHandler(this.registryEditorToolStripMenuItem_Click);
             // 
             // remoteExecuteToolStripMenuItem
@@ -196,14 +196,14 @@ namespace Rouzzf.Server.Forms
             this.remoteExecuteToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.lightning;
             this.remoteExecuteToolStripMenuItem.Name = "remoteExecuteToolStripMenuItem";
             this.remoteExecuteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.remoteExecuteToolStripMenuItem.Text = "Remote Execute";
+            this.remoteExecuteToolStripMenuItem.Text = "远程执行";
             // 
             // localFileToolStripMenuItem
             // 
             this.localFileToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.drive_go;
             this.localFileToolStripMenuItem.Name = "localFileToolStripMenuItem";
             this.localFileToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.localFileToolStripMenuItem.Text = "Local File...";
+            this.localFileToolStripMenuItem.Text = "本地文件...";
             this.localFileToolStripMenuItem.Click += new System.EventHandler(this.localFileToolStripMenuItem_Click);
             // 
             // webFileToolStripMenuItem
@@ -211,7 +211,7 @@ namespace Rouzzf.Server.Forms
             this.webFileToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.world_go;
             this.webFileToolStripMenuItem.Name = "webFileToolStripMenuItem";
             this.webFileToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.webFileToolStripMenuItem.Text = "Web File...";
+            this.webFileToolStripMenuItem.Text = "网络文件...";
             this.webFileToolStripMenuItem.Click += new System.EventHandler(this.webFileToolStripMenuItem_Click);
             // 
             // ctxtLine
@@ -228,14 +228,14 @@ namespace Rouzzf.Server.Forms
             this.actionsToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.actions;
             this.actionsToolStripMenuItem.Name = "actionsToolStripMenuItem";
             this.actionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.actionsToolStripMenuItem.Text = "Actions";
+            this.actionsToolStripMenuItem.Text = "处理";
             // 
             // shutdownToolStripMenuItem
             // 
             this.shutdownToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.shutdown;
             this.shutdownToolStripMenuItem.Name = "shutdownToolStripMenuItem";
             this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.shutdownToolStripMenuItem.Text = "Shutdown";
+            this.shutdownToolStripMenuItem.Text = "关机";
             this.shutdownToolStripMenuItem.Click += new System.EventHandler(this.shutdownToolStripMenuItem_Click);
             // 
             // restartToolStripMenuItem
@@ -243,7 +243,7 @@ namespace Rouzzf.Server.Forms
             this.restartToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.restart;
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
             this.restartToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.restartToolStripMenuItem.Text = "Restart";
+            this.restartToolStripMenuItem.Text = "重启";
             this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
             // 
             // standbyToolStripMenuItem
@@ -251,7 +251,7 @@ namespace Rouzzf.Server.Forms
             this.standbyToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.standby;
             this.standbyToolStripMenuItem.Name = "standbyToolStripMenuItem";
             this.standbyToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.standbyToolStripMenuItem.Text = "Standby";
+            this.standbyToolStripMenuItem.Text = "备用";
             this.standbyToolStripMenuItem.Click += new System.EventHandler(this.standbyToolStripMenuItem_Click);
             // 
             // surveillanceToolStripMenuItem
@@ -263,14 +263,14 @@ namespace Rouzzf.Server.Forms
             this.surveillanceToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.monitoring;
             this.surveillanceToolStripMenuItem.Name = "surveillanceToolStripMenuItem";
             this.surveillanceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.surveillanceToolStripMenuItem.Text = "Monitoring";
+            this.surveillanceToolStripMenuItem.Text = "监控";
             // 
             // passwordRecoveryToolStripMenuItem
             // 
             this.passwordRecoveryToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("passwordRecoveryToolStripMenuItem.Image")));
             this.passwordRecoveryToolStripMenuItem.Name = "passwordRecoveryToolStripMenuItem";
             this.passwordRecoveryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.passwordRecoveryToolStripMenuItem.Text = "Password Recovery";
+            this.passwordRecoveryToolStripMenuItem.Text = "密码恢复";
             this.passwordRecoveryToolStripMenuItem.Click += new System.EventHandler(this.passwordRecoveryToolStripMenuItem_Click);
             // 
             // keyloggerToolStripMenuItem
@@ -278,7 +278,7 @@ namespace Rouzzf.Server.Forms
             this.keyloggerToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.keyboard_magnify;
             this.keyloggerToolStripMenuItem.Name = "keyloggerToolStripMenuItem";
             this.keyloggerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.keyloggerToolStripMenuItem.Text = "Keylogger";
+            this.keyloggerToolStripMenuItem.Text = "键盘记录器";
             this.keyloggerToolStripMenuItem.Click += new System.EventHandler(this.keyloggerToolStripMenuItem_Click);
             // 
             // remoteDesktopToolStripMenuItem2
@@ -286,7 +286,7 @@ namespace Rouzzf.Server.Forms
             this.remoteDesktopToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("remoteDesktopToolStripMenuItem2.Image")));
             this.remoteDesktopToolStripMenuItem2.Name = "remoteDesktopToolStripMenuItem2";
             this.remoteDesktopToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.remoteDesktopToolStripMenuItem2.Text = "Remote Desktop";
+            this.remoteDesktopToolStripMenuItem2.Text = "远程桌面";
             this.remoteDesktopToolStripMenuItem2.Click += new System.EventHandler(this.remoteDesktopToolStripMenuItem_Click);
             // 
             // userSupportToolStripMenuItem
@@ -298,14 +298,14 @@ namespace Rouzzf.Server.Forms
             this.userSupportToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.user;
             this.userSupportToolStripMenuItem.Name = "userSupportToolStripMenuItem";
             this.userSupportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.userSupportToolStripMenuItem.Text = "User Support";
+            this.userSupportToolStripMenuItem.Text = "用户支持";
             // 
             // showMessageboxToolStripMenuItem
             // 
             this.showMessageboxToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("showMessageboxToolStripMenuItem.Image")));
             this.showMessageboxToolStripMenuItem.Name = "showMessageboxToolStripMenuItem";
             this.showMessageboxToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.showMessageboxToolStripMenuItem.Text = "Show Messagebox";
+            this.showMessageboxToolStripMenuItem.Text = "显示对话框";
             this.showMessageboxToolStripMenuItem.Click += new System.EventHandler(this.showMessageboxToolStripMenuItem_Click);
             // 
             // remoteDesktopToolStripMenuItem
@@ -313,7 +313,7 @@ namespace Rouzzf.Server.Forms
             this.remoteDesktopToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("remoteDesktopToolStripMenuItem.Image")));
             this.remoteDesktopToolStripMenuItem.Name = "remoteDesktopToolStripMenuItem";
             this.remoteDesktopToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.remoteDesktopToolStripMenuItem.Text = "Remote Desktop";
+            this.remoteDesktopToolStripMenuItem.Text = "远程桌面";
             this.remoteDesktopToolStripMenuItem.Click += new System.EventHandler(this.remoteDesktopToolStripMenuItem_Click);
             // 
             // visitWebsiteToolStripMenuItem
@@ -321,7 +321,7 @@ namespace Rouzzf.Server.Forms
             this.visitWebsiteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("visitWebsiteToolStripMenuItem.Image")));
             this.visitWebsiteToolStripMenuItem.Name = "visitWebsiteToolStripMenuItem";
             this.visitWebsiteToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.visitWebsiteToolStripMenuItem.Text = "Send to Website";
+            this.visitWebsiteToolStripMenuItem.Text = "发送至网站";
             this.visitWebsiteToolStripMenuItem.Click += new System.EventHandler(this.visitWebsiteToolStripMenuItem_Click);
             // 
             // connectionToolStripMenuItem
@@ -335,14 +335,14 @@ namespace Rouzzf.Server.Forms
             this.connectionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("connectionToolStripMenuItem.Image")));
             this.connectionToolStripMenuItem.Name = "connectionToolStripMenuItem";
             this.connectionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.connectionToolStripMenuItem.Text = "Client Management";
+            this.connectionToolStripMenuItem.Text = "客户管理";
             // 
             // elevateClientPermissionsToolStripMenuItem
             // 
             this.elevateClientPermissionsToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.uac_shield;
             this.elevateClientPermissionsToolStripMenuItem.Name = "elevateClientPermissionsToolStripMenuItem";
             this.elevateClientPermissionsToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.elevateClientPermissionsToolStripMenuItem.Text = "Elevate Client Permissions";
+            this.elevateClientPermissionsToolStripMenuItem.Text = "提升客户端权限";
             this.elevateClientPermissionsToolStripMenuItem.Click += new System.EventHandler(this.elevateClientPermissionsToolStripMenuItem_Click);
             // 
             // updateToolStripMenuItem
@@ -350,7 +350,7 @@ namespace Rouzzf.Server.Forms
             this.updateToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("updateToolStripMenuItem.Image")));
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
             this.updateToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.updateToolStripMenuItem.Text = "Update";
+            this.updateToolStripMenuItem.Text = "更新";
             this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
             // 
             // reconnectToolStripMenuItem
@@ -358,7 +358,7 @@ namespace Rouzzf.Server.Forms
             this.reconnectToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("reconnectToolStripMenuItem.Image")));
             this.reconnectToolStripMenuItem.Name = "reconnectToolStripMenuItem";
             this.reconnectToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.reconnectToolStripMenuItem.Text = "Reconnect";
+            this.reconnectToolStripMenuItem.Text = "重新连接";
             this.reconnectToolStripMenuItem.Click += new System.EventHandler(this.reconnectToolStripMenuItem_Click);
             // 
             // disconnectToolStripMenuItem
@@ -366,7 +366,7 @@ namespace Rouzzf.Server.Forms
             this.disconnectToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("disconnectToolStripMenuItem.Image")));
             this.disconnectToolStripMenuItem.Name = "disconnectToolStripMenuItem";
             this.disconnectToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.disconnectToolStripMenuItem.Text = "Disconnect";
+            this.disconnectToolStripMenuItem.Text = "断开连接";
             this.disconnectToolStripMenuItem.Click += new System.EventHandler(this.disconnectToolStripMenuItem_Click);
             // 
             // uninstallToolStripMenuItem
@@ -374,7 +374,7 @@ namespace Rouzzf.Server.Forms
             this.uninstallToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("uninstallToolStripMenuItem.Image")));
             this.uninstallToolStripMenuItem.Name = "uninstallToolStripMenuItem";
             this.uninstallToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.uninstallToolStripMenuItem.Text = "Uninstall";
+            this.uninstallToolStripMenuItem.Text = "卸载";
             this.uninstallToolStripMenuItem.Click += new System.EventHandler(this.uninstallToolStripMenuItem_Click);
             // 
             // lineToolStripMenuItem
@@ -386,7 +386,7 @@ namespace Rouzzf.Server.Forms
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
             this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.selectAllToolStripMenuItem.Text = "Select All";
+            this.selectAllToolStripMenuItem.Text = "全选";
             this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
             // 
             // imgFlags
@@ -645,7 +645,7 @@ namespace Rouzzf.Server.Forms
             // notifyIcon
             // 
             this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
-            this.notifyIcon.Text = "Rouzzf";
+            this.notifyIcon.Text = "通知图标";
             this.notifyIcon.Visible = true;
             this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
             // 
@@ -677,13 +677,13 @@ namespace Rouzzf.Server.Forms
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(1022, 22);
             this.statusStrip.TabIndex = 3;
-            this.statusStrip.Text = "statusStrip1";
+            this.statusStrip.Text = "状态条";
             // 
             // listenToolStripStatusLabel
             // 
             this.listenToolStripStatusLabel.Name = "listenToolStripStatusLabel";
             this.listenToolStripStatusLabel.Size = new System.Drawing.Size(87, 17);
-            this.listenToolStripStatusLabel.Text = "Listening: False";
+            this.listenToolStripStatusLabel.Text = "监听: False";
             // 
             // lstClients
             // 
@@ -713,46 +713,46 @@ namespace Rouzzf.Server.Forms
             // 
             // hIP
             // 
-            this.hIP.Text = "IP Address";
+            this.hIP.Text = "IP地址";
             this.hIP.Width = 112;
             // 
             // hTag
             // 
-            this.hTag.Text = "Tag";
+            this.hTag.Text = "标签";
             // 
             // hUserPC
             // 
-            this.hUserPC.Text = "User@PC";
+            this.hUserPC.Text = "用户@电脑";
             this.hUserPC.Width = 175;
             // 
             // hVersion
             // 
-            this.hVersion.Text = "Version";
+            this.hVersion.Text = "版本";
             this.hVersion.Width = 66;
             // 
             // hStatus
             // 
-            this.hStatus.Text = "Status";
+            this.hStatus.Text = "状态";
             this.hStatus.Width = 78;
             // 
             // hUserStatus
             // 
-            this.hUserStatus.Text = "User Status";
+            this.hUserStatus.Text = "用户状态";
             this.hUserStatus.Width = 72;
             // 
             // hCountry
             // 
-            this.hCountry.Text = "Country";
+            this.hCountry.Text = "国家";
             this.hCountry.Width = 117;
             // 
             // hOS
             // 
-            this.hOS.Text = "Operating System";
+            this.hOS.Text = "操作系统";
             this.hOS.Width = 222;
             // 
             // hAccountType
             // 
-            this.hAccountType.Text = "Account Type";
+            this.hAccountType.Text = "账户类型";
             this.hAccountType.Width = 100;
             // 
             // menuStrip
@@ -777,34 +777,34 @@ namespace Rouzzf.Server.Forms
             this.fIleToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fIleToolStripMenuItem.Name = "fIleToolStripMenuItem";
             this.fIleToolStripMenuItem.Size = new System.Drawing.Size(39, 21);
-            this.fIleToolStripMenuItem.Text = "File";
+            this.fIleToolStripMenuItem.Text = "文件";
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.closeToolStripMenuItem.Text = "Close";
+            this.closeToolStripMenuItem.Text = "关闭";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 21);
-            this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Text = "设置";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // builderToolStripMenuItem
             // 
             this.builderToolStripMenuItem.Name = "builderToolStripMenuItem";
             this.builderToolStripMenuItem.Size = new System.Drawing.Size(56, 21);
-            this.builderToolStripMenuItem.Text = "Builder";
+            this.builderToolStripMenuItem.Text = "构建";
             this.builderToolStripMenuItem.Click += new System.EventHandler(this.builderToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 21);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Text = "关于";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // FrmMain
@@ -819,7 +819,7 @@ namespace Rouzzf.Server.Forms
             this.MinimumSize = new System.Drawing.Size(680, 415);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Rouzzf - Connected: 0";
+            this.Text = "Rouzzf - 连接: 0";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.contextMenuStrip.ResumeLayout(false);

@@ -102,7 +102,7 @@ namespace Rouzzf.Server.Forms
             foreach (var process in processes)
             {
                 ListViewItem lvi =
-                    new ListViewItem(new[] {process.Name, process.Id.ToString(), process.MainWindowTitle});
+                    new ListViewItem(new[] { process.Name, process.Id.ToString(), process.MainWindowTitle });
                 lstTasks.Items.Add(lvi);
             }
 
@@ -127,7 +127,7 @@ namespace Rouzzf.Server.Forms
 
         private void FrmTaskManager_Load(object sender, EventArgs e)
         {
-            this.Text = WindowHelper.GetWindowTitle("Task Manager", _connectClient);
+            this.Text = WindowHelper.GetWindowTitle("任务管理器", _connectClient);
             _taskManagerHandler.RefreshProcesses();
         }
 

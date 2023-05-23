@@ -63,13 +63,13 @@ namespace Rouzzf.Server.Forms
             _titleUpdateRunning = true;
             try
             {
-                this.Invoke((MethodInvoker) delegate
+                this.Invoke((MethodInvoker)delegate
                 {
                     int selected = lstClients.SelectedItems.Count;
                     this.Text = (selected > 0)
-                        ? string.Format("Rouzzf - Connected: {0} [Selected: {1}]", ListenServer.ConnectedClients.Length,
+                        ? string.Format("Rouzzf - 连接: {0} [选择: {1}]", ListenServer.ConnectedClients.Length,
                             selected)
-                        : string.Format("Rouzzf - Connected: {0}", ListenServer.ConnectedClients.Length);
+                        : string.Format("Rouzzf - 连接: {0}", ListenServer.ConnectedClients.Length);
                 });
             }
             catch (Exception)
@@ -122,11 +122,11 @@ namespace Rouzzf.Server.Forms
             {
                 if (ex.ErrorCode == 10048)
                 {
-                    MessageBox.Show(this, "The port is already in use.", "Socket Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(this, "端口被占用.", "套接字错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    MessageBox.Show(this, $"An unexpected socket error occurred: {ex.Message}\n\nError Code: {ex.ErrorCode}\n\n", "Unexpected Socket Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(this, $"发生意外的套接字错误: {ex.Message}\n\n错误码: {ex.ErrorCode}\n\n", "套接字错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 ListenServer.Disconnect();
             }
@@ -172,11 +172,11 @@ namespace Rouzzf.Server.Forms
         {
             try
             {
-                this.Invoke((MethodInvoker) delegate
+                this.Invoke((MethodInvoker)delegate
                 {
                     if (!listening)
                         lstClients.Items.Clear();
-                    listenToolStripStatusLabel.Text = listening ? string.Format("Listening on port {0}.", port) : "Not listening.";
+                    listenToolStripStatusLabel.Text = listening ? string.Format("监听端口 {0}.", port) : "没有监听.";
                 });
                 UpdateWindowTitle();
             }
@@ -273,7 +273,7 @@ namespace Rouzzf.Server.Forms
 
             try
             {
-                lstClients.Invoke((MethodInvoker) delegate
+                lstClients.Invoke((MethodInvoker)delegate
                 {
                     var item = GetListViewItemByClient(client);
                     if (item != null)
@@ -301,9 +301,10 @@ namespace Rouzzf.Server.Forms
                     " " + client.EndPoint.Address, client.Value.Tag,
                     client.Value.UserAtPc, client.Value.Version, "Connected", "Active", client.Value.CountryWithCode,
                     client.Value.OperatingSystem, client.Value.AccountType
-                }) { Tag = client, ImageIndex = client.Value.ImageIndex };
+                })
+                { Tag = client, ImageIndex = client.Value.ImageIndex };
 
-                lstClients.Invoke((MethodInvoker) delegate
+                lstClients.Invoke((MethodInvoker)delegate
                 {
                     lock (_lockClients)
                     {
@@ -328,7 +329,7 @@ namespace Rouzzf.Server.Forms
 
             try
             {
-                lstClients.Invoke((MethodInvoker) delegate
+                lstClients.Invoke((MethodInvoker)delegate
                 {
                     lock (_lockClients)
                     {
@@ -385,7 +386,7 @@ namespace Rouzzf.Server.Forms
 
             ListViewItem itemClient = null;
 
-            lstClients.Invoke((MethodInvoker) delegate
+            lstClients.Invoke((MethodInvoker)delegate
             {
                 itemClient = lstClients.Items.Cast<ListViewItem>()
                     .FirstOrDefault(lvi => lvi != null && client.Equals(lvi.Tag));
@@ -437,7 +438,7 @@ namespace Rouzzf.Server.Forms
                 this.Invoke((MethodInvoker)delegate
                 {
                     if (c == null || c.Value == null) return;
-                    
+
                     notifyIcon.ShowBalloonTip(4000, string.Format("Client connected from {0}!", c.Value.Country),
                         string.Format("IP Address: {0}\nOperating System: {1}", c.EndPoint.Address.ToString(),
                         c.Value.OperatingSystem), ToolTipIcon.Info);
@@ -492,8 +493,8 @@ namespace Rouzzf.Server.Forms
             if (
                 MessageBox.Show(
                     string.Format(
-                        "Are you sure you want to uninstall the client on {0} computer\\s?",
-                        lstClients.SelectedItems.Count), "Uninstall Confirmation", MessageBoxButtons.YesNo,
+                        "您确定要在{0}计算机上卸载客户端吗\\s?",
+                        lstClients.SelectedItems.Count), "卸载确认", MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 foreach (Client c in GetSelectedClients())
@@ -614,7 +615,7 @@ namespace Rouzzf.Server.Forms
         {
             foreach (Client c in GetSelectedClients())
             {
-                c.Send(new DoShutdownAction {Action = ShutdownAction.Shutdown});
+                c.Send(new DoShutdownAction { Action = ShutdownAction.Shutdown });
             }
         }
 
@@ -622,7 +623,7 @@ namespace Rouzzf.Server.Forms
         {
             foreach (Client c in GetSelectedClients())
             {
-                c.Send(new DoShutdownAction {Action = ShutdownAction.Restart});
+                c.Send(new DoShutdownAction { Action = ShutdownAction.Restart });
             }
         }
 
@@ -630,7 +631,7 @@ namespace Rouzzf.Server.Forms
         {
             foreach (Client c in GetSelectedClients())
             {
-                c.Send(new DoShutdownAction {Action = ShutdownAction.Standby});
+                c.Send(new DoShutdownAction { Action = ShutdownAction.Standby });
             }
         }
 

@@ -1,9 +1,9 @@
-﻿using System;
-using System.Windows.Forms;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using Rouzzf.Common.Models;
 using Rouzzf.Common.Utilities;
 using Rouzzf.Server.Enums;
+using System;
+using System.Windows.Forms;
 
 namespace Rouzzf.Server.Forms
 {
@@ -22,15 +22,15 @@ namespace Rouzzf.Server.Forms
 
             this.valueNameTxtBox.Text = value.Name;
 
-            if (value.Kind == RegistryValueKind.DWord) 
+            if (value.Kind == RegistryValueKind.DWord)
             {
-                this.Text = "Edit DWORD (32-bit) Value";
+                this.Text = "编辑双字节 (32-bit) 值";
                 this.valueDataTxtBox.Type = WordType.DWORD;
                 this.valueDataTxtBox.Text = ByteConverter.ToUInt32(value.Data).ToString("x");
             }
-            else 
+            else
             {
-                this.Text = "Edit QWORD (64-bit) Value";
+                this.Text = "编辑双字节 (64-bit) 值";
                 this.valueDataTxtBox.Type = WordType.QWORD;
                 this.valueDataTxtBox.Text = ByteConverter.ToUInt64(value.Data).ToString("x");
             }
@@ -41,7 +41,7 @@ namespace Rouzzf.Server.Forms
             if (valueDataTxtBox.IsHexNumber == radioHexa.Checked)
                 return;
 
-            if(valueDataTxtBox.IsConversionValid() || IsOverridePossible())
+            if (valueDataTxtBox.IsConversionValid() || IsOverridePossible())
                 valueDataTxtBox.IsHexNumber = radioHexa.Checked;
             else
                 radioDecimal.Checked = true;

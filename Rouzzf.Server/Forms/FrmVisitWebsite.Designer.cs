@@ -44,7 +44,7 @@
             this.chkVisitHidden.Name = "chkVisitHidden";
             this.chkVisitHidden.Size = new System.Drawing.Size(170, 17);
             this.chkVisitHidden.TabIndex = 2;
-            this.chkVisitHidden.Text = "Visit hidden (recommended)";
+            this.chkVisitHidden.Text = "隐藏访问(推荐)";
             this.chkVisitHidden.UseVisualStyleBackColor = true;
             // 
             // lblURL
@@ -69,7 +69,7 @@
             this.btnVisitWebsite.Name = "btnVisitWebsite";
             this.btnVisitWebsite.Size = new System.Drawing.Size(138, 23);
             this.btnVisitWebsite.TabIndex = 3;
-            this.btnVisitWebsite.Text = "Visit Website";
+            this.btnVisitWebsite.Text = "访问网站";
             this.btnVisitWebsite.UseVisualStyleBackColor = true;
             this.btnVisitWebsite.Click += new System.EventHandler(this.btnVisitWebsite_Click);
             // 
@@ -90,7 +90,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmVisitWebsite";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Visit Website []";
+            this.Text = "访问网站 []";
             this.Load += new System.EventHandler(this.FrmVisitWebsite_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

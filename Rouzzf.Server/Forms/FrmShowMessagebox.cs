@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Rouzzf.Server.Helper;
+using System;
 using System.Windows.Forms;
-using Rouzzf.Server.Helper;
 
 namespace Rouzzf.Server.Forms
 {
@@ -22,7 +22,7 @@ namespace Rouzzf.Server.Forms
 
         private void FrmShowMessagebox_Load(object sender, EventArgs e)
         {
-            this.Text = WindowHelper.GetWindowTitle("Show Messagebox", _selectedClients);
+            this.Text = WindowHelper.GetWindowTitle("显示对话框", _selectedClients);
 
             cmbMsgButtons.Items.AddRange(new string[]
             {"AbortRetryIgnore", "OK", "OKCancel", "RetryCancel", "YesNo", "YesNoCancel"});
@@ -36,8 +36,8 @@ namespace Rouzzf.Server.Forms
         {
             MessageBox.Show(null, txtText.Text, txtCaption.Text,
                 (MessageBoxButtons)
-                    Enum.Parse(typeof (MessageBoxButtons), GetMessageBoxButton(cmbMsgButtons.SelectedIndex)),
-                (MessageBoxIcon) Enum.Parse(typeof (MessageBoxIcon), GetMessageBoxIcon(cmbMsgIcon.SelectedIndex)));
+                    Enum.Parse(typeof(MessageBoxButtons), GetMessageBoxButton(cmbMsgButtons.SelectedIndex)),
+                (MessageBoxIcon)Enum.Parse(typeof(MessageBoxIcon), GetMessageBoxIcon(cmbMsgIcon.SelectedIndex)));
         }
 
         private void btnSend_Click(object sender, EventArgs e)

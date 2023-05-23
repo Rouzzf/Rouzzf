@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Rouzzf.Server.Networking;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using Rouzzf.Server.Networking;
 
 namespace Rouzzf.Server.ReverseProxy
 {

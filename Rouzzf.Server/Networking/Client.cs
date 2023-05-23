@@ -131,7 +131,7 @@ namespace Rouzzf.Server.Networking
         public override int GetHashCode()
         {
             return this.EndPoint.GetHashCode();
-        }  
+        }
 
         /// <summary>
         /// The type of the message received.
@@ -268,7 +268,7 @@ namespace Rouzzf.Server.Networking
                 bytesTransferred = _stream.EndRead(result);
 
                 if (bytesTransferred <= 0)
-                    throw new Exception("no bytes transferred");
+                    throw new Exception("未传输任何字节");
             }
             catch (NullReferenceException)
             {
@@ -365,7 +365,7 @@ namespace Rouzzf.Server.Networking
                                         _payloadLen = BitConverter.ToInt32(_payloadBuffer, _readOffset);
 
                                         if (_payloadLen <= 0 || _payloadLen > MaxMessageSize)
-                                            throw new Exception("invalid header");
+                                            throw new Exception("无效的标头");
 
                                         // try to re-use old payload buffers which fit
                                         if (_payloadBuffer.Length <= _payloadLen + HeaderSize)
@@ -406,9 +406,9 @@ namespace Rouzzf.Server.Networking
                         case ReceiveType.Payload:
                             {
                                 int length = (_writeOffset - HeaderSize + _readableDataLen) >= _payloadLen
-                                    ?  _payloadLen - (_writeOffset - HeaderSize)
+                                    ? _payloadLen - (_writeOffset - HeaderSize)
                                     : _readableDataLen;
-                                
+
                                 try
                                 {
                                     Array.Copy(readBuffer, _readOffset, _payloadBuffer, _writeOffset, length);
@@ -419,11 +419,11 @@ namespace Rouzzf.Server.Networking
                                     Disconnect();
                                     break;
                                 }
-                                
+
                                 _writeOffset += length;
                                 _readOffset += length;
                                 _readableDataLen -= length;
-                                
+
                                 if (_writeOffset - HeaderSize == _payloadLen)
                                 {
                                     // completely received payload
@@ -442,7 +442,7 @@ namespace Rouzzf.Server.Networking
                                         Disconnect();
                                         break;
                                     }
-                                    
+
                                     _receiveState = ReceiveType.Header;
                                     _payloadLen = 0;
                                     _writeOffset = 0;

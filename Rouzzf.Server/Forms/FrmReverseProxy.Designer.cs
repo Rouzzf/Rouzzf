@@ -63,7 +63,7 @@ namespace Rouzzf.Server.Forms
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(114, 23);
             this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Start Listening";
+            this.btnStart.Text = "启动监听";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -74,7 +74,7 @@ namespace Rouzzf.Server.Forms
             this.lblLocalServerPort.Name = "lblLocalServerPort";
             this.lblLocalServerPort.Size = new System.Drawing.Size(91, 13);
             this.lblLocalServerPort.TabIndex = 1;
-            this.lblLocalServerPort.Text = "Local Server Port";
+            this.lblLocalServerPort.Text = "本地服务器端口";
             // 
             // nudServerPort
             // 
@@ -120,7 +120,7 @@ namespace Rouzzf.Server.Forms
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(728, 248);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Open Connections";
+            this.tabPage1.Text = "打开连接";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // contextMenuStrip
@@ -134,7 +134,7 @@ namespace Rouzzf.Server.Forms
             // 
             this.killConnectionToolStripMenuItem.Name = "killConnectionToolStripMenuItem";
             this.killConnectionToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
-            this.killConnectionToolStripMenuItem.Text = "Kill Connection";
+            this.killConnectionToolStripMenuItem.Text = "杀死连接";
             this.killConnectionToolStripMenuItem.Click += new System.EventHandler(this.killConnectionToolStripMenuItem_Click);
             // 
             // btnStop
@@ -144,7 +144,7 @@ namespace Rouzzf.Server.Forms
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(114, 23);
             this.btnStop.TabIndex = 4;
-            this.btnStop.Text = "Stop Listening";
+            this.btnStop.Text = "停止监听";
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
@@ -155,7 +155,7 @@ namespace Rouzzf.Server.Forms
             this.lblProxyInfo.Name = "lblProxyInfo";
             this.lblProxyInfo.Size = new System.Drawing.Size(312, 13);
             this.lblProxyInfo.TabIndex = 5;
-            this.lblProxyInfo.Text = "Connect to this SOCKS5 Proxy: 127.0.0.1:3128 (no user/pass)";
+            this.lblProxyInfo.Text = "连接到这个SOCKS5代理: 127.0.0.1:3128";
             // 
             // label1
             // 
@@ -164,7 +164,7 @@ namespace Rouzzf.Server.Forms
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(405, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "All the DNS Queries will be executed at the remote client to reduce DNS Leaks";
+            this.label1.Text = "所有DNS查询将在远程客户端执行，以减少DNS泄漏";
             // 
             // lblLoadBalance
             // 
@@ -173,7 +173,7 @@ namespace Rouzzf.Server.Forms
             this.lblLoadBalance.Name = "lblLoadBalance";
             this.lblLoadBalance.Size = new System.Drawing.Size(105, 13);
             this.lblLoadBalance.TabIndex = 7;
-            this.lblLoadBalance.Text = "[Load Balance Info]";
+            this.lblLoadBalance.Text = "[负载均衡信息]";
             // 
             // lstConnections
             // 
@@ -200,37 +200,37 @@ namespace Rouzzf.Server.Forms
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Client IP";
+            this.columnHeader6.Text = "客户端IP";
             this.columnHeader6.Width = 106;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "Client Country";
+            this.columnHeader7.Text = "客户端国家";
             this.columnHeader7.Width = 106;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Target Server";
+            this.columnHeader1.Text = "目标服务器";
             this.columnHeader1.Width = 135;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Target Port";
+            this.columnHeader2.Text = "目标端口";
             this.columnHeader2.Width = 68;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Total Received";
+            this.columnHeader3.Text = "总接收";
             this.columnHeader3.Width = 105;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Total Sent";
+            this.columnHeader4.Text = "总发送";
             this.columnHeader4.Width = 95;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Proxy Type";
+            this.columnHeader5.Text = "代理类型";
             this.columnHeader5.Width = 90;
             // 
             // FrmReverseProxy
@@ -250,7 +250,7 @@ namespace Rouzzf.Server.Forms
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmReverseProxy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Reverse Proxy []";
+            this.Text = "Rouzzf - 反向代理 []";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmReverseProxy_FormClosing);
             this.Load += new System.EventHandler(this.FrmReverseProxy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudServerPort)).EndInit();

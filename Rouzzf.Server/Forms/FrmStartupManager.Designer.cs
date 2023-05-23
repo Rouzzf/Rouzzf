@@ -54,7 +54,7 @@ namespace Rouzzf.Server.Forms
             this.addEntryToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.application_add;
             this.addEntryToolStripMenuItem.Name = "addEntryToolStripMenuItem";
             this.addEntryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.addEntryToolStripMenuItem.Text = "Add Entry";
+            this.addEntryToolStripMenuItem.Text = "添加";
             this.addEntryToolStripMenuItem.Click += new System.EventHandler(this.addEntryToolStripMenuItem_Click);
             // 
             // removeEntryToolStripMenuItem
@@ -62,7 +62,7 @@ namespace Rouzzf.Server.Forms
             this.removeEntryToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.application_delete;
             this.removeEntryToolStripMenuItem.Name = "removeEntryToolStripMenuItem";
             this.removeEntryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.removeEntryToolStripMenuItem.Text = "Remove Entry";
+            this.removeEntryToolStripMenuItem.Text = "删除";
             this.removeEntryToolStripMenuItem.Click += new System.EventHandler(this.removeEntryToolStripMenuItem_Click);
             // 
             // lstStartupItems
@@ -85,12 +85,12 @@ namespace Rouzzf.Server.Forms
             // 
             // hName
             // 
-            this.hName.Text = "Name";
+            this.hName.Text = "名称";
             this.hName.Width = 187;
             // 
             // hPath
             // 
-            this.hPath.Text = "Path";
+            this.hPath.Text = "路径";
             this.hPath.Width = 460;
             // 
             // FrmStartupManager
@@ -104,7 +104,7 @@ namespace Rouzzf.Server.Forms
             this.MinimumSize = new System.Drawing.Size(650, 400);
             this.Name = "FrmStartupManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Startup Manager []";
+            this.Text = "启动管理器 []";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmStartupManager_FormClosing);
             this.Load += new System.EventHandler(this.FrmStartupManager_Load);
             this.contextMenuStrip.ResumeLayout(false);

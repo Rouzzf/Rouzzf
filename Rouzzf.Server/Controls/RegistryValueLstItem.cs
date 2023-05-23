@@ -1,7 +1,7 @@
-﻿using System.Windows.Forms;
-using Rouzzf.Common.Models;
+﻿using Rouzzf.Common.Models;
 using Rouzzf.Server.Extensions;
 using Rouzzf.Server.Registry;
+using System.Windows.Forms;
 
 namespace Rouzzf.Server.Controls
 {
@@ -10,15 +10,17 @@ namespace Rouzzf.Server.Controls
         private string _type { get; set; }
         private string _data { get; set; }
 
-        public string RegName {
+        public string RegName
+        {
             get { return this.Name; }
-            set 
-            { 
+            set
+            {
                 this.Name = value;
                 this.Text = RegValueHelper.GetName(value);
             }
         }
-        public string Type {
+        public string Type
+        {
             get { return _type; }
             set
             {
@@ -33,7 +35,8 @@ namespace Rouzzf.Server.Controls
             }
         }
 
-        public string Data {
+        public string Data
+        {
             get { return _data; }
             set
             {
@@ -41,7 +44,7 @@ namespace Rouzzf.Server.Controls
 
                 if (this.SubItems.Count < 3)
                     this.SubItems.Add(_data);
-                else 
+                else
                     this.SubItems[2].Text = _data;
             }
         }

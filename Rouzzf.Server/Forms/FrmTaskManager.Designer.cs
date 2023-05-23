@@ -64,7 +64,7 @@ namespace Rouzzf.Server.Forms
             this.killProcessToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.cancel;
             this.killProcessToolStripMenuItem.Name = "killProcessToolStripMenuItem";
             this.killProcessToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
-            this.killProcessToolStripMenuItem.Text = "Kill Process";
+            this.killProcessToolStripMenuItem.Text = "关闭进程";
             this.killProcessToolStripMenuItem.Click += new System.EventHandler(this.killProcessToolStripMenuItem_Click);
             // 
             // startProcessToolStripMenuItem
@@ -72,7 +72,7 @@ namespace Rouzzf.Server.Forms
             this.startProcessToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.application_go;
             this.startProcessToolStripMenuItem.Name = "startProcessToolStripMenuItem";
             this.startProcessToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
-            this.startProcessToolStripMenuItem.Text = "Start Process";
+            this.startProcessToolStripMenuItem.Text = "启动进程";
             this.startProcessToolStripMenuItem.Click += new System.EventHandler(this.startProcessToolStripMenuItem_Click);
             // 
             // lineToolStripMenuItem
@@ -85,7 +85,7 @@ namespace Rouzzf.Server.Forms
             this.refreshToolStripMenuItem.Image = global::Rouzzf.Server.Properties.Resources.refresh;
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
             this.refreshToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
-            this.refreshToolStripMenuItem.Text = "Refresh";
+            this.refreshToolStripMenuItem.Text = "刷新";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // tableLayoutPanel
@@ -123,7 +123,7 @@ namespace Rouzzf.Server.Forms
             // 
             // hProcessname
             // 
-            this.hProcessname.Text = "Processname";
+            this.hProcessname.Text = "进程名称";
             this.hProcessname.Width = 202;
             // 
             // hPID
@@ -132,7 +132,7 @@ namespace Rouzzf.Server.Forms
             // 
             // hTitle
             // 
-            this.hTitle.Text = "Title";
+            this.hTitle.Text = "进程说明";
             this.hTitle.Width = 531;
             // 
             // statusStrip
@@ -144,13 +144,13 @@ namespace Rouzzf.Server.Forms
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(821, 22);
             this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "statusStrip1";
+            this.statusStrip.Text = "状态条";
             // 
             // processesToolStripStatusLabel
             // 
             this.processesToolStripStatusLabel.Name = "processesToolStripStatusLabel";
             this.processesToolStripStatusLabel.Size = new System.Drawing.Size(70, 17);
-            this.processesToolStripStatusLabel.Text = "Processes: 0";
+            this.processesToolStripStatusLabel.Text = "进程: 0";
             // 
             // FrmTaskManager
             // 
@@ -163,7 +163,7 @@ namespace Rouzzf.Server.Forms
             this.MinimumSize = new System.Drawing.Size(351, 449);
             this.Name = "FrmTaskManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Task Manager []";
+            this.Text = "任务管理器 []";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmTaskManager_FormClosing);
             this.Load += new System.EventHandler(this.FrmTaskManager_Load);
             this.contextMenuStrip.ResumeLayout(false);

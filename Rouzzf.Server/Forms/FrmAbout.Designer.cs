@@ -35,8 +35,6 @@
             this.btnOkay = new System.Windows.Forms.Button();
             this.rtxtContent = new System.Windows.Forms.RichTextBox();
             this.lblLicense = new System.Windows.Forms.Label();
-            this.lnkCredits = new System.Windows.Forms.LinkLabel();
-            this.lnkGithubPage = new System.Windows.Forms.LinkLabel();
             this.lblSubTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.SuspendLayout();
@@ -57,7 +55,7 @@
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(82, 7);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(79, 30);
+            this.lblTitle.Size = new System.Drawing.Size(76, 30);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Rouzzf";
             // 
@@ -78,7 +76,7 @@
             this.btnOkay.Name = "btnOkay";
             this.btnOkay.Size = new System.Drawing.Size(75, 23);
             this.btnOkay.TabIndex = 7;
-            this.btnOkay.Text = "&Okay";
+            this.btnOkay.Text = "关闭";
             this.btnOkay.UseVisualStyleBackColor = true;
             this.btnOkay.Click += new System.EventHandler(this.btnOkay_Click);
             // 
@@ -103,28 +101,6 @@
             this.lblLicense.TabIndex = 5;
             this.lblLicense.Text = "License";
             // 
-            // lnkCredits
-            // 
-            this.lnkCredits.AutoSize = true;
-            this.lnkCredits.Location = new System.Drawing.Point(415, 83);
-            this.lnkCredits.Name = "lnkCredits";
-            this.lnkCredits.Size = new System.Drawing.Size(97, 13);
-            this.lnkCredits.TabIndex = 4;
-            this.lnkCredits.TabStop = true;
-            this.lnkCredits.Text = "3rd-party licenses";
-            this.lnkCredits.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCredits_LinkClicked);
-            // 
-            // lnkGithubPage
-            // 
-            this.lnkGithubPage.AutoSize = true;
-            this.lnkGithubPage.Location = new System.Drawing.Point(441, 61);
-            this.lnkGithubPage.Name = "lnkGithubPage";
-            this.lnkGithubPage.Size = new System.Drawing.Size(73, 13);
-            this.lnkGithubPage.TabIndex = 3;
-            this.lnkGithubPage.TabStop = true;
-            this.lnkGithubPage.Text = "GitHub page";
-            this.lnkGithubPage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkGithubPage_LinkClicked);
-            // 
             // lblSubTitle
             // 
             this.lblSubTitle.AutoSize = true;
@@ -133,7 +109,7 @@
             this.lblSubTitle.Name = "lblSubTitle";
             this.lblSubTitle.Size = new System.Drawing.Size(170, 17);
             this.lblSubTitle.TabIndex = 1;
-            this.lblSubTitle.Text = "Remote Administration Tool";
+            this.lblSubTitle.Text = "远程管理工具";
             // 
             // FrmAbout
             // 
@@ -143,8 +119,6 @@
             this.CancelButton = this.btnOkay;
             this.ClientSize = new System.Drawing.Size(525, 405);
             this.Controls.Add(this.lblSubTitle);
-            this.Controls.Add(this.lnkGithubPage);
-            this.Controls.Add(this.lnkCredits);
             this.Controls.Add(this.lblLicense);
             this.Controls.Add(this.rtxtContent);
             this.Controls.Add(this.btnOkay);
@@ -158,7 +132,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmAbout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Rouzzf - About";
+            this.Text = "Rouzzf - 关于";
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -173,8 +147,6 @@
         private System.Windows.Forms.Button btnOkay;
         private System.Windows.Forms.RichTextBox rtxtContent;
         private System.Windows.Forms.Label lblLicense;
-        private System.Windows.Forms.LinkLabel lnkCredits;
-        private System.Windows.Forms.LinkLabel lnkGithubPage;
         private System.Windows.Forms.Label lblSubTitle;
     }
 }

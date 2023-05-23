@@ -172,7 +172,7 @@ namespace Rouzzf.Server.Forms
             int imageIndex = -1;
             switch (status)
             {
-                case "Completed":
+                case "完成":
                     imageIndex = 1;
                     break;
                 case "Canceled":
@@ -202,7 +202,7 @@ namespace Rouzzf.Server.Forms
 
             var lvi = new ListViewItem(new[]
                     {transfer.Id.ToString(), transfer.Type.ToString(), transfer.Status, transfer.RemotePath})
-                {Tag = transfer, ImageIndex = GetTransferImageIndex(transfer.Status)};
+            { Tag = transfer, ImageIndex = GetTransferImageIndex(transfer.Status) };
 
             lstTransfers.Items.Add(lvi);
         }
@@ -249,7 +249,7 @@ namespace Rouzzf.Server.Forms
 
         private void FrmFileManager_Load(object sender, EventArgs e)
         {
-            this.Text = WindowHelper.GetWindowTitle("File Manager", _connectClient);
+            this.Text = WindowHelper.GetWindowTitle("文件管理", _connectClient);
             _fileManagerHandler.RefreshDrives();
         }
 
@@ -268,7 +268,7 @@ namespace Rouzzf.Server.Forms
         {
             if (lstDirectory.SelectedItems.Count > 0)
             {
-                FileManagerListTag tag = (FileManagerListTag) lstDirectory.SelectedItems[0].Tag;
+                FileManagerListTag tag = (FileManagerListTag)lstDirectory.SelectedItems[0].Tag;
 
                 switch (tag.Type)
                 {
@@ -328,7 +328,7 @@ namespace Rouzzf.Server.Forms
         {
             foreach (ListViewItem files in lstDirectory.SelectedItems)
             {
-                FileManagerListTag tag = (FileManagerListTag) files.Tag;
+                FileManagerListTag tag = (FileManagerListTag)files.Tag;
 
                 if (tag.Type == FileType.File)
                 {
@@ -366,7 +366,7 @@ namespace Rouzzf.Server.Forms
         {
             int count = lstDirectory.SelectedItems.Count;
             if (count == 0) return;
-            if (MessageBox.Show(string.Format("Are you sure you want to delete {0} file(s)?", count),
+            if (MessageBox.Show(string.Format("您确定要删除 {0} 文件(夹)吗?", count),
                 "Delete Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 foreach (ListViewItem files in lstDirectory.SelectedItems)
@@ -436,7 +436,7 @@ namespace Rouzzf.Server.Forms
         {
             if (!Directory.Exists(_connectClient.Value.DownloadDirectory))
                 Directory.CreateDirectory(_connectClient.Value.DownloadDirectory);
-            
+
             Process.Start(_connectClient.Value.DownloadDirectory);
         }
 

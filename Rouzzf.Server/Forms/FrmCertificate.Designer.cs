@@ -46,7 +46,7 @@
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(130, 13);
             this.lblInfo.TabIndex = 3;
-            this.lblInfo.Text = "(this might take a while)";
+            this.lblInfo.Text = "(这可能需要一段时间)";
             // 
             // btnCreate
             // 
@@ -54,7 +54,7 @@
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(75, 23);
             this.btnCreate.TabIndex = 1;
-            this.btnCreate.Text = "Create";
+            this.btnCreate.Text = "创建";
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
@@ -66,8 +66,7 @@
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(493, 15);
             this.lblDescription.TabIndex = 0;
-            this.lblDescription.Text = "To use Rouzzf create a new certificate or import an existing one from a previous" +
-    " installation.";
+            this.lblDescription.Text = "要使用Rouzzf，请创建一个新证书或从以前的安装中导入一个现有证书";
             // 
             // txtDetails
             // 
@@ -85,7 +84,7 @@
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(130, 23);
             this.btnImport.TabIndex = 2;
-            this.btnImport.Text = "Browse && Import";
+            this.btnImport.Text = "浏览或导入";
             this.btnImport.UseVisualStyleBackColor = true;
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
@@ -96,7 +95,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "保存";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -108,7 +107,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(355, 15);
             this.label1.TabIndex = 5;
-            this.label1.Text = "KEEP THIS FILE SAFE! LOSS RESULTS IN LOOSING ALL CLIENTS!";
+            this.label1.Text = "确保文件安全!损失将导致失去所有客户!";
             // 
             // btnExit
             // 
@@ -116,7 +115,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 7;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "退出";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -140,7 +139,7 @@
             this.MinimizeBox = false;
             this.Name = "FrmCertificate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Rouzzf - Certificate Wizard";
+            this.Text = "Rouzzf - 证书向导";
             this.ResumeLayout(false);
             this.PerformLayout();
 

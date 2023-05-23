@@ -20,8 +20,8 @@ namespace Rouzzf.Server.Controls
                 label.Text = promptText;
                 textBox.Text = value;
 
-                buttonOk.Text = "OK";
-                buttonCancel.Text = "Cancel";
+                buttonOk.Text = "确定";
+                buttonCancel.Text = "取消";
                 buttonOk.DialogResult = DialogResult.OK;
                 buttonCancel.DialogResult = DialogResult.Cancel;
 
@@ -36,7 +36,7 @@ namespace Rouzzf.Server.Controls
                 buttonCancel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
 
                 form.ClientSize = new Size(396, 107);
-                form.Controls.AddRange(new Control[] {label, textBox, buttonOk, buttonCancel});
+                form.Controls.AddRange(new Control[] { label, textBox, buttonOk, buttonCancel });
                 form.ClientSize = new Size(Math.Max(300, label.Right + 10), form.ClientSize.Height);
                 form.FormBorderStyle = FormBorderStyle.FixedDialog;
                 form.StartPosition = FormStartPosition.CenterScreen;

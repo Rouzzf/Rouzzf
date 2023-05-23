@@ -231,7 +231,7 @@ namespace Rouzzf.Server.Messages
             }
             catch (Exception)
             {
-                transfer.Status = "Error writing file";
+                transfer.Status = "写文件错误";
                 OnFileTransferUpdated(transfer);
                 return;
             }
@@ -243,7 +243,7 @@ namespace Rouzzf.Server.Messages
 
             OnFileTransferUpdated(transfer);
 
-            _client.Send(new FileTransferRequest {RemotePath = remotePath, Id = id});
+            _client.Send(new FileTransferRequest { RemotePath = remotePath, Id = id });
         }
 
         /// <summary>
@@ -295,7 +295,7 @@ namespace Rouzzf.Server.Messages
                     {
                         transfer.TransferredSize += chunk.Data.Length;
                         decimal progress = transfer.Size == 0 ? 100 : Math.Round((decimal)((double)transfer.TransferredSize / (double)transfer.Size * 100.0), 2);
-                        transfer.Status = $"Uploading...({progress}%)";
+                        transfer.Status = $"上传中...({progress}%)";
                         OnFileTransferUpdated(transfer);
 
                         bool transferCanceled;
@@ -350,7 +350,7 @@ namespace Rouzzf.Server.Messages
         /// <param name="transferId">The id of the file transfer to cancel.</param>
         public void CancelFileTransfer(int transferId)
         {
-            _client.Send(new FileTransferCancel {Id = transferId});
+            _client.Send(new FileTransferCancel { Id = transferId });
         }
 
         /// <summary>
@@ -376,7 +376,7 @@ namespace Rouzzf.Server.Messages
         /// <param name="type">The type of the file (file or directory).</param>
         public void DeleteFile(string remotePath, FileType type)
         {
-            _client.Send(new DoPathDelete {Path = remotePath, PathType = type});
+            _client.Send(new DoPathDelete { Path = remotePath, PathType = type });
         }
 
         /// <summary>
@@ -394,7 +394,7 @@ namespace Rouzzf.Server.Messages
         /// <param name="item">The startup item to add.</param>
         public void AddToStartup(StartupItem item)
         {
-            _client.Send(new DoStartupItemAdd {StartupItem = item});
+            _client.Send(new DoStartupItemAdd { StartupItem = item });
         }
 
         /// <summary>
@@ -403,7 +403,7 @@ namespace Rouzzf.Server.Messages
         /// <param name="remotePath">The remote path of the directory.</param>
         public void GetDirectoryContents(string remotePath)
         {
-            _client.Send(new GetDirectory {RemotePath = remotePath});
+            _client.Send(new GetDirectory { RemotePath = remotePath });
         }
 
         /// <summary>
@@ -434,14 +434,14 @@ namespace Rouzzf.Server.Messages
             }
             catch (Exception)
             {
-                transfer.Status = "Error writing file";
+                transfer.Status = "写文件错误";
                 OnFileTransferUpdated(transfer);
                 CancelFileTransfer(transfer.Id);
                 return;
             }
 
-            decimal progress = transfer.Size == 0 ? 100 : Math.Round((decimal) ((double) transfer.TransferredSize / (double) transfer.Size * 100.0), 2);
-            transfer.Status = $"Downloading...({progress}%)";
+            decimal progress = transfer.Size == 0 ? 100 : Math.Round((decimal)((double)transfer.TransferredSize / (double)transfer.Size * 100.0), 2);
+            transfer.Status = $"下载中...({progress}%)";
 
             OnFileTransferUpdated(transfer);
         }
@@ -476,7 +476,7 @@ namespace Rouzzf.Server.Messages
             if (transfer != null)
             {
                 transfer.RemotePath = message.FilePath; // required for temporary file names generated on the client
-                transfer.Status = "Completed";
+                transfer.Status = "完成";
                 RemoveFileTransfer(transfer.Id);
                 OnFileTransferUpdated(transfer);
             }
@@ -489,7 +489,7 @@ namespace Rouzzf.Server.Messages
 
             OnDrivesChanged(message.Drives);
         }
-        
+
         private void Execute(ISender client, GetDirectoryResponse message)
         {
             if (message.Items == null)
@@ -560,7 +560,7 @@ namespace Rouzzf.Server.Messages
                 {
                     foreach (var transfer in _activeFileTransfers)
                     {
-                        _client.Send(new FileTransferCancel {Id = transfer.Id});
+                        _client.Send(new FileTransferCancel { Id = transfer.Id });
                         transfer.FileSplit?.Dispose();
                         if (transfer.Type == TransferType.Download)
                             File.Delete(transfer.LocalPath);
