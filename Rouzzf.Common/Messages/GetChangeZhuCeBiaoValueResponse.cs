@@ -4,7 +4,7 @@ using Rouzzf.Common.Models;
 namespace Rouzzf.Common.Messages
 {
     [ProtoContract]
-    public class GetChangeRegistryValueResponse : IMessage
+    public class GetChangeZhuCeBiaoValueResponse : IMessage
     {
         [ProtoMember(1)]
         public string KeyPath { get; set; }

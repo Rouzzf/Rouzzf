@@ -1,4 +1,4 @@
-﻿using ProtoBuf;
+﻿/*using ProtoBuf;
 using Rouzzf.Common.Messages;
 using System;
 using System.IO;
@@ -45,10 +45,10 @@ namespace Rouzzf.Common.Networking
         public IMessage ReadMessage()
         {
             ReadInteger();
-            /* Length prefix is ignored here and already handled in Client class,
+            *//* Length prefix is ignored here and already handled in Client class,
              * it would cause to much trouble to check here for split or not fully
              * received packets.
-             */
+             *//*
             IMessage message = Serializer.Deserialize<IMessage>(_innerStream);
             return message;
         }
@@ -73,3 +73,4 @@ namespace Rouzzf.Common.Networking
         }
     }
 }
+*/

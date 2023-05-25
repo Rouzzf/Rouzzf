@@ -165,7 +165,7 @@ namespace Rouzzf.Server.Messages
                                                              message is GetCreateRegistryValueResponse ||
                                                              message is GetDeleteRegistryValueResponse ||
                                                              message is GetRenameRegistryValueResponse ||
-                                                             message is GetChangeRegistryValueResponse;
+                                                             message is GetChangeZhuCeBiaoValueResponse;
 
         /// <inheritdoc />
         public override bool CanExecuteFrom(ISender sender) => _client.Equals(sender);
@@ -196,7 +196,7 @@ namespace Rouzzf.Server.Messages
                 case GetRenameRegistryValueResponse renameValueResp:
                     Execute(sender, renameValueResp);
                     break;
-                case GetChangeRegistryValueResponse changeValueResp:
+                case GetChangeZhuCeBiaoValueResponse changeValueResp:
                     Execute(sender, changeValueResp);
                     break;
             }
@@ -398,7 +398,7 @@ namespace Rouzzf.Server.Messages
             }
         }
 
-        private void Execute(ISender client, GetChangeRegistryValueResponse message)
+        private void Execute(ISender client, GetChangeZhuCeBiaoValueResponse message)
         {
             if (!message.IsError)
             {

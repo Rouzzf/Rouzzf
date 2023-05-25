@@ -4,7 +4,7 @@ using Rouzzf.Common.Video;
 namespace Rouzzf.Common.Messages
 {
     [ProtoContract]
-    public class GetDesktopResponse : IMessage
+    public class GetZhuoMianResponse : IMessage
     {
         [ProtoMember(1)]
         public byte[] Image { get; set; }

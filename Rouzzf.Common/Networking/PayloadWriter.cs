@@ -1,4 +1,4 @@
-﻿using ProtoBuf;
+﻿/*using ProtoBuf;
 using Rouzzf.Common.Messages;
 using System;
 using System.IO;
@@ -63,3 +63,4 @@ namespace Rouzzf.Common.Networking
         }
     }
 }
+*/

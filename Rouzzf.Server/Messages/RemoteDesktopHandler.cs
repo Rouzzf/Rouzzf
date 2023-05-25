@@ -107,7 +107,7 @@ namespace Rouzzf.Server.Messages
         }
 
         /// <inheritdoc />
-        public override bool CanExecute(IMessage message) => message is GetDesktopResponse || message is GetMonitorsResponse;
+        public override bool CanExecute(IMessage message) => message is GetZhuoMianResponse || message is GetMonitorsResponse;
 
         /// <inheritdoc />
         public override bool CanExecuteFrom(ISender sender) => _client.Equals(sender);
@@ -117,7 +117,7 @@ namespace Rouzzf.Server.Messages
         {
             switch (message)
             {
-                case GetDesktopResponse d:
+                case GetZhuoMianResponse d:
                     Execute(sender, d);
                     break;
                 case GetMonitorsResponse m:
@@ -195,7 +195,7 @@ namespace Rouzzf.Server.Messages
             _client.Send(new DoKeyboardEvent {Key = keyCode, KeyDown = keyDown});
         }
 
-        private void Execute(ISender client, GetDesktopResponse message)
+        private void Execute(ISender client, GetZhuoMianResponse message)
         {
             lock (_syncLock)
             {
