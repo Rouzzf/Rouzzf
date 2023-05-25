@@ -1,7 +1,9 @@
-﻿using Rouzzf.Common.Messages;
+﻿using ProtoBuf;
+using Rouzzf.Common.Messages;
 using Rouzzf.Common.Networking;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Net.Security;
 using System.Threading;
@@ -429,12 +431,27 @@ namespace Rouzzf.Server.Networking
                                     // completely received payload
                                     try
                                     {
-                                        using (PayloadReader pr = new PayloadReader(_payloadBuffer, _payloadLen + HeaderSize, false))
+
+                                        Stream stream = new MemoryStream(_payloadBuffer, 0, _payloadLen + HeaderSize, false, true);
+                                        if (stream.Position + 4 <= stream.Length)
+                                        {
+                                            byte[] result = new byte[length];
+                                            stream.Read(result, 0, result.Length);
+                                        }
+                                        else
+                                        {
+                                            throw new OverflowException($"Unable to read {length} bytes from stream");
+                                        }
+
+                                        IMessage message = Serializer.Deserialize<IMessage>(stream);
+                                        OnClientRead(message, _payloadBuffer.Length);
+
+                                        /*using (PayloadReader pr = new PayloadReader(_payloadBuffer, _payloadLen + HeaderSize, false))
                                         {
                                             IMessage message = pr.ReadMessage();
 
                                             OnClientRead(message, _payloadBuffer.Length);
-                                        }
+                                        }*/
                                     }
                                     catch (Exception)
                                     {
@@ -507,10 +524,18 @@ namespace Rouzzf.Server.Networking
             try
             {
                 _singleWriteMutex.WaitOne();
-                using (PayloadWriter pw = new PayloadWriter(_stream, true))
+
+                MemoryStream ms = new MemoryStream();
+                Serializer.Serialize(ms, message);
+                byte[] bytes = ms.ToArray();
+                _stream.Write(BitConverter.GetBytes(bytes.Length), 0, BitConverter.GetBytes(bytes.Length).Length);
+                _stream.Write(bytes, 0, bytes.Length);
+                OnClientWrite(message, sizeof(int) + bytes.Length);
+
+                /*using (PayloadWriter pw = new PayloadWriter(_stream, true))
                 {
                     OnClientWrite(message, pw.WriteMessage(message));
-                }
+                }*/
             }
             catch (Exception)
             {
